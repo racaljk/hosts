@@ -1,4 +1,4 @@
-![undefine](https://lh3.googleusercontent.com/rqxNSiYHO2mjKT8mgl2VX2B8cPcCpeNImuSvwvlZ6OoiKJDqm_1QG8HmRZOHJxck6lzRfW0clD1NRNoRhiY2hEBmIz18CYfk3UWnpIdW)
+![undefine](http://www.google.cn/landing/cnexp/google-search.png)
 
 [README.md for Chinese](https://github.com/racaljk/hosts/blob/master/README.md)
 ## Windows

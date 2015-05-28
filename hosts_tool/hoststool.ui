@@ -109,7 +109,7 @@ font: 75 9pt &quot;微软雅黑&quot;;</string>
     </property>
     <item>
      <property name="text">
-      <string extracomment="默认源">http://www.racalinux.cn/hosts.txt</string>
+      <string extracomment="默认源">https://raw.githubusercontent.com/racaljk/hosts/master/hosts</string>
      </property>
     </item>
    </widget>
