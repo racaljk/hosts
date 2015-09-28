@@ -10,7 +10,7 @@
 ### GNU/Linux
 * Linux 系统终端下命令：  
 使用wget或curl，以wget为例：  
-开启终端(快捷键为"Ctrl + Alt + T")输入`sudo rename /etc/hosts /etc/hosts.bak /etc/hosts`之后输入
+开启终端(快捷键为"Ctrl + Alt + T")输入`sudo mv /etc/hosts /etc/hosts.bak`之后输入
 <br>`sudo wget -q https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O /etc/hosts`
 按下述方法令其生效  
 
@@ -20,6 +20,7 @@
   
 * Linux  
 终端输入`sudo rcnscd restart`
+<br>(对于systemed发行版，请使用命令`sudo systemctl restart NetworkManager`。如果不懂请都尝试下)
   
 * Mac OS X  
 终端输入`sudo killall -HUP mDNSResponder`
@@ -34,7 +35,7 @@
 * 可使用[getHosts.py](https://github.com/racaljk/hosts/blob/master/getHosts.py)进行跨平台的hosts简单配置,简单示例如下
 ```python
 import getHosts
-h =getHosts.hosts()
+h = getHosts.hosts()
 h.printContributors() #输出hosts贡献者名单
 h.getReadMeFile()     #获取README.MD文件
 h.getHostsFile()      #获取hosts文件
