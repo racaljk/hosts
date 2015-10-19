@@ -1,5 +1,4 @@
 ![](https://www.google.com.hk/logos/doodles/2015/evidence-of-water-found-on-mars-5652760466817024.2-hp.gif)
-**已证实火星上存在液态水啦！！**
 
 **更多内容请访问[hosts wiki](https://github.com/racaljk/hosts/wiki)**
 
@@ -11,8 +10,7 @@
 ### GNU/Linux
 * Linux 系统终端下命令：  
 使用wget或curl，以wget为例：  
-开启终端(快捷键为"Ctrl + Alt + T")输入`sudo mv /etc/hosts /etc/hosts.bak`之后输入
-<br>`sudo wget -q https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O /etc/hosts`
+开启终端(快捷键为"Ctrl + Alt + T")输入`wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts_tool/script_tool_for_linux.sh -O - | sudo bash -`
 <br>按下述方法令其生效
 
 ### 修改hosts后生效的方法
@@ -20,8 +18,8 @@
 开始 -> 运行 -> 输入cmd -> 在CMD窗口输入`ipconfig /flushdns`
   
 * Linux  
-终端输入`sudo rcnscd restart`
-<br>(对于systemd发行版，请使用命令`sudo systemctl restart NetworkManager`。如果不懂请都尝试下)
+终端输入`sudo systemctl restart NetworkManager`
+<br>非systemd发行版，终端输入`sudo rcnscd restart`
   
 * Mac OS X  
 终端输入`sudo killall -HUP mDNSResponder`
@@ -32,14 +30,19 @@
 * 通用方法  
 拔网线(断网) -> 插网线(重新连接网络)  
   
-### Others
-* 可使用[getHosts.py](https://github.com/racaljk/hosts/blob/master/getHosts.py)进行跨平台的hosts简单配置,简单示例如下
+### 其它
+* 可使用[getHosts.py](https://github.com/racaljk/hosts/blob/master/getHosts.py)进行跨平台hosts相关操作,简单示例如下
 ```python
 import getHosts
 h = getHosts.hosts()
 h.printContributors() #输出hosts贡献者名单
 h.getReadMeFile()     #获取README.MD文件
 h.getHostsFile()      #获取hosts文件
+h.reportIssue(usrname='github username',password='github password',\
+			title='issue title',body='issue content')
+              		  #快捷创建Issue
                       #更多功能亟待补充
 ```
 * 衷心感谢每位参与开源hosts的用户[https://github.com/racaljk/hosts/graphs/contributors](https://github.com/racaljk/hosts/graphs/contributors)
+
+Copyright © 2014-2015 racaljk, All Rights Reserved.
