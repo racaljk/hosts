@@ -1,21 +1,22 @@
 ![](https://lh3.googleusercontent.com/OlK0I-7oGT7TTP2dRhU_cyGgaPsFv9LPLA26-saxcjuUlB2H4xzSpaRj5CROZkg84jeeUeP8zBp3sJ2aZM_4MLfWT1-wri6P8ILsGgU5TQ=s660)
 
 **更多内容请访问[hosts wiki](https://github.com/racaljk/hosts/wiki)**
-###Linux&Mac
-如果是用linux系统的同学，则在/etc目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)。
-
-如果是苹果电脑（Mac ）则新建或修改/private/etc/目录下的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件。
-
-###iOS&Android
-Android：需要root权限。将新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件并保存在/system/etc目录下。
-
-iOS：需越狱。访问设备文件系统，新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)并保存在/etc文件夹下。
-###注意！Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts会无法正常工作。
 
 ### Windows
 * 用文本编辑器(如Notepad++|记事本)打开`C:\Windows\System32\drivers\etc`中的hosts文件，  
 把 -> [hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts) <- 全部内容复制到hosts文件中，保存后按下述方法令其生效。
 <br>**注意：如果遇到无法保存，请右键hosts->属性->安全，然后选择你登陆的用户名，最后点击编辑，勾选"写入"即可。**
+
+###Linux&Mac
+如果是用linux系统的基友们，请在`/etc`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)。
+
+如果是苹果电脑（Mac）则新建或修改`/private/etc/`目录下的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件。
+
+###iOS&Android
+Android：需要root权限。新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件并保存在`/system/etc`目录下。
+
+iOS：需越狱。访问设备文件系统，新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)并保存在`/etc`文件夹下。
+###注意！Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。
 
 ### GNU/Linux
 * Linux 系统终端下命令：  
