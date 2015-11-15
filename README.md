@@ -16,7 +16,7 @@
 Android：需要root权限。新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件并保存在`/system/etc`目录下。
 
 iOS：需越狱。访问设备文件系统，新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)并保存在`/etc`文件夹下。
-###注意！Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。你可以参照这个回答[参考](http://www.zhihu.com/question/29064201/answer/63612656)
+###注意！Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。你可以参考这个回答[参考](http://www.zhihu.com/question/29064201/answer/63612656)。
 
 ### GNU/Linux
 * Linux 系统终端下命令：  
