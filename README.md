@@ -19,7 +19,9 @@
 ###iOS
 * iOS：新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)并保存在`/etc`文件夹下使其生效。
 
-###注意事项！Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。你可以参考这个[回答](http://www.zhihu.com/question/29064201/answer/63612656)。
+###注意事项！
+* Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。你可以参考这个[回答](http://www.zhihu.com/question/29064201/answer/63612656)。
+* Android和iOS需要root和越狱才能访问hosts文件。
 
 ### GNU/Linux
 * Linux 系统终端下命令：  
