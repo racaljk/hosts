@@ -17,7 +17,7 @@
 * 请在`/system/etc`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)使其生效。
 
 ###iOS
-* 请在`/etc`文件夹下[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)使其生效。
+* 请在`/etc`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)使其生效。
 
 ###注意事项！
 * Linux、Mac、Android用户请用Notepad++ 转换文本编码和换行符格式，否则hosts可能会无法正常工作。对此你可以参考这个[解决方案](http://www.zhihu.com/question/29064201/answer/63612656)。
