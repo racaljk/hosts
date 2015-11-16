@@ -18,3 +18,5 @@ SOURCES += main.cpp\
 HEADERS  += hoststool.h
 
 FORMS    += hoststool.ui
+
+RESOURCES +=
