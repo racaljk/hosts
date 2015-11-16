@@ -11,7 +11,7 @@
 ## Linux
 Linux 系统终端下命令：  
 使用wget或curl，以wget为例：  
-开启终端(快捷键为"Ctrl + Alt + T")输入`wget https://raw.githubusercontent.com/racaljk/hosts/master/scripts/script_tool_for_linux.sh -O - | sudo bash -`
+开启终端(快捷键为"Ctrl + Alt + T")输入`bash -c 'wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -qO /tmp/hosts && sudo mv /tmp/hosts /etc/hosts'`
 <br>最后在终端输入`sudo systemctl restart NetworkManager`
 <br>**注意 : 非systemd发行版，终端输入`sudo rcnscd restart`，如果不清楚请两个都试一次。**
 
