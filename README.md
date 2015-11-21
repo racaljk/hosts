@@ -8,6 +8,8 @@
 ```开始 -> 运行 -> 输入cmd -> 在CMD窗口输入ipconfig /flushdns```使其生效。
 <br>**注意：如果遇到无法保存，请右键hosts->属性->安全，然后选择你登陆的用户名，最后点击编辑，勾选"写入"即可。**
 
+另外，可参考[Windows 下自动化更新 hosts](http://www.waylau.com/windows-hosts-auto-update/)。
+
 ## Linux
 Linux 系统终端下命令：  
 使用wget或curl，以wget为例：  
