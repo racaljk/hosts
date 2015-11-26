@@ -1,50 +1,69 @@
-#!/usr/bin/env python
-# -*-coding: utf8 -*-
+"""Simple Guidance for getHosts script
+This is a simple guidance,it tell you how to use this script even
+I know it's useless..
+For running this script,you need install python environment(v2.7).
+Now you can use this python script to configure your hosts file 
+and do something magically.All of the first you need to import 
+this script as a PythonModule by IMPORT statement.
+For example,if you want to get hosts file via script from remote
+server,you ,you might create a new .py file,type following code:
 
-'''
-GitHub API Python SDK. (Python >= 2.6)
+import getHosts
+h = getHosts.hosts() #initial an hosts object
+h.getHostsFile()     #output hosts file to your local system
 
-Apache License
+I promise there will be more useful functions in the feature.
+"""
 
-Michael Liao (askxuefeng@gmail.com)
+class hosts(object):
 
-Usage:
+    HEADER = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; rv:16.0) Gecko/20100101 Firefox/16.0'
+    }
 
->>> gh = GitHub(username='githubpy', password='test-githubpy-1234')
->>> L = gh.users('githubpy').followers.get()
->>> L[0].id
-470058
->>> L[0].login == u'michaelliao'
-True
->>> x_ratelimit_remaining = gh.x_ratelimit_remaining
->>> x_ratelimit_limit = gh.x_ratelimit_limit
->>> x_ratelimit_reset = gh.x_ratelimit_reset
->>> L = gh.users('githubpy').following.get()
->>> L[0].url == u'https://api.github.com/users/michaelliao'
-True
->>> L = gh.repos('githubpy')('testgithubpy').issues.get(state='closed', sort='created')
->>> L[0].title == u'sample issue for test'
-True
->>> L[0].number
-1
->>> I = gh.repos('githubpy')('testgithubpy').issues(1).get()
->>> I.url == u'https://api.github.com/repos/githubpy/testgithubpy/issues/1'
-True
->>> gh = GitHub(username='githubpy', password='test-githubpy-1234')
->>> r = gh.repos('githubpy')('testgithubpy').issues.post(title='test create issue', body='just a test')
->>> r.title == u'test create issue'
-True
->>> r.state == u'open'
-True
->>> gh.repos.thisisabadurl.get()
-Traceback (most recent call last):
-    ...
-ApiNotFoundError: https://api.github.com/repos/thisisabadurl
->>> gh.users('github-not-exist-user').followers.get()
-Traceback (most recent call last):
-    ...
-ApiNotFoundError: https://api.github.com/users/github-not-exist-user/followers
-'''
+    def __init__(self, header=None):
+        self.header = header or self.HEADER
+        self.reposUrl = 'https://github.com/racaljk/hosts'
+
+    def getRaw(self, url):
+
+        request = urllib2.Request(url, headers=self.header)
+        response = urllib2.urlopen(request)
+        return response.read()
+
+    def getReadMeFile(self):
+        url = 'https://raw.githubusercontent.com/racaljk/hosts/master/README.md'
+        content = self.getRaw(url)
+        with open('README.MD', 'wb') as f:
+            f.write(content)
+
+    def getHostsFile(self):
+        url = 'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
+        content = self.getRaw(url)
+        with open('hosts', 'wb') as f:
+            f.write(content)
+
+    def printContributors(self):
+        l = ['racaljk', 'andytimes', 'smounives',
+             'K-Guan','cw881014','fluviusmagnus',
+             'whiteclover','LyricTian','RellyVadd',
+             'mklnz','chaosshen','TimothyGu']
+
+        c = [{'author': i,
+              'githubpage': 'https://github.com/' + i} for i in l]
+
+        print ':D thanks for all contributors(sort by commits):'
+        for x in c:
+            for (k, v) in x.items():
+                print k + ':' + v
+
+    #you need to provide your github.username&github.password in following next functions
+    def reportIssue(self,username,password,title,body):
+        if username=='' or password=='' or title==''or body=='':
+            raise ValueError('incorrect parameters,try again.')
+        gh = github.GitHub(username,password)
+        gh.repos('racaljk')('hosts').issues.post(title=title, body=body,label='QuickIssue')
+        print 'You have succeed to report a Issue to hosts project via getHost script.'
 
 __version__ = '1.1.1'
 
