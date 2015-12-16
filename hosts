@@ -10,7 +10,7 @@
 # localhost is used to configure the loopback interface
 # when the system is booting. Do not change this entry.
 #
-# Last updated: Mon Dev 04 22:38:04 CST 2015
+# Last updated: Fri Dec 12 20:26:22 CST 2015
 ##
 127.0.0.1	localhost
 255.255.255.255 broadcasthost
@@ -83,40 +83,40 @@ fe80::1%lo0 localhost
 # DuckDuckGo End
 
 # Facebook start
-31.13.95.46	mqtt.facebook.com
-31.13.95.46	video.xx.fbcdn.net
+173.252.88.67	mqtt.facebook.com
+173.252.88.67	video.xx.fbcdn.net
 77.67.4.11	fbcdn-sphotos-a-a.akamaihd.net
 77.67.4.64	fbcdn-sphotos-b-a.akamaihd.net
 77.67.4.74	fbcdn-sphotos-c-a.akamaihd.net
 77.67.4.73	fbcdn-sphotos-d-a.akamaihd.net
 77.67.4.74	fbcdn-sphotos-e-a.akamaihd.net
 77.67.4.10	fbcdn-sphotos-f-a.akamaihd.net
-31.13.95.46	fbcdn-sphotos-g-a.akamaihd.net
-31.13.95.46	fbcdn-sphotos-h-a.akamaihd.net
+173.252.88.67	fbcdn-sphotos-g-a.akamaihd.net
+173.252.88.67	fbcdn-sphotos-h-a.akamaihd.net
 2.16.162.11	fbcdn-profile-a.akamaihd.net
-31.13.95.46	scontent.xx.fbcdn.net
-31.13.95.46	scontent-a.xx.fbcdn.net
-31.13.95.46	scontent-b.xx.fbcdn.net
+173.252.88.67	scontent.xx.fbcdn.net
+173.252.88.67	scontent-a.xx.fbcdn.net
+173.252.88.67	scontent-b.xx.fbcdn.net
 23.213.58.87	s-static.ak.facebook.com
 23.213.58.87	profile.ak.facebook.com
 184.28.188.154	static.ak.facebook.com
 184.28.188.154	b.static.ak.facebook.com
-31.13.95.46	graph.facebook.com
-31.13.95.46	ssl.facebook.com
-31.13.95.46	api.facebook.com
-31.13.95.46	secure-profile.facebook.com
-31.13.95.46	secure.facebook.com
-31.13.95.46	zh-cn.facebook.com
-31.13.95.46	login.facebook.com
-31.13.95.46	m.facebook.com
-31.13.95.46	messages-facebook.com
-31.13.95.46	attachments.facebook.com
-31.13.95.46	touch.facebook.com
-31.13.95.46	facebook.com
-31.13.95.46	www.facebook.com
-31.13.95.46	apps.facebook.com
-31.13.95.46	profile.ak.fbcdn.net
-31.13.95.46	vpn.tfbnw.net
+173.252.88.67	graph.facebook.com
+173.252.88.67	ssl.facebook.com
+173.252.88.67	api.facebook.com
+173.252.88.67	secure-profile.facebook.com
+173.252.88.67	secure.facebook.com
+173.252.88.67	zh-cn.facebook.com
+173.252.88.67	login.facebook.com
+173.252.88.67	m.facebook.com
+173.252.88.67	messages-facebook.com
+173.252.88.67	attachments.facebook.com
+173.252.88.67	touch.facebook.com
+173.252.88.67	facebook.com
+173.252.88.67	www.facebook.com
+173.252.88.67	apps.facebook.com
+173.252.88.67	profile.ak.fbcdn.net
+173.252.88.67	vpn.tfbnw.net
 184.28.188.240	vthumb.ak.fbcdn.net
 184.28.188.152	photos-a.ak.fbcdn.net
 184.28.188.154	photos-b.ak.fbcdn.net
@@ -127,12 +127,12 @@ fe80::1%lo0 localhost
 184.28.188.171	photos-g.ak.fbcdn.net
 184.28.188.146	photos-h.ak.fbcdn.net
 184.28.188.171	creative.ak.fbcdn.net
-31.13.95.46	fbcdn.net
+173.252.88.67	fbcdn.net
 184.28.188.153	external.ak.fbcdn.net
 184.28.188.153	b.static.ak.fbcdn.net
 184.28.188.153	static.ak.fbcdn.net
-31.13.95.46	upload.facebook.com
-31.13.95.46	developers.facebook.com
+173.252.88.67	upload.facebook.com
+173.252.88.67	developers.facebook.com
 184.28.188.153	act.channel.facebook.com
 184.28.188.153	0-act.channel.facebook.com
 184.28.188.153	1-act.channel.facebook.com
@@ -141,43 +141,43 @@ fe80::1%lo0 localhost
 184.28.188.153	4-act.channel.facebook.com
 184.28.188.153	5-act.channel.facebook.com
 184.28.188.153	6-act.channel.facebook.com
-31.13.95.46	beta-chat-01-05-ash3.facebook.com
+173.252.88.67	beta-chat-01-05-ash3.facebook.com
 184.28.188.153	origincache-ai-01-05-ash3.fbcdn.net
-31.13.95.46	static.thefacebook.com
+173.252.88.67	static.thefacebook.com
 184.28.188.153	inyour-slb-01-05-ash3.facebook.com
 184.28.188.153	origincache-starfacebook-ai-01-05-ash3.facebook.com
-31.13.95.46	channel-ecmp-05-ash3.facebook.com
-31.13.95.46	channel-staging-ecmp-05-ash3.facebook.com
-31.13.95.46	channel-testing-ecmp-05-ash3.facebook.com
-31.13.95.46	0-edge-chat.facebook.com
-31.13.95.46	1-edge-chat.facebook.com
-31.13.95.46	2-edge-chat.facebook.com
-31.13.95.46	3-edge-chat.facebook.com
-31.13.95.46	4-edge-chat.facebook.com
-31.13.95.46	5-edge-chat.facebook.com
-31.13.95.46	6-edge-chat.facebook.com
-31.13.95.46	api-read.facebook.com
-31.13.95.46	attachment.fbsbx.com
-31.13.95.46	bigzipfiles.facebook.com
-31.13.95.46	check4.facebook.com
-31.13.95.46	check6.facebook.com
-31.13.95.46	code.facebook.com
-31.13.95.46	connect.facebook.com
-31.13.95.46	edge-chat.facebook.com
-31.13.95.46	pixel.facebook.com
-31.13.95.46	star.c10r.facebook.com
-31.13.95.46	star.facebook.com
-31.13.95.46	zh-tw.facebook.com
-31.13.95.46	b-api.facebook.com
-31.13.95.46	b-graph.facebook.com
-31.13.95.46	connect.facebook.net
-31.13.95.46	creative.ak.fbcdn.net
-31.13.95.46	d.facebook.com
-31.13.95.46	ent-a.xx.fbcdn.net
-31.13.95.46	ent-b.xx.fbcdn.net
-31.13.95.46	ent-c.xx.fbcdn.net
-31.13.95.46	ent-d.xx.fbcdn.net
-31.13.95.46	ent-e.xx.fbcdn.net
+173.252.88.67	channel-ecmp-05-ash3.facebook.com
+173.252.88.67	channel-staging-ecmp-05-ash3.facebook.com
+173.252.88.67	channel-testing-ecmp-05-ash3.facebook.com
+173.252.88.67	0-edge-chat.facebook.com
+173.252.88.67	1-edge-chat.facebook.com
+173.252.88.67	2-edge-chat.facebook.com
+173.252.88.67	3-edge-chat.facebook.com
+173.252.88.67	4-edge-chat.facebook.com
+173.252.88.67	5-edge-chat.facebook.com
+173.252.88.67	6-edge-chat.facebook.com
+173.252.88.67	api-read.facebook.com
+173.252.88.67	attachment.fbsbx.com
+173.252.88.67	bigzipfiles.facebook.com
+173.252.88.67	check4.facebook.com
+173.252.88.67	check6.facebook.com
+173.252.88.67	code.facebook.com
+173.252.88.67	connect.facebook.com
+173.252.88.67	edge-chat.facebook.com
+173.252.88.67	pixel.facebook.com
+173.252.88.67	star.c10r.facebook.com
+173.252.88.67	star.facebook.com
+173.252.88.67	zh-tw.facebook.com
+173.252.88.67	b-api.facebook.com
+173.252.88.67	b-graph.facebook.com
+173.252.88.67	connect.facebook.net
+173.252.88.67	creative.ak.fbcdn.net
+173.252.88.67	d.facebook.com
+173.252.88.67	ent-a.xx.fbcdn.net
+173.252.88.67	ent-b.xx.fbcdn.net
+173.252.88.67	ent-c.xx.fbcdn.net
+173.252.88.67	ent-d.xx.fbcdn.net
+173.252.88.67	ent-e.xx.fbcdn.net
 23.32.248.66	fbcdn-creative-a.akamaihd.net
 72.246.188.82	fbcdn-photos-a.akamaihd.net
 72.246.188.19	fbcdn-photos-e-a.akamaihd.net
@@ -201,21 +201,21 @@ fe80::1%lo0 localhost
 23.32.248.33	fbcdn-vthumb-a.akamaihd.net
 23.32.248.27	fbexternal-a.akamaihd.net
 58.26.185.48	fbstatic-a.akamaihd.net
-31.13.95.46	ldap.thefacebook.com
-31.13.95.46	orcart.facebook.com
-31.13.95.46	scontent-a-lax.xx.fbcdn.net
-31.13.95.46	scontent-a-sin.xx.fbcdn.net
-31.13.95.46	scontent-b-lax.xx.fbcdn.net
+173.252.88.67	ldap.thefacebook.com
+173.252.88.67	orcart.facebook.com
+173.252.88.67	scontent-a-lax.xx.fbcdn.net
+173.252.88.67	scontent-a-sin.xx.fbcdn.net
+173.252.88.67	scontent-b-lax.xx.fbcdn.net
 183.111.23.18	scontent-b-sin.xx.fbcdn.net
-31.13.95.46	scontent-c.xx.fbcdn.net
-31.13.95.46	scontent-d.xx.fbcdn.net
-31.13.95.46	scontent-e.xx.fbcdn.net
-31.13.95.46	scontent-mxp.xx.fbcdn.net
+173.252.88.67	scontent-c.xx.fbcdn.net
+173.252.88.67	scontent-d.xx.fbcdn.net
+173.252.88.67	scontent-e.xx.fbcdn.net
+173.252.88.67	scontent-mxp.xx.fbcdn.net
 23.207.122.24	s-external.ak.fbcdn.net
 23.34.45.177	s-static.ak.fbcdn.net
 118.214.29.177	s-static.facebook.com
-31.13.95.46	vupload.facebook.com
-31.13.95.46	vupload2.vvv.facebook.com
+173.252.88.67	vupload.facebook.com
+173.252.88.67	vupload2.vvv.facebook.com
 # Facebook end
 
 # FlipBoard Start
@@ -1880,6 +1880,8 @@ fe80::1%lo0 localhost
 64.233.188.129	login.corp.google.com
 64.233.188.129	uberproxy.corp.google.com
 64.233.188.129	uberproxy.l.google.com
+216.239.38.125	certificate-transparency.org
+216.239.38.125	www.certificate-transparency.org
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
@@ -2112,29 +2114,6 @@ fe80::1%lo0 localhost
 31.216.147.130	w.api.mega.co.nz
 # MEGA End
 
-# Mozilla Start
-117.18.232.191	activations.cdn.mozilla.net
-117.18.232.191	addons.cdn.mozilla.net
-117.18.232.191	air.cdn.mozilla.net
-117.18.232.191	cdn.mozilla.net
-117.18.232.191	code.cdn.mozilla.net
-117.18.232.191	developer.cdn.mozilla.net
-117.18.232.191	download-installer.cdn.mozilla.net
-117.18.232.191	fhr.cdn.mozilla.net
-117.18.232.191	glow.cdn.mozilla.net
-117.18.232.191	marketplace.cdn.mozilla.net
-117.18.232.191	mozorg.cdn.mozilla.net
-117.18.232.191	snippets.cdn.mozilla.net
-117.18.232.191	support.cdn.mozilla.net
-117.18.232.191	telemetry-experiment.cdn.mozilla.net
-117.18.232.191	videos.cdn.mozilla.net
-117.18.237.191	getpersonas-cdn.mozilla.net
-117.18.237.29	ocsp.digicert.com
-63.245.215.56	ftp.mozilla.org
-63.245.216.132	addons.mozilla.org
-72.21.81.109	df6a.https.cdn.softlayer.net
-# Mozilla End
-
 # OneDrive Start
 65.54.187.24	account.live.com
 23.44.152.70	auth.gfx.ms
@@ -2314,7 +2293,7 @@ fe80::1%lo0 localhost
 185.45.5.35	tweetdeck.twitter.com
 173.236.110.98	twitpic.com
 173.236.110.98	m1.twitpic.com
-104.244.42.193	twitter.com
+104.244.42.195	twitter.com
 185.45.5.40	upload.twitter.com
 104.244.42.67	analytics.twitter.com
 199.59.150.48	urls-real.api.twitter.com
