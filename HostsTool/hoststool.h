@@ -9,8 +9,11 @@
 #include <qfile.h>
 #include <qtextstream.h>
 #include <QMessageBox>
-#include <qglobal.h>
-
+#include <QtNetwork/qssl.h>
+#include <QtNetwork/qsslconfiguration.h>
+#include <QtNetwork/qsslsocket.h>
+#include <qstandardpaths.h>
+#include <QDesktopServices>
 namespace Ui {
 class HostsTool;
 }
@@ -28,6 +31,14 @@ private slots:
     void readyread();
 
     void on_actionAbout_A_triggered();
+
+    void on_commandLinkButton_2_clicked();
+
+    void on_commandLinkButton_clicked();
+
+    void on_commandLinkButton_3_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::HostsTool *ui;

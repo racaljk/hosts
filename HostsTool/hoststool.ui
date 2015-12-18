@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>498</width>
-    <height>333</height>
+    <width>688</width>
+    <height>457</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,23 +19,23 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>481</width>
-      <height>261</height>
+      <width>671</width>
+      <height>341</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
       <widget class="QGroupBox" name="groupBox">
        <property name="title">
-        <string>执行操作</string>
+        <string>输出中心</string>
        </property>
        <widget class="QTextEdit" name="textEdit">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>0</x>
           <y>20</y>
-          <width>461</width>
-          <height>231</height>
+          <width>671</width>
+          <height>311</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -59,9 +59,9 @@ p, li { white-space: pre-wrap; }
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>270</y>
-      <width>101</width>
+      <x>430</x>
+      <y>360</y>
+      <width>171</width>
       <height>41</height>
      </rect>
     </property>
@@ -82,9 +82,9 @@ font: 75 9pt &quot;微软雅黑&quot;;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>280</y>
-      <width>61</width>
+      <x>20</x>
+      <y>370</y>
+      <width>71</width>
       <height>21</height>
      </rect>
     </property>
@@ -92,15 +92,15 @@ font: 75 9pt &quot;微软雅黑&quot;;</string>
      <string notr="true">font: 75 10pt &quot;微软雅黑&quot;;</string>
     </property>
     <property name="text">
-     <string>Hosts源:</string>
+     <string>远端源地址:</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>280</y>
-      <width>311</width>
+      <x>100</x>
+      <y>370</y>
+      <width>321</width>
       <height>21</height>
      </rect>
     </property>
@@ -113,13 +113,86 @@ font: 75 9pt &quot;微软雅黑&quot;;</string>
      </property>
     </item>
    </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>400</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>我有疑问?</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton_2">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>400</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>我有建议?</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>400</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>我有其他源?</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>360</y>
+      <width>77</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>498</width>
+     <width>688</width>
      <height>23</height>
     </rect>
    </property>
