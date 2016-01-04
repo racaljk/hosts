@@ -3064,40 +3064,40 @@ fe80::1%lo0 localhost
 # Startpage End
 
 # Steam Start
-23.32.241.40	akacdn.valve.com.edgesuite.net
-208.64.202.85	api.steampowered.com
-162.242.173.193	cafe.steampowered.com
-23.32.241.19	cdn.akamai.steamstatic.com
-23.32.241.19	cdn.steamcommunity.com
-23.32.241.19	cdn.steampowered.com
-23.32.241.19	cdn.store.steampowered.com
-162.254.192.20	client-download.steampowered.com
-205.185.216.42	cloud-2.steampowered.com
-205.185.216.10	cloud-2.steamusercontent.com
-23.32.241.19	cloud-3.steampowered.com
-23.32.241.19	cloud-3.steamusercontent.com
-205.128.91.126	cloud-4.steampowered.com
-205.128.91.126	cloud-4.steamusercontent.com
-207.123.53.253	content2.steampowered.com
-205.185.216.10	content3.steampowered.com
-69.252.117.26	content6.steampowered.com
-23.32.241.19	content8.steampowered.com
-184.50.91.157	forums.steampowered.com
-23.32.241.19	images.akamai.steamusercontent.com
-23.32.241.19	media.steampowered.com
-205.185.216.42	media2.steampowered.com
-207.123.53.253	media3.steampowered.com
-23.32.241.19	media4.steampowered.com
-46.16.252.18	na.gcsip.com
-23.32.248.58	steamcdn-a.akamaihd.net
-184.50.91.157	steamcommunity.com
-23.32.248.10	steamcommunity-a.akamaihd.net
-23.32.248.48	steamstore-a.akamaihd.net
-23.32.241.19	store.akamai.steamstatic.com
-184.50.91.157	store.steampowered.com
-23.32.241.40	store.valvesoftware.com
-184.50.91.157	storefront.steampowered.com
-184.50.91.157	support.steampowered.com
+103.31.45.10    akacdn.valve.com.edgesuite.net
+208.64.202.85   api.steampowered.com
+162.242.173.193 cafe.steampowered.com
+103.31.45.10    cdn.akamai.steamstatic.com
+103.31.45.10    cdn.steamcommunity.com
+103.31.45.10    cdn.steampowered.com
+103.31.45.10    cdn.store.steampowered.com
+162.254.192.20  client-download.steampowered.com
+205.185.216.42  cloud-2.steampowered.com
+205.185.216.10  cloud-2.steamusercontent.com
+103.31.45.10    cloud-3.steampowered.com
+103.31.45.10    cloud-3.steamusercontent.com
+205.128.91.126  cloud-4.steampowered.com
+205.128.91.126  cloud-4.steamusercontent.com
+207.123.53.253  content2.steampowered.com
+205.185.216.10  content3.steampowered.com
+69.252.117.26   content6.steampowered.com
+103.31.45.10    content8.steampowered.com
+184.50.91.157   forums.steampowered.com
+103.31.45.10    images.akamai.steamusercontent.com
+103.31.45.10    media.steampowered.com
+205.185.216.42  media2.steampowered.com
+207.123.53.253  media3.steampowered.com
+103.31.45.10    media4.steampowered.com
+46.16.252.18    na.gcsip.com
+103.31.45.10    steamcdn-a.akamaihd.net
+184.50.91.157   steamcommunity.com
+103.31.45.10    steamcommunity-a.akamaihd.net
+103.31.45.10    steamstore-a.akamaihd.net
+103.31.45.10    store.akamai.steamstatic.com
+184.50.91.157   store.steampowered.com
+23.32.241.40    store.valvesoftware.com
+184.50.91.157   storefront.steampowered.com
+184.50.91.157   support.steampowered.com
 # Steam End
 
 # Twitter Start

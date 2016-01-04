@@ -5,7 +5,7 @@
 -----------------
 
 > **请注意：下述命令或指导均可能覆盖现有hosts，如现有hosts内容重要的话请备份后再尝试下述方法。**
-> **如果不想手动备份的话，请尝试我们的[HostsTool](https://github.com/racaljk/hosts/tree/master/HostsTool)和[一些方便的script](https://github.com/racaljk/hosts/tree/master/scripts)。**
+> **如果不想手动备份的话，请尝试我们的[HostsTool](https://github.com/racaljk/hosts/tree/master/HostsTool)和[一些方便的scripts](https://github.com/racaljk/hosts/tree/master/scripts)。**
 
 ------------------
 
