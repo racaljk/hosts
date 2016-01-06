@@ -3064,40 +3064,44 @@ fe80::1%lo0 localhost
 # Startpage End
 
 # Steam Start
-203.116.74.210	akacdn.valve.com.edgesuite.net
-208.64.202.85	api.steampowered.com
-162.242.173.193	cafe.steampowered.com
-203.116.74.210	cdn.akamai.steamstatic.com
-203.116.74.210	cdn.steamcommunity.com
-203.116.74.210	cdn.steampowered.com
-203.116.74.210	cdn.store.steampowered.com
-162.254.192.20	client-download.steampowered.com
-205.185.216.42	cloud-2.steampowered.com
-205.185.216.10	cloud-2.steamusercontent.com
-203.116.74.210	cloud-3.steampowered.com
-203.116.74.210	cloud-3.steamusercontent.com
-205.128.91.126	cloud-4.steampowered.com
-205.128.91.126	cloud-4.steamusercontent.com
-207.123.53.253	content2.steampowered.com
-205.185.216.10	content3.steampowered.com
-69.252.117.26	content6.steampowered.com
-203.116.74.210	content8.steampowered.com
-184.50.91.157	forums.steampowered.com
-203.116.74.210	images.akamai.steamusercontent.com
-203.116.74.210	media.steampowered.com
-205.185.216.42	media2.steampowered.com
-207.123.53.253	media3.steampowered.com
-203.116.74.210	media4.steampowered.com
-46.16.252.18	na.gcsip.com
-203.116.74.210	steamcdn-a.akamaihd.net
-184.50.91.157	steamcommunity.com
-203.116.74.210	steamcommunity-a.akamaihd.net
-203.116.74.210	steamstore-a.akamaihd.net
-203.116.74.210	store.akamai.steamstatic.com
-184.50.91.157	store.steampowered.com
-23.32.241.40	store.valvesoftware.com
-184.50.91.157	storefront.steampowered.com
-184.50.91.157	support.steampowered.com
+# 203.116.74.210 / 103.31.45.9
+# Basic
+203.116.74.210 forums.steampowered.com
+203.116.74.210 cdn.steamcommunity.com
+203.116.74.210 cdn.steampowered.com
+203.116.74.210 cdn.store.steampowered.com
+203.116.74.210 media.steampowered.com
+203.116.74.210 storefront.steampowered.com
+203.116.74.210 cdn.akamai.steamstatic.com
+203.116.74.210 steamcommunity-a.akamaihd.net
+
+# Plus
+#203.116.74.210 cloud.steampowered.com
+#203.116.74.210 api.steampowered.com
+#162.242.173.193	cafe.steampowered.com
+#162.254.192.20	client-download.steampowered.com
+#205.185.216.10	cloud-2.steampowered.com
+#205.185.216.10	cloud-2.steamusercontent.com
+#42.99.128.171	cloud-3.steampowered.com
+#42.99.128.171	cloud-3.steamusercontent.com
+#8.254.207.30	cloud-4.steampowered.com
+#8.254.207.30	cloud-4.steamusercontent.com
+#8.254.207.30	content2.steampowered.com
+#205.185.216.10	content3.steampowered.com
+#69.252.117.78	content6.steampowered.com
+#42.99.128.171	content8.steampowered.com
+#205.185.216.10	media2.steampowered.com
+#8.254.207.30	media3.steampowered.com
+#192.204.26.91	media4.steampowered.com
+#46.16.252.18	na.gcsip.com
+#203.116.74.210	steamcommunity.com
+#203.116.74.210	steamcommunity-a.akamaihd.net
+#203.116.74.210	steamstore-a.akamaihd.net
+#192.204.26.91	store.akamai.steamstatic.com
+#203.116.74.210 store.steampowered.com
+#192.204.26.91	store.valvesoftware.com
+#203.116.74.210 support.steampowered.com
+
 # Steam End
 
 # Twitter Start
