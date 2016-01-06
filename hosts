@@ -1,5 +1,5 @@
 ##
-# Copyright (c) 2014-2015, racaljk.
+# Copyright (c) 2014-2016, racaljk.
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY. Redistribution and use in anyway, DO
@@ -10,7 +10,7 @@
 # localhost is used to configure the loopback interface
 # when the system is booting. Do not change this entry.
 #
-# Last updated: Mon Dec 21 13:32:41 CST 2015
+# Last updated: Tue Jan  5 23:35:46 CST 2016
 ##
 127.0.0.1	localhost
 255.255.255.255 broadcasthost
@@ -482,27 +482,27 @@ fe80::1%lo0 localhost
 216.239.38.125	accounts.google.co.nz
 216.239.38.125	id.google.co.nz
 216.239.38.125	www.googlecode.com
-216.239.38.125	googlesource.com
-216.239.38.125	gerrit.googlesource.com
-216.239.38.125	chromium.googlesource.com
-216.239.38.125	kernel.googlesource.com
-216.239.38.125	gwt.googlesource.com
-216.239.38.125	code.google.com
-216.239.38.125	uploads.code.google.com
-216.239.38.125	chromium.googlecode.com
-216.239.38.125	closure-library.googlecode.com
-216.239.38.125	earth-api-samples.googlecode.com
-216.239.38.125	gmaps-samples-flash.googlecode.com
-216.239.38.125	googleappengine.googlecode.com
-216.239.38.125	google-code-feed-gadget.googlecode.com
-216.239.38.125	google-code-prettify.googlecode.com
-216.239.38.125	www.googlesource.com
-216.239.38.125	android.googlesource.com
-64.233.160.90	cloud.google.com
-216.239.38.125	developers.google.com
-216.239.38.125	cloudssh.developers.google.com
-64.233.160.90	console.developers.google.com
-216.239.38.125	source.developers.google.com
+216.58.212.38	googlesource.com
+216.58.212.38	gerrit.googlesource.com
+216.58.212.38	chromium.googlesource.com
+216.58.212.38	kernel.googlesource.com
+216.58.212.38	gwt.googlesource.com
+216.58.212.38	code.google.com
+216.58.212.38	uploads.code.google.com
+216.58.212.38	chromium.googlecode.com
+216.58.212.38	closure-library.googlecode.com
+216.58.212.38	earth-api-samples.googlecode.com
+216.58.212.38	gmaps-samples-flash.googlecode.com
+216.58.212.38	googleappengine.googlecode.com
+216.58.212.38	google-code-feed-gadget.googlecode.com
+216.58.212.38	google-code-prettify.googlecode.com
+216.58.212.38	www.googlesource.com
+216.58.212.38	android.googlesource.com
+216.58.212.38	cloud.google.com
+216.58.212.38	developers.google.com
+216.58.212.38	cloudssh.developers.google.com
+216.58.212.38	console.developers.google.com
+216.58.212.38	source.developers.google.com
 216.239.38.125	directory.google.com
 216.239.38.125	dir.google.com
 216.239.38.125	events.google.com
@@ -581,6 +581,7 @@ fe80::1%lo0 localhost
 216.239.38.125	v3.cache1.c.docs.google.com
 216.239.38.125	domains.google.com
 216.239.38.125	dl-ssl.google.com
+216.239.38.125	dl.google.com
 216.239.38.125	earth.google.com
 216.239.38.125	auth.keyhole.com
 216.239.38.125	geoauth.google.com
@@ -1029,7 +1030,7 @@ fe80::1%lo0 localhost
 216.239.38.125	www.android.com
 216.239.38.125	android.com
 216.239.38.125	connectivitycheck.android.com
-64.233.160.90	developer.android.com
+216.58.212.38	developer.android.com
 216.239.38.125	source.android.com
 216.239.38.125	market.android.com
 216.239.38.125	play.google.com
@@ -3063,36 +3064,36 @@ fe80::1%lo0 localhost
 # Startpage End
 
 # Steam Start
-23.32.241.40	akacdn.valve.com.edgesuite.net
+203.116.74.210	akacdn.valve.com.edgesuite.net
 208.64.202.85	api.steampowered.com
 162.242.173.193	cafe.steampowered.com
-23.32.241.19	cdn.akamai.steamstatic.com
-23.32.241.19	cdn.steamcommunity.com
-23.32.241.19	cdn.steampowered.com
-23.32.241.19	cdn.store.steampowered.com
+203.116.74.210	cdn.akamai.steamstatic.com
+203.116.74.210	cdn.steamcommunity.com
+203.116.74.210	cdn.steampowered.com
+203.116.74.210	cdn.store.steampowered.com
 162.254.192.20	client-download.steampowered.com
 205.185.216.42	cloud-2.steampowered.com
 205.185.216.10	cloud-2.steamusercontent.com
-23.32.241.19	cloud-3.steampowered.com
-23.32.241.19	cloud-3.steamusercontent.com
+203.116.74.210	cloud-3.steampowered.com
+203.116.74.210	cloud-3.steamusercontent.com
 205.128.91.126	cloud-4.steampowered.com
 205.128.91.126	cloud-4.steamusercontent.com
 207.123.53.253	content2.steampowered.com
 205.185.216.10	content3.steampowered.com
 69.252.117.26	content6.steampowered.com
-23.32.241.19	content8.steampowered.com
+203.116.74.210	content8.steampowered.com
 184.50.91.157	forums.steampowered.com
-23.32.241.19	images.akamai.steamusercontent.com
-23.32.241.19	media.steampowered.com
+203.116.74.210	images.akamai.steamusercontent.com
+203.116.74.210	media.steampowered.com
 205.185.216.42	media2.steampowered.com
 207.123.53.253	media3.steampowered.com
-23.32.241.19	media4.steampowered.com
+203.116.74.210	media4.steampowered.com
 46.16.252.18	na.gcsip.com
-23.32.248.58	steamcdn-a.akamaihd.net
+203.116.74.210	steamcdn-a.akamaihd.net
 184.50.91.157	steamcommunity.com
-23.32.248.10	steamcommunity-a.akamaihd.net
-23.32.248.48	steamstore-a.akamaihd.net
-23.32.241.19	store.akamai.steamstatic.com
+203.116.74.210	steamcommunity-a.akamaihd.net
+203.116.74.210	steamstore-a.akamaihd.net
+203.116.74.210	store.akamai.steamstatic.com
 184.50.91.157	store.steampowered.com
 23.32.241.40	store.valvesoftware.com
 184.50.91.157	storefront.steampowered.com
