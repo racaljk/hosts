@@ -10,7 +10,7 @@
 # localhost is used to configure the loopback interface
 # when the system is booting. Do not change this entry.
 #
-# Last updated: Tue Jan  5 23:35:46 CST 2016
+# Last updated: Fri Jan 15 13:03:59 CST 2016
 ##
 127.0.0.1	localhost
 255.255.255.255 broadcasthost
@@ -42,6 +42,7 @@ fe80::1%lo0 localhost
 54.240.250.61	us-west-2.console.aws.amazon.com
 54.231.34.41	github-cloud.s3.amazonaws.com
 # Amazon AWS End 
+
 # Archive Start
 207.241.224.2	archive.org
 207.241.226.190	web.archive.org
@@ -67,12 +68,6 @@ fe80::1%lo0 localhost
 54.192.232.60	cdn-images.bundlestars.com
 185.12.83.2	support.bundlestars.com
 # BundleStars End
-
-# DeviantART Start
-# DeviantART End
-
-# Dropbox_hosts start
-# Dropbox_hosts end
 
 # DuckDuckGo Start
 46.51.216.186	duckduckgo.com
@@ -219,11 +214,6 @@ fe80::1%lo0 localhost
 173.252.88.67	vupload2.vvv.facebook.com
 # Facebook end
 
-# FlipBoard Start
-# FlipBoard End
-
-
-
 # Gmail web Start
 216.239.38.125	chatenabled.mail.google.com
 216.239.38.125	filetransferenabled.mail.google.com
@@ -246,6 +236,7 @@ fe80::1%lo0 localhost
 216.239.38.125	com.google
 216.239.38.125	admin.google.com
 216.239.38.125	accounts.google.com
+216.239.38.125	passwords.google.com
 216.239.38.125	bpui0.google.com
 216.239.38.125	cse.google.com
 216.239.38.125	clients1.google.com
@@ -1023,10 +1014,6 @@ fe80::1%lo0 localhost
 216.239.38.125	www.googleadservices.com
 216.239.38.125	adwords.google.com
 216.239.38.125	adwords.google.sk
-216.239.38.125	partner.googleadservices.com
-216.239.38.125	pagead.google.com
-216.239.38.125	pagead2.googleadservices.com
-216.239.38.125	buttons.googlesyndication.com
 216.239.38.125	www.android.com
 216.239.38.125	android.com
 216.239.38.125	connectivitycheck.android.com
@@ -2294,7 +2281,6 @@ fe80::1%lo0 localhost
 216.239.38.125	contacts.google.com
 216.239.38.125	youtube.com
 216.239.38.125	www.youtube.com
-216.239.38.125	youtube-ui.l.google.com
 216.239.38.125	au.youtube.com
 216.239.38.125	ca.youtube.com
 216.239.38.125	de.youtube.com
@@ -2304,49 +2290,26 @@ fe80::1%lo0 localhost
 216.239.38.125	uk.youtube.com
 216.239.38.125	tw.youtube.com
 216.239.38.125	ads.youtube.com
-216.239.38.125	www3.l.google.com
 216.239.38.125	www.youtube-nocookie.com
 216.239.38.125	m.youtube.com
 216.239.38.125	youtu.be
 216.239.38.125	gdata.youtube.com
 216.239.38.125	stage.gdata.youtube.com
 216.239.38.125	s.youtube.com
-216.239.38.125	video-stats.l.google.com
 216.239.38.125	s2.youtube.com
 216.239.38.125	accounts.youtube.com
 216.239.38.125	img.youtube.com
-216.239.38.125	ytimg.l.google.com
 216.239.38.125	help.youtube.com
 216.239.38.125	upload.youtube.com
-216.239.38.125	yt-video-upload.l.google.com
-216.239.38.125	uploads.stage.gdata.youtube.com
-216.239.38.125	yt-video-upload.l.google.com
 216.239.38.125	insight.youtube.com
-216.239.38.125	video-analytics.l.google.com
 216.239.38.125	apiblog.youtube.com
 216.239.38.125	clients1.youtube.com
 216.239.38.125	i.ytimg.com
-216.239.38.125	ytimg.l.google.com
 216.239.38.125	i1.ytimg.com
 216.239.38.125	i2.ytimg.com
 216.239.38.125	i3.ytimg.com
 216.239.38.125	i4.ytimg.com
 216.239.38.125	s.ytimg.com
-216.239.38.125	ytstatic.l.google.com
-216.239.38.125	video.google.com
-216.239.38.125	video.l.google.com
-216.239.38.125	video.google.com.hk
-216.239.38.125	video.google.com.tw
-216.239.38.125	0.gvt0.com
-216.239.38.125	video-thumbnails.l.google.com
-216.239.38.125	1.gvt0.com
-216.239.38.125	2.gvt0.com
-216.239.38.125	3.gvt0.com
-216.239.38.125	4.gvt0.com
-216.239.38.125	5.gvt0.com
-216.239.38.125	upload.video.google.com
-216.239.38.125	sslvideo-upload.l.google.com
-216.239.38.125	video-stats.video.google.com
 216.239.38.125	manifest.googlevideo.com
 64.233.162.83	onetoday.google.com
 
@@ -2878,6 +2841,10 @@ fe80::1%lo0 localhost
 # 216.239.38.125	csi.gstatic.com
 # 216.239.38.125	www-google-analytics.l.google.com
 # 216.239.38.125	www-googletagmanager.l.google.com
+# 216.239.38.125	partner.googleadservices.com
+# 216.239.38.125	pagead.google.com
+# 216.239.38.125	pagead2.googleadservices.com
+# 216.239.38.125	buttons.googlesyndication.com
 # Google CN End
 
 # Google End
@@ -3062,43 +3029,6 @@ fe80::1%lo0 localhost
 37.0.88.36	support.startpage.com
 37.0.88.36	blog.startpage.com
 # Startpage End
-
-# Steam Start
-203.116.74.210	akacdn.valve.com.edgesuite.net
-208.64.202.85	api.steampowered.com
-162.242.173.193	cafe.steampowered.com
-203.116.74.210	cdn.akamai.steamstatic.com
-203.116.74.210	cdn.steamcommunity.com
-203.116.74.210	cdn.steampowered.com
-203.116.74.210	cdn.store.steampowered.com
-162.254.192.20	client-download.steampowered.com
-205.185.216.42	cloud-2.steampowered.com
-205.185.216.10	cloud-2.steamusercontent.com
-203.116.74.210	cloud-3.steampowered.com
-203.116.74.210	cloud-3.steamusercontent.com
-205.128.91.126	cloud-4.steampowered.com
-205.128.91.126	cloud-4.steamusercontent.com
-207.123.53.253	content2.steampowered.com
-205.185.216.10	content3.steampowered.com
-69.252.117.26	content6.steampowered.com
-203.116.74.210	content8.steampowered.com
-184.50.91.157	forums.steampowered.com
-203.116.74.210	images.akamai.steamusercontent.com
-203.116.74.210	media.steampowered.com
-205.185.216.42	media2.steampowered.com
-207.123.53.253	media3.steampowered.com
-203.116.74.210	media4.steampowered.com
-46.16.252.18	na.gcsip.com
-203.116.74.210	steamcdn-a.akamaihd.net
-184.50.91.157	steamcommunity.com
-203.116.74.210	steamcommunity-a.akamaihd.net
-203.116.74.210	steamstore-a.akamaihd.net
-203.116.74.210	store.akamai.steamstatic.com
-184.50.91.157	store.steampowered.com
-23.32.241.40	store.valvesoftware.com
-184.50.91.157	storefront.steampowered.com
-184.50.91.157	support.steampowered.com
-# Steam End
 
 # Twitter Start
 185.45.5.47	t.co
@@ -3307,7 +3237,6 @@ fe80::1%lo0 localhost
 208.80.154.224	it.wikipedia.org
 208.80.154.224	iu.wikipedia.org
 208.80.154.224	ja.wikipedia.org
-208.80.154.224	ja.wikipedia.org
 208.80.154.224	jbo.wikipedia.org
 208.80.154.224	jv.wikipedia.org
 208.80.154.224	ka.wikipedia.org
@@ -3386,12 +3315,10 @@ fe80::1%lo0 localhost
 208.80.154.224	pi.wikipedia.org
 208.80.154.224	pih.wikipedia.org
 208.80.154.224	pl.wikipedia.org
-208.80.154.224	pl.wikipedia.org
 208.80.154.224	pms.wikipedia.org
 208.80.154.224	pnb.wikipedia.org
 208.80.154.224	pnt.wikipedia.org
 208.80.154.224	ps.wikipedia.org
-208.80.154.224	pt.wikipedia.org
 208.80.154.224	pt.wikipedia.org
 208.80.154.224	qu.wikipedia.org
 208.80.154.224	rm.wikipedia.org
@@ -3480,7 +3407,6 @@ fe80::1%lo0 localhost
 208.80.154.224	www.wikimedia.org
 208.80.154.224	www.wikimediafoundation.org
 208.80.154.224	www.wikinews.org
-208.80.154.224	www.wikipedia.org
 208.80.154.224	www.wikiquote.org
 208.80.154.224	www.wikisource.org
 208.80.154.224	www.wikiversity.org
