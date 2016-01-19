@@ -1,25 +1,34 @@
-![](https://www.google.com/logos/2012/halloween-2012-hp.jpg)
+![](https://www.google.com/logos/doodles/2016/41st-anniversary-of-the-discovery-of-the-mountain-of-the-butterflies-5704071614824448.2-hp2x.jpg)
 
 **更多内容请访问[hosts wiki](https://github.com/racaljk/hosts/wiki)**
 
+-----------------
+
+> **请注意：下述命令或指导均可能覆盖现有hosts，如现有hosts内容重要的话请备份后再尝试下述方法。**
+> **如果不想手动备份的话，请尝试[HostsTool](https://github.com/ppoffice/Hozz)和[一些方便的scripts](https://github.com/racaljk/hosts/tree/master/scripts)。**
+
+------------------
+
 ## Windows
-用文本编辑器(如Notepad++|记事本)打开`C:\Windows\System32\drivers\etc`中的hosts文件，  
+用文本编辑器(如Notepad++|记事本)打开`C:\Windows\System32\drivers\etc`中的hosts文件，
 把 -> [hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts) <- 全部内容复制到hosts文件中，保存后通过
 ```开始 -> 运行 -> 输入cmd -> 在CMD窗口输入ipconfig /flushdns```使其生效。
 <br>**注意：如果遇到无法保存，请右键hosts->属性->安全，然后选择你登陆的用户名，最后点击编辑，勾选"写入"即可。**
 
-## Linux 
+## Linux
 开启终端(快捷键为"Ctrl + Alt + T")输入`bash -c 'wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -qO /tmp/hosts && sudo mv /tmp/hosts /etc/hosts'`
 <br>最后在终端输入`sudo systemctl restart NetworkManager`
 <br>**注意 : 非systemd发行版，终端输入`sudo rcnscd restart`，如果不清楚请两个都试一次，或者参考[#100](https://github.com/racaljk/hosts/issues/100)**
 
 ## Mac OS
-请在`/private/etc/`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)，然后终端输入`sudo killall -HUP mDNSResponder`使其生效。
+可以使用[Gas Mask](http://www.macupdate.com/app/mac/29949/gas-mask/)工具修改
+
+或者在`/private/etc/`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)，然后终端输入`sudo killall -HUP mDNSResponder`使其生效。
 
 ## Android
 请在`/system/etc`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)，然后通过`开启飞行模式 -> 关闭飞行模式 `的方式使其生效。
 
-## iOS 
+## iOS
 请在`/etc`目录下新建或修改[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)使其生效。
 
 ## Annoucement
