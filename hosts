@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-2-5
+# Last updated: 2016-2-8
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -35,7 +35,8 @@ fe80::1%lo0 localhost
 204.246.162.198	us-west-1.console.aws.amazon.com
 54.240.250.61	us-west-2.console.aws.amazon.com
 54.231.34.41	github-cloud.s3.amazonaws.com
-# Amazon AWS End 
+54.231.48.40	github-com.s3.amazonaws.com
+# Amazon AWS End
 
 # Archive Start
 207.241.224.2	archive.org
@@ -2261,7 +2262,7 @@ fe80::1%lo0 localhost
 220.255.2.153	mobile.l.google.com
 # 220.255.2.153	ext.google.com
 216.58.217.12	proxy.googlezip.net
-216.58.217.12	check.googlezip.net
+# 216.58.217.12	check.googlezip.net
 216.58.217.12	compress.googlezip.net
 216.58.217.12	proxy-dev.googlezip.net
 220.255.2.153	polymer-project.org
@@ -2707,6 +2708,7 @@ fe80::1%lo0 localhost
 64.233.188.129	uberproxy.l.google.com
 220.255.2.153	certificate-transparency.org
 220.255.2.153	www.certificate-transparency.org
+220.255.2.153	abc.xyz
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
