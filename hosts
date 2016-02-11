@@ -3600,8 +3600,8 @@ fe80::1%lo0 localhost
 66.163.168.247	open.login.yahoo.com
 98.136.166.37	overview.mail.yahoo.com
 119.160.254.215	p.yimg.com
-119.160.254.215	s.yimg.com
-96.6.93.227	s.yimg.com
+# 119.160.254.215	s.yimg.com
+# 96.6.93.227	s.yimg.com
 119.160.254.215	s1.yimg.com
 106.10.193.20	sa.edit.yahoo.com
 124.108.120.124	sa.edit.yahoo.com
