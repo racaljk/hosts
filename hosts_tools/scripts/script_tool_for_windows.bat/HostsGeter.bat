@@ -1,5 +1,3 @@
-
-
 %1 %2
 ver|find "5.">nul&&goto :st
 mshta vbscript:createobject("shell.application").shellexecute("%~s0","goto :st","","runas",1)(window.close)&goto :eof
@@ -10,11 +8,11 @@ cls
 @REM HostsGet Version0.3.1
 
 @echo off
-del %temp%\download.vbs > nul
+del %temp%\download.vbs >nul2 > nul
 cd /d %~dp0
-echo 初始化中...
+echo Initializing...
 
-echo iLocal=LCase("c:\hosts") >> %temp%\download.vbs
+echo iLocal=LCase("%windir%\hosts") >> %temp%\download.vbs
 echo iRemote=LCase("https://raw.githubusercontent.com/racaljk/hosts/master/hosts") >> %temp%\download.vbs
 
 echo Set xPost=createObject("Microsoft.XMLHTTP") 'Set Post = CreateObject("Msxml2.XMLHTTP") >> %temp%\download.vbs
@@ -27,28 +25,29 @@ echo sGet.Open() >> %temp%\download.vbs
 echo sGet.Write xPost.ResponseBody >> %temp%\download.vbs
 echo sGet.SaveToFile iLocal,2 >> %temp%\download.vbs
 
-echo 初始化完成...请稍后...
+echo Please wait...
 ping 127.0.0.1 > nul
-echo 开始从github中下载hosts
+echo Downloading Hosts file from github...
 %temp%\download.vbs
-echo 请稍后...
+ping 127.0.0.1 > nul
+echo Please wait...
 del %temp%\download.vbs /s /q
 ping 127.0.0.1 > nul
-echo 正在备份原hosts...
-move %windir%\system32\drivers\etc\hosts %windir%\
+echo Backing up the original Hosts...
+move %windir%\system32\drivers\etc\hosts %windir%\system32\drivers\etc\
 set filename=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%
-ren %windir%\hosts %filename%.bak
+ren %windir%\system32\drivers\etc\hosts %filename%.bak
 
 
-echo hosts文件已经备份到%windir%，名字为%filename% ，路径为：%windir%\%filename%  .
+echo Original Hosts file path:%windir%\drivers\etc\%filename%.
 
-move c:\hosts %windir%\system32\drivers\etc\
-echo hosts替换完成.
+move %windir%\hosts %windir%\system32\drivers\etc\
+echo Host file has been replaced.
 ipconfig /flushdns
-echo 按任意键访问google.com.hk进行测试，如取消，请直接关闭本窗口
+echo Press any key to access google.com.hk to check the new Hosts is working...
 pause >nul
 start https://www.google.com.hk
-echo 已经帮你访问google.com.hk 如可以访问则替换成功.
 
-echo 按任意键关闭
+
+echo Press any key to exit.
 pause >nul
