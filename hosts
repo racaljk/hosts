@@ -3058,29 +3058,6 @@ static.ak.fbcdn.net    origincache-starfacebook-ai-01-05-ash3.facebook.com
 204.79.197.213	nhuhga.dm2301.livefilestore.com
 # OneDrive End
 
-# osu Start
-141.101.112.193	a.ppy.sh
-141.101.112.193	b.ppy.sh
-192.99.201.125	bm4.ppy.sh
-192.99.38.38	bm5.ppy.sh
-141.101.112.193	c.ppy.sh
-192.241.179.220	m1.ppy.sh
-141.101.112.193	osu.ppy.sh
-141.101.112.193	s.ppy.sh
-# osu End
-
-# RockStar Start
-192.81.241.11	conductor-prod.ros.rockstargames.com
-192.81.241.100	conductor-prod.ros.rockstargames.com
-208.111.148.6	patches.rockstargames.com
-208.111.149.150	prod.cloud.rockstargames.com
-54.68.41.239	prod.cs.ros.rockstargames.com
-192.81.245.200	prod.p01sjc.pod.rockstargames.com
-192.81.245.201	prod.p02sjc.pod.rockstargames.com
-192.81.241.11	prod.ros.rockstargames.com
-54.149.44.210	prod.telemetry.ros.rockstargames.com
-# RockStar End
-
 # SoundCloud Start
 68.232.44.96	a1.sndcdn.com
 68.232.44.127	api.soundcloud.com
