@@ -43,7 +43,7 @@
 	<key>DTXcodeBuild</key>
 	<string>7C1002</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.11</string>
+	<string>10.10</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016年 ZhangMeng. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
