@@ -3,7 +3,7 @@
 # 欢迎使用hosts！
 
 
-1. 下述使用指导均可能覆盖现有 hosts ，如现有 hosts 内容重要的话请事先备份。您也可以使用我们的 [**Host Tools**](https://github.com/racaljk/hosts/tree/master/hosts_tools) 来自动化 备份/配置 的工作。
+1. 下述使用指导均可能覆盖现有 hosts ，如现有 hosts 内容重要的话请 **事先备份**。您也可以使用我们的 [**Host Tools**](https://github.com/racaljk/hosts/tree/master/hosts_tools) 来自动化 备份/配置 的工作。
 2. 根据下述使用指导配置完成后，您将需要“重置网络”：
 
 - 重启系统
@@ -23,11 +23,17 @@
     
 并将我们的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件中的内容全部内容复制到该文件中并保存。
 
-> 注意：如果遇到无法保存，请右键文件hosts并找到“属性” -> “安全”，然后选择你登陆的用户名，最后点击编辑，勾选“写入”即可。
+> 注意：
+
+> 1. 右键以管理员身份运行 记事本(或其它编辑器)，按 ｀Ctrl＋O｀ 打开文件，可以解决权限问题。 
+
+> 2. 如果遇到无法保存，请右键文件hosts并找到“属性” -> “安全”，然后选择你登陆的用户名，最后点击编辑，勾选“写入”即可。
+
 
 ## Mac OS
 请 新建/修改 `/private/etc/hosts` 文件，并将我们的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件中的内容全部内容复制到该文件中并保存。
 
+> 没有权限，可以先将 hosts 文件拖到桌面修改，保存之后再拖进原文件夹，期间需要输入Mac的密码。
 
 > 也可以使用[Gas Mask](http://www.macupdate.com/app/mac/29949/gas-mask/)工具。
 
@@ -48,8 +54,15 @@
     bash -c 'wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -qO /tmp/hosts && sudo mv /tmp/hosts /etc/hosts'
     
 
+
+## More
+
+http://laod.cn/hosts
+
+
 ## License
 * 本项目的所有代码按照 [MIT License](https://github.com/racaljk/hosts/blob/master/LICENSE) 发布。
 * 本项目的hosts，README.MD，wiki等资源基于[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 这意味着你可以拷贝、并再发行本项目的内容，但是你将必须同样提供原作者信息以及协议声明。同时你也不能将本项目用于商业用途，按照我们狭义的理解（增加附属条款），凡是任何盈利的活动皆属于商业用途。若你无法遵守上述的责任和义务，请不要拷贝、并再发行本项目。
 ![img-source-from-https://github.com/docker/dockercraft](https://github.com/docker/dockercraft/raw/master/docs/img/contribute.png?raw=true)
+
