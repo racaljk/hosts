@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-3-4
+# Last updated: 2016-3-5
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -564,6 +564,8 @@ fe80::1%lo0	localhost
 # 74.125.248.73	git.chromium.org
 # 216.58.217.251	codereview.chromium.org
 216.58.217.251	download-chromium.appspot.com
+216.58.217.251	betaspike.appspot.com
+216.58.217.251	m-dot-betaspike.appspot.com
 216.58.217.251	chrome-devtools-frontend.appspot.com
 216.58.217.251	accounts.google.com.gi
 216.58.217.251	accounts.google.co.nz
