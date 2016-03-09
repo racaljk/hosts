@@ -294,8 +294,8 @@ fe80::1%lo0	localhost
 204.13.251.34	assets1.twitter.com
 204.13.251.34	assets2.twitter.com
 208.78.71.34	assets3.twitter.com
-204.13.251.34	static.twitter.com
-204.13.251.34	help.twitter.com
+104.244.42.131	static.twitter.com
+104.244.42.131	help.twitter.com
 199.59.243.21	si0.twimg.co
 199.59.243.120	si1.twimg.co
 199.7.91.13	si2.twimg.co
@@ -306,6 +306,8 @@ fe80::1%lo0	localhost
 185.45.5.35	api.tweetdeck.com
 185.45.5.35	web.tweetdeck.com
 185.45.5.35	www.tweetdeck.com
+199.59.148.249	ton.twitter.com
+104.244.42.195	s.twitter.com
 # Twitter End
 
 # Gmail web Start
