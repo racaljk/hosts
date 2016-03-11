@@ -2,6 +2,8 @@
 
 # 欢迎使用hosts！
 
+[![Join the chat at https://gitter.im/racaljk/hosts](https://badges.gitter.im/racaljk/hosts.svg)](https://gitter.im/racaljk/hosts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 1. 下述使用指导均可能覆盖现有 hosts ，如现有 hosts 内容重要的话请事先备份。您也可以使用我们的 [**Host Tools**](https://github.com/racaljk/hosts/tree/master/hosts_tools) 来自动化 备份/配置 的工作。
 2. 根据下述使用指导配置完成后，您将需要“重置网络”：
