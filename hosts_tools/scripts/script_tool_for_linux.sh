@@ -11,6 +11,8 @@
 #
 if [ `id -u` -eq 0 ]; then
     wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O ~/fetchedhosts
+# ISSUE 284: sudo: unable to resolve host xxxxx problem:
+    sed -i '/127.0.0.1    localhost/c\127.0.0.1 '"$(hostname)"'\' ~/fetchedhosts
     sed -i '/# Copyright (c) 2014/,/# Modified hosts end/d' /etc/hosts
     cat ~/fetchedhosts >> /etc/hosts
     rm -f ~/fetchedhosts
