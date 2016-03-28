@@ -33,13 +33,9 @@
 ::1	localhost
 fe80::1%lo0	localhost
 
-#too-naive defined
 127.0.0.1 ubmcmm.baidustatic.com
 54.231.112.176 github-cloud.s3.amazonaws.com
 54.174.188.191 base64converter.com
-23.192.160.8 a248.e.akamai.net
-#end
-
 
 # Modified hosts start
 
