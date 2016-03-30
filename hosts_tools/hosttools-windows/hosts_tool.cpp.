@@ -6,7 +6,7 @@
 #include <tchar.h>
 #include <windows.h>
 #include <stdio.h>
-#include "handle/download.hpp"
+#include "download.hpp"
 #include <string.h>
 
 #define DEFBUF(x,y) x[y]=_T("")
