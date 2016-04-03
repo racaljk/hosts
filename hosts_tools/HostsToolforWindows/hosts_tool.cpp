@@ -17,7 +17,6 @@
 #define THROWERR(x) throw expection(x)
 //#define THROWERRx(x) throw expection(x,1)
 #define hostsfile _T("https://raw.githubusercontent.com/racaljk/hosts/master/hosts")
-#define Shell(x) ShellExecute(NULL,(_os_.dwMajorVersion==5)?_T("open"):_T("runas"),argv[0],_T(x),NULL,SW_SHOWNORMAL)
 
 #define DownLocated _T(".\\hosts")
 #define ChangeCTLR _T(".\\hostsq")
@@ -65,25 +64,19 @@ bool Func_CheckDiff(const TCHAR*,const TCHAR*) throw(expection);
 DWORD __stdcall HostThread(LPVOID);
 
 SERVICE_TABLE_ENTRY STE[2]={{Sname,(LPSERVICE_MAIN_FUNCTION)Service_Main},{NULL,NULL}};
-OSVERSIONINFO _os_={sizeof(OSVERSIONINFO),0,0,0,0,_T("")};
 
 int _tmain(int argc,LPTSTR * argv){
-	GetVersionEx(&_os_);
 	SetConsoleTitle(_T("racaljk-host tools"));
-	if (argc==1) Shell("-r");
+	if (argc==1)
+        NormalEntry(false);
+    else if (!_tcscmp(_T("-i"),argv[1]) || !_tcscmp(_T("-install"),argv[1]))
+        Func_Service_Install(argv[0]);
+	else if (!_tcscmp(_T("-svc"),argv[1]))
+        StartServiceCtrlDispatcher(STE);
+	else if (!_tcscmp(_T("-u"),argv[1]) || !_tcscmp(_T("-uninstall"),argv[1]))
+        Func_Service_UnInstall();
 	else
-		if (!_tcscmp(_T("-r"),argv[1])) NormalEntry(false);
-		else
-			if (!_tcscmp(_T("-i"),argv[1])) Shell("-install");
-			else
-				if (!_tcscmp(_T("-install"),argv[1])) Func_Service_Install(argv[0]);
-				else
-					if (!_tcscmp(_T("-svc"),argv[1])) StartServiceCtrlDispatcher(STE);
-					else 
-						if (!_tcscmp(_T("-u"),argv[1])) Shell("-uninstall");
-						else
-							if (!_tcscmp(_T("-uninstall"),argv[1])) Func_Service_UnInstall();
-							else _tprintf(_T("Bad Parameters.\n")),abort();
+        _tprintf(_T("Bad Parameters.\n")),abort();
 	return 0;
 }
 
