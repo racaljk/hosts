@@ -38,7 +38,7 @@ struct expection{
 
 
 
-#define welcomeShow "\
+#define welcomeShow _T("\
     **********************************************\n\
     *                                            *\n\
     *                                            *\n\
@@ -47,7 +47,7 @@ struct expection{
     *                                            *\n\
     *                                            *\n\
     *                    Powered by: @Too-Naive  *\n\
-    **********************************************"
+    **********************************************")
 
 TCHAR Sname[]=_T("racaljk-hoststool");
 
