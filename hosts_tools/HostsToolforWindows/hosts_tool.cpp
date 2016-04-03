@@ -31,14 +31,14 @@ struct expection{
 	}
 };
 
-#define SHOW_HELP "\n\
+#define SHOW_HELP _T("\n\
 Usage: hosts_tool [-fi | -fu | -h]\n\n\n\
 Options:\n\
     -h  : Show this help message.\n\
     -fi : Install Auto-Update hosts service(Service Name:%s).\n\
     -fu : uninstall service.\n\n\n\
     Copyright (C) 2016 @Too-Naive\n\
-    License:MIT LICENSE\n\n\n"
+    License:MIT LICENSE\n\n\n")
 
 
 #define welcomeShow _T("\
