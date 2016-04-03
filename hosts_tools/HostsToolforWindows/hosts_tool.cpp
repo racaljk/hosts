@@ -55,17 +55,37 @@ struct expection{
 	}*/
 };
 
-
+#define LICENSE_MIT _T("\
+The MIT License(MIT)\r\n\
+\r\n\
+Copyright(c) 2016 Too-Naive Email:sweheartiii@hotmail.com\r\n\
+\r\n\
+Permission is hereby granted, free of charge, to any person obtaining a copy \
+of this software and associated documentation files(the \"Software\"), to deal \
+in the Software without restriction, including without limitation the rights \
+to use, copy, modify, merge, publish, distribute, sublicense, and / or sell \
+copies of the Software, and to permit persons to whom the Software is \
+furnished to do so, subject to the following conditions :\r\n\
+\r\n\
+The above copyright notice and this permission notice shall be included in all \
+copies or substantial portions of the Software.\r\n\
+\r\n\
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE \
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \
+SOFTWARE.")
 
 #define welcomeShow _T("\
     **********************************************\n\
     *                                            *\n\
+    *    https://github.com/racaljk/hosts        *\n\
+    *        Welcome use hosts tools!            *\n\
+    *            Enjoy the free net!             *\n\
+    *                Powered by: @Too-Naive      *\n\
     *                                            *\n\
-    *                                            *\n\
-    *          Welcome use hosts tools!          *\n\
-    *                                            *\n\
-    *                                            *\n\
-    *                    Powered by: @Too-Naive  *\n\
     **********************************************")
 
 TCHAR Sname[]=_T("racaljk-hoststool");
@@ -106,7 +126,8 @@ void NormalEntry(bool is_in_service){
 	FILE * fp=NULL,*_=NULL;
 	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 	GetLocalTime(&st);
-	_tprintf(_T("    LICENSE:MIT LICENSE\n%s\n    Copyright (C) 2016 @Too-Naive\n"),welcomeShow);
+    MessageBox(NULL, LICENSE_MIT, _T("LICENSE"), MB_OK);
+    _tprintf(_T("%s\n"), welcomeShow);
 	_tprintf(_T("\n    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n\n\n"));
 	_tprintf(_T("    Start replace hosts file:\n    Step1:Get System Driver..."));
 	try {
@@ -149,7 +170,9 @@ void NormalEntry(bool is_in_service){
 		_tprintf(_T("\n[Debug Message]\n%s\n%s\n%s\n"),buf1,buf2,buf3);
 		abort();
 	}
-	MessageBox(NULL,_T("Hosts File Set Success!"),_T("Congratulations!"),MB_ICONINFORMATION|MB_SETFOREGROUND);
+    _tprintf(_T("\n    Congratulations!\n"));
+    _tprintf(_T("    Hosts File Set Success!\n"));
+    system("pause");
 	return ;
 }
 
