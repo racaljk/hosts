@@ -124,12 +124,27 @@ int _tmain(int argc,TCHAR const ** argv){
 	SetConsoleTitle(_T("racaljk-host tools"));
 	GetVersionEx(&_os_);
 	switch (__Check_Parameters(argc,argv)){
+#ifdef _MSC_VER 
+        case EXEC_START_NORMAL:
+        case EXEC_START_RUNAS | EXEC_START_NORMAL:
+            NormalEntry();
+            break;
+        case EXEC_START_INSTALL_SERVICE:
+        case EXEC_START_RUNAS | EXEC_START_INSTALL_SERVICE:
+            Func_Service_Install(argv[0]);
+            break;
+        case EXEC_START_UNINSTALL_SERVICE:
+        case EXEC_START_RUNAS | EXEC_START_UNINSTALL_SERVICE:
+            Func_Service_UnInstall();
+            break;
+#else
 		CASE(EXEC_START_NORMAL,Shell("-rrun"));
 		CASE(EXEC_START_RUNAS|EXEC_START_NORMAL,NormalEntry());
 		CASE(EXEC_START_RUNAS|EXEC_START_INSTALL_SERVICE,Func_Service_Install(argv[0]));
 		CASE(EXEC_START_RUNAS|EXEC_START_UNINSTALL_SERVICE,Func_Service_UnInstall());
 		CASE(EXEC_START_INSTALL_SERVICE,Shell("-rinstall"));
 		CASE(EXEC_START_UNINSTALL_SERVICE,Shell("-runinstall"));
+#endif // _MSC_VER
 		CASE(EXEC_START_SERVICE,StartServiceCtrlDispatcher(STE));
 		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));
 		case EXEC_BAD_PARAMETERS:
