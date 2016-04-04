@@ -1,6 +1,26 @@
-//Copyright (C) 2016 Too-Naive 
-//E-mail:sweheartiii@hotmail.com
-
+/*
+ * The MIT License(MIT)
+ *
+ * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files(the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, and to permit persons to 
+ * whom the Software is furnished to do so, BUT DO NOT SUBLICENSE, AND / OR SELL
+ * OF THE SOFTWARE,subject to the following conditions :
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
 
 #include <windows.h>
 #include <stdio.h>
@@ -10,18 +30,21 @@
 #include <stdlib.h>
 #include "ptrerr.hpp"
 
-
 #define WIN32_LEAN_AND_MEAN
 
 #define DEFBUF(x,y) x[y]=_T("")
 #define THROWERR(x) throw expection(x)
 #define hostsfile _T("https://raw.githubusercontent.com/racaljk/hosts/master/hosts")
-#define Shell(x) ShellExecute(NULL,(_os_.dwMajorVersion<=5)?_T("open"):_T("runas"),argv[0],_T(x),NULL,SW_SHOWNORMAL)
+#define objectwebsite _T("https://github.com/racaljk/hosts")
+//#define Shell(x) ShellExecute(NULL,(_os_.dwMajorVersion<=5)?_T("open"):_T("runas"),argv[0],_T(x),NULL,SW_SHOWNORMAL)
 
 #define CASE(x,y) case x : y; break;
 
 #define DownLocated _T(".\\hosts")
 #define ChangeCTLR _T(".\\hostsq")
+#define BAD_EXIT \
+		_tprintf(_T("Bad Parameters.\n")),\
+		abort();
 
 
 struct expection{
@@ -31,14 +54,16 @@ struct expection{
 	}
 };
 
-#define SHOW_HELP "\n\
+#define SHOW_HELP _T("\n\
 Usage: hosts_tool [-fi | -fu | -h]\n\n\n\
 Options:\n\
     -h  : Show this help message.\n\
     -fi : Install Auto-Update hosts service(Service Name:%s).\n\
-    -fu : uninstall service.\n\n\n\
+    -fu : uninstall service.\n\n\
+Example:\n\
+    hosts_tool -fi\n\n\
     Copyright (C) 2016 @Too-Naive\n\
-    License:MIT LICENSE\n\n\n"
+    License:MIT LICENSE\n\n\n")
 
 
 #define welcomeShow _T("\
@@ -74,24 +99,25 @@ bool Func_CheckDiff(const TCHAR*,const TCHAR*) throw(expection);
 DWORD __stdcall HostThread(LPVOID);
 
 SERVICE_TABLE_ENTRY STE[2]={{Sname,Service_Main},{NULL,NULL}};
-OSVERSIONINFO _os_={sizeof(OSVERSIONINFO),0,0,0,0,_T("")};
+//OSVERSIONINFO _os_={sizeof(OSVERSIONINFO),0,0,0,0,_T("")};
 
+TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 
 enum _Parameters{
-	EXEC_START_NORMAL			=1,
-	EXEC_START_RUNAS			=2,
-	EXEC_START_SERVICE			=4,
+	EXEC_START_NORMAL		=1,
+	EXEC_START_RUNAS		=2,
+	EXEC_START_SERVICE		=4,
 	EXEC_START_INSTALL_SERVICE	=8,
-	EXEC_START_UNINSTALL_SERVICE=16,
-	EXEC_START_HELP				=32,
-	EXEC_BAD_PARAMETERS			=65536
+	EXEC_START_UNINSTALL_SERVICE	=16,
+	EXEC_START_HELP			=32,
+	EXEC_BAD_PARAMETERS		=65536
 };
 
 
 TCHAR const *__const_Parameters[]={
-	_T("rinstall"),
+/*	_T("rinstall"),
 	_T("runinstall"),
-	_T("rrun"),
+	_T("rrun"),*/
 	_T("svc"),//for backward compatibility
 	_T("fi"),
 	_T("fu"),
@@ -101,40 +127,45 @@ TCHAR const *__const_Parameters[]={
 int __fastcall __Check_Parameters(int argc,TCHAR const **argv){
 	if (argc==1) return EXEC_START_NORMAL;
 	if (argc>2 || !((argv[1][0]==_T('/') || 
-		argv[1][0]==_T('-')) && argv[1][1]!='\0')) return EXEC_BAD_PARAMETERS;
+		argv[1][0]==_T('-')) && argv[1][1]!=_T('\0'))) BAD_EXIT;
 	size_t i=0;
 	for (;_tcscmp(&(argv[1][1]),__const_Parameters[i]) && 
 		i<sizeof(__const_Parameters)/sizeof(__const_Parameters[0]);i++);
 	switch (i){
-		case 0: return EXEC_START_RUNAS|EXEC_START_INSTALL_SERVICE;
-		case 1: return EXEC_START_RUNAS|EXEC_START_UNINSTALL_SERVICE;
-		case 2: return EXEC_START_RUNAS|EXEC_START_NORMAL;
-		case 3: return EXEC_START_SERVICE;
-		case 4: return EXEC_START_INSTALL_SERVICE;
-		case 5: return EXEC_START_UNINSTALL_SERVICE;
-		case 6: return EXEC_START_HELP;
-		default: break;
+//		case 0: return EXEC_START_RUNAS|EXEC_START_INSTALL_SERVICE;
+//		case 1: return EXEC_START_RUNAS|EXEC_START_UNINSTALL_SERVICE;
+//		case 2: return EXEC_START_RUNAS|EXEC_START_NORMAL;
+		case 0: return EXEC_START_SERVICE;
+		case 1: return EXEC_START_INSTALL_SERVICE;
+		case 2: return EXEC_START_UNINSTALL_SERVICE;
+		case 3: return EXEC_START_HELP;
+		default: BAD_EXIT;
 	}
-	return EXEC_BAD_PARAMETERS;
+	BAD_EXIT
 }
 
 
 
 int _tmain(int argc,TCHAR const ** argv){
 	SetConsoleTitle(_T("racaljk-host tools"));
-	GetVersionEx(&_os_);
+//	GetVersionEx(&_os_);
 	switch (__Check_Parameters(argc,argv)){
-		CASE(EXEC_START_NORMAL,Shell("-rrun"));
+/*		CASE(EXEC_START_NORMAL,Shell("-rrun"));
 		CASE(EXEC_START_RUNAS|EXEC_START_NORMAL,NormalEntry());
 		CASE(EXEC_START_RUNAS|EXEC_START_INSTALL_SERVICE,Func_Service_Install(argv[0]));
 		CASE(EXEC_START_RUNAS|EXEC_START_UNINSTALL_SERVICE,Func_Service_UnInstall());
 		CASE(EXEC_START_INSTALL_SERVICE,Shell("-rinstall"));
 		CASE(EXEC_START_UNINSTALL_SERVICE,Shell("-runinstall"));
 		CASE(EXEC_START_SERVICE,StartServiceCtrlDispatcher(STE));
-		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));
-		case EXEC_BAD_PARAMETERS:
+		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));*/
+/*		case EXEC_BAD_PARAMETERS:
 		_tprintf(_T("Bad Parameters."));
-		abort();
+		abort();*/
+		CASE(EXEC_START_NORMAL,NormalEntry());
+		CASE(EXEC_START_INSTALL_SERVICE,Func_Service_Install(argv[0]));
+		CASE(EXEC_START_UNINSTALL_SERVICE,Func_Service_UnInstall());
+		CASE(EXEC_START_SERVICE,StartServiceCtrlDispatcher(STE));
+		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));
 		default:break;
 	}
 	return 0;
@@ -144,9 +175,9 @@ int _tmain(int argc,TCHAR const ** argv){
 void NormalEntry(){
 	SYSTEMTIME st={0,0,0,0,0,0,0,0};
 	FILE * fp=NULL,*_=NULL;
-	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 	GetLocalTime(&st);
-	_tprintf(_T("    LICENSE:MIT LICENSE\n%s\n    Copyright (C) 2016 @Too-Naive\n\n"),welcomeShow);
+	_tprintf(_T("    LICENSE:MIT LICENSE\n%s\n    Copyright (C) 2016 @Too-Naive\n"),welcomeShow);
+	_tprintf(_T("    Project website:%s\n"),objectwebsite);
 	_tprintf(_T("    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n\n\n"));
 	_tprintf(_T("    Start replace hosts file:\n    Step1:Get System Driver..."));
 	try {
@@ -199,7 +230,7 @@ Please contact the application's support team for more information.\n"),runtimee
 
 void Func_Service_UnInstall(){
 	SC_HANDLE shMang=NULL,shSvc=NULL;
-	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000);
+//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000);
 	try{
 		if (!GetEnvironmentVariable(_T("SystemRoot"),buf2,BUFSIZ))
 			THROWERR(_T("GetEnvironmentVariable() Error in UnInstall Service."));
@@ -234,7 +265,7 @@ Please contact the application's support team for more information.\n"),
 
 void Func_Service_Install(const TCHAR * st){
 	SC_HANDLE shMang=NULL,shSvc=NULL;
-	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000);
+//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000);
 	_tprintf(_T("    LICENSE:MIT LICENSE\n    Copyright (C) 2016 @Too-Naive\n\n"));
 	_tprintf(_T("    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n------------------------------------------------------\n\n"));
 	try{
@@ -319,7 +350,7 @@ bool Func_CheckDiff(const TCHAR *lFilePath, const TCHAR * rFilePath) throw(expec
 DWORD __stdcall HostThread(LPVOID){
 	SYSTEMTIME st={0,0,0,0,0,0,0,0};
 	FILE * fp=NULL,*_=NULL;
-	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
+//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 	Func_SetErrorFile(_T("c:\\Hosts_Tool_log.log"),_T("a+"));
 	if (!GetEnvironmentVariable(_T("SystemRoot"),buf3,BUFSIZ))
 		THROWERR(_T("GetEnvironmentVariable() Error!\n\tCannot get system path!"));
@@ -412,5 +443,6 @@ void WINAPI Service_Control(DWORD dwControl){
 			SetServiceStatus(ssh,&ss);
 		default:break;
 	}
+	return ;
 }
 
