@@ -2,7 +2,7 @@
 
 我们现有的工具可以在下列平台上工作：
 
-- Microsoft Windows (`.bat` script; Qt GUI tool)
+- Microsoft Windows (`.bat` script; Qt GUI tool; console (service type) tool)
 
 - GNU Linux (bash script)
 
@@ -20,6 +20,8 @@
 - HostTool: Windows 环境下的 hosts 自动更新应用，使用 **C++** 构建， GUI 基于 **Qt** 。由 @racaljk 贡献。
 
 - HostToolforMac: Mac 环境下的 hosts 自动部署更新应用（适用于 OS X 10.10 或以上），基于 Swift 开发。由 @ZzzM 贡献。
+
+- HostsToolforWindows: Windows console环境下的 hosts 自动更新应用(作为系统服务)，使用 **C++**构建。由 @Too-Naive 贡献。
 
 - [`script_tool_for_windows.bat`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat): Windows 环境下的 hosts 一键部署脚本，由 @redapple0204 与 @lizongzeshunshun 贡献。以及 @lideming 提供的重要更新。
 
