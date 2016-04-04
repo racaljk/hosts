@@ -1,6 +1,26 @@
-//Copyright (C) 2016 Too-Naive 
-//E-mail:sweheartiii@hotmail.com
-
+/*
+ * The MIT License(MIT)
+ *
+ * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files(the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions :
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
 
 #include <windows.h>
 #include <stdio.h>
@@ -31,26 +51,48 @@ struct expection{
 	}
 };
 
-#define SHOW_HELP "\n\
+#define SHOW_HELP _T("\n\
 Usage: hosts_tool [-fi | -fu | -h]\n\n\n\
 Options:\n\
     -h  : Show this help message.\n\
     -fi : Install Auto-Update hosts service(Service Name:%s).\n\
     -fu : uninstall service.\n\n\n\
     Copyright (C) 2016 @Too-Naive\n\
-    License:MIT LICENSE\n\n\n"
+    License:MIT LICENSE\n\n\n")
 
+#define LICENSE_MIT _T("\
+The MIT License(MIT)\r\n\
+\r\n\
+Copyright(c) 2016 Too-Naive Email:sweheartiii@hotmail.com\r\n\
+\r\n\
+Permission is hereby granted, free of charge, to any person obtaining a copy \
+of this software and associated documentation files(the \"Software\"), to deal \
+in the Software without restriction, including without limitation the rights \
+to use, copy, modify, merge, publish, distribute, sublicense, and / or sell \
+copies of the Software, and to permit persons to whom the Software is \
+furnished to do so, subject to the following conditions :\r\n\
+\r\n\
+The above copyright notice and this permission notice shall be included in all \
+copies or substantial portions of the Software.\r\n\
+\r\n\
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE \
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \
+SOFTWARE.")
 
 #define welcomeShow _T("\
-    **********************************************\n\
-    *                                            *\n\
-    *                                            *\n\
-    *                                            *\n\
-    *          Welcome use hosts tools!          *\n\
-    *                                            *\n\
-    *                                            *\n\
-    *                    Powered by: @Too-Naive  *\n\
-    **********************************************")
+    ******************************************\r\n\
+    *                                        *\r\n\
+    *    https://github.com/racaljk/hosts    *\r\n\
+    *    Welcome to hosts tools!             *\r\n\
+    *    Enjoy the free net!                 *\r\n\
+    *                                        *\r\n\
+    *    Created by: @Too-Naive              *\r\n\
+    *                                        *\r\n\
+    ******************************************")
 
 TCHAR Sname[]=_T("racaljk-hoststool");
 TCHAR const *SzName[]={
@@ -124,12 +166,27 @@ int _tmain(int argc,TCHAR const ** argv){
 	SetConsoleTitle(_T("racaljk-host tools"));
 	GetVersionEx(&_os_);
 	switch (__Check_Parameters(argc,argv)){
+#ifdef _MSC_VER 
+        case EXEC_START_NORMAL:
+        case EXEC_START_RUNAS | EXEC_START_NORMAL:
+            NormalEntry();
+            break;
+        case EXEC_START_INSTALL_SERVICE:
+        case EXEC_START_RUNAS | EXEC_START_INSTALL_SERVICE:
+            Func_Service_Install(argv[0]);
+            break;
+        case EXEC_START_UNINSTALL_SERVICE:
+        case EXEC_START_RUNAS | EXEC_START_UNINSTALL_SERVICE:
+            Func_Service_UnInstall();
+            break;
+#else
 		CASE(EXEC_START_NORMAL,Shell("-rrun"));
 		CASE(EXEC_START_RUNAS|EXEC_START_NORMAL,NormalEntry());
 		CASE(EXEC_START_RUNAS|EXEC_START_INSTALL_SERVICE,Func_Service_Install(argv[0]));
 		CASE(EXEC_START_RUNAS|EXEC_START_UNINSTALL_SERVICE,Func_Service_UnInstall());
 		CASE(EXEC_START_INSTALL_SERVICE,Shell("-rinstall"));
 		CASE(EXEC_START_UNINSTALL_SERVICE,Shell("-runinstall"));
+#endif // _MSC_VER
 		CASE(EXEC_START_SERVICE,StartServiceCtrlDispatcher(STE));
 		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));
 		case EXEC_BAD_PARAMETERS:
@@ -146,7 +203,8 @@ void NormalEntry(){
 	FILE * fp=NULL,*_=NULL;
 	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 	GetLocalTime(&st);
-	_tprintf(_T("    LICENSE:MIT LICENSE\n%s\n    Copyright (C) 2016 @Too-Naive\n\n"),welcomeShow);
+    MessageBox(NULL, LICENSE_MIT, _T("LICENSE"), MB_OK);
+    _tprintf(_T("%s\r\n\r\n"), welcomeShow);
 	_tprintf(_T("    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n\n\n"));
 	_tprintf(_T("    Start replace hosts file:\n    Step1:Get System Driver..."));
 	try {

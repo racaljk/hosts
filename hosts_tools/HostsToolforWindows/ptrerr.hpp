@@ -1,4 +1,26 @@
-//ptrerr.hpp
+/*
+ * The MIT License(MIT)
+ *
+ * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files(the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions :
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
 
 #pragma once
 
@@ -38,12 +60,12 @@ inline void * ___Func__Check_File_Set(void);
 		__END__
 		
 
-#define Func_PrintMessage(___ptr_fp,arg...) \
-		_ftprintf(___ptr_fp,##arg)
+#define Func_PrintMessage(___ptr_fp,...) \
+		_ftprintf(___ptr_fp,##__VA_ARGS__)
 #define Func_PM Func_PrintMessage
-#define Func_PMNT(___ptr_fp,arg...) \
+#define Func_PMNT(___ptr_fp,...) \
 		___Func_PrintErrorTimeToFileStream(___ptr_fp),\
-		_ftprintf(___ptr_fp,##arg)
+		_ftprintf(___ptr_fp,##__VA_ARGS__)
 #define Func_PMNTTStdout(...) \
 		Func_PMNT(stdout,__VA_ARGS__)
 #define Func_PMNTTStderr(...) \
@@ -55,14 +77,14 @@ inline void * ___Func__Check_File_Set(void);
 		__BEGIN__, \
 		Func_PMNT(___ptr_fp,__VA_ARGS__), \
 		__END__
-#define Func_FastPMNTS(arg...) \
-		Func_FastPMNT(ptr_ErrorFileStream,##arg)
+#define Func_FastPMNTS(...) \
+		Func_FastPMNT(ptr_ErrorFileStream,##__VA_ARGS__)
 
-#define Func_PrintMessageNeedSpace(___ptr_fp,arg...) \
+#define Func_PrintMessageNeedSpace(___ptr_fp,...) \
 		_ftprintf(___ptr_fp,_T("                    ")),\
-		_ftprintf(___ptr_fp,##arg)
-#define Func_PMNS(___ptr_fp,arg...) \
-		Func_PrintMessageNeedSpace(___ptr_fp,##arg) 
+		_ftprintf(___ptr_fp,##__VA_ARGS__)
+#define Func_PMNS(___ptr_fp,...) \
+		Func_PrintMessageNeedSpace(___ptr_fp,##__VA_ARGS__) 
 #define Func_PMNStdout(...) \
 		Func_PMNS(stdout,__VA_ARGS__)
 #define Func_PMNStderr(...) \
@@ -70,12 +92,12 @@ inline void * ___Func__Check_File_Set(void);
 #define Func_PMNSS(...) \
 		Func_PMNS(ptr_ErrorFileStream,__VA_ARGS__)
 	
-#define Func_FastPMNS(___ptr_fp,arg...) \
+#define Func_FastPMNS(___ptr_fp,...) \
 		__BEGIN__,\
-		Func_PMNS(___ptr_fp,##arg),\
+		Func_PMNS(___ptr_fp,##__VA_ARGS__),\
 		__END__
-#define Func_FastPMNSS(arg...) \
-		Func_FastPMNS(ptr_ErrorFileStream,##arg)
+#define Func_FastPMNSS(...) \
+		Func_FastPMNS(ptr_ErrorFileStream,##__VA_ARGS__)
 
 
 inline void * ___Func__Check_File_Set(void){
