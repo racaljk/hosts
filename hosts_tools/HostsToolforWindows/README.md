@@ -1,12 +1,12 @@
-## Download executable file
+# Download Executable File
 
-Download address:[hosts_tool.exe](https://git.io/vV0DI)
+Download address:[hosts_tool.exe](https://git.io/vV2YO)
 
-## Hosts Tool
+# Hosts Tool
 
 这个工具可以帮助你全自动的更换 备份原来的hosts文件 所有麻烦的事情只需要打开一个程序就能搞定 并且程序还可以作为服务安装随系统启动 每次开机后都每30分钟会自动检测hosts文件的更新噢
 
-### How to use?
+## How to use?
 
 main program file: `hosts_tool.exe`
 
@@ -16,7 +16,7 @@ main program file: `hosts_tool.exe`
 
  (如有安全软件请放行通过)
 
-### 注意事项
+## 注意事项
 
 如果安装服务 程序会往`%SystemRoot%`下复制一个`hosts_tool.exe`文件用来作为服务启动的主程序
 
@@ -26,9 +26,9 @@ main program file: `hosts_tool.exe`
 
 请间隔一段时间后清理`%SystemRoot%\system32\drivers\etc\`文件夹 (因为可能堆满了备份的文件)
 
-Bug Report: 请开新的issue并`@Too-Naive` 或者发邮件给 sweheartiii[at]hotmail.com (请记得带上日志文件)
+Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]hotmail.com (请记得带上日志文件)
 
-### for Developer
+## for Developer
 
 Code license:
 
@@ -42,7 +42,7 @@ Code license:
 
 
 
-**Save `hosts_tool.exe.manifest` to directory first **
+**Save `hosts_tool.exe.manifest` to directory first**
 
 Compile commandline:
 

@@ -1,5 +1,5 @@
 /*
- * The MIT License(MIT)
+ * The MIT License(MIT)(redefined)
  *
  * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
  *

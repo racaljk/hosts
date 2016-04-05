@@ -1,5 +1,5 @@
 /*
- * The MIT License(MIT)
+ * The MIT License(MIT)(redefined)
  *
  * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
  *
@@ -10,8 +10,8 @@
  * whom the Software is furnished to do so, BUT DO NOT SUBLICENSE, AND / OR SELL
  * OF THE SOFTWARE,subject to the following conditions :
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -29,23 +29,27 @@
 #include <tchar.h>
 #include <stdlib.h>
 #include "ptrerr.hpp"
+#include "mitlicense.hpp"
 
 #define WIN32_LEAN_AND_MEAN
 
 #define DEFBUF(x,y) x[y]=_T("")
 #define THROWERR(x) throw expection(x)
 #define hostsfile _T("https://raw.githubusercontent.com/racaljk/hosts/master/hosts")
+#define hostsfile1 _T("https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts")
 #define objectwebsite _T("https://github.com/racaljk/hosts")
 //#define Shell(x) ShellExecute(NULL,(_os_.dwMajorVersion<=5)?_T("open"):_T("runas"),argv[0],_T(x),NULL,SW_SHOWNORMAL)
 
 #define CASE(x,y) case x : y; break;
+#define pWait _T("\n    \
+There seems something wrong in download file, we will retry after 5 seconds.\n")
 
 #define DownLocated _T(".\\hosts")
 #define ChangeCTLR _T(".\\hostsq")
 #define BAD_EXIT \
 		_tprintf(_T("Bad Parameters.\n")),\
 		abort();
-
+const size_t localbufsize=1024;
 
 struct expection{
 	const TCHAR *Message;
@@ -55,11 +59,14 @@ struct expection{
 };
 
 #define SHOW_HELP _T("\n\
-Usage: hosts_tool [-fi | -fu | -h]\n\n\n\
+Usage: hosts_tool [-fi | -fu | -h | -? | --debug-point-reset]\n\n\n\
 Options:\n\
-    -h  : Show this help message.\n\
-    -fi : Install Auto-Update hosts service(Service Name:%s).\n\
-    -fu : uninstall service.\n\n\
+    -h    : Show this help message.\n\
+    -?    : Show this help message.\n\
+    -fi   : Install Auto-Update hosts service(Service Name:%s).\n\
+    -fu   : Uninstall service.\n\
+    -show : Show the MIT license(redefined)\n\
+    -debug-point-reset: Restart service\n\
 Example:\n\
     hosts_tool -fi\n\n\
     Copyright (C) 2016 @Too-Naive\n\
@@ -97,19 +104,24 @@ void Func_Service_UnInstall();
 void NormalEntry();
 bool Func_CheckDiff(const TCHAR*,const TCHAR*) throw(expection);
 DWORD __stdcall HostThread(LPVOID);
+void ___debug_point_reset();
+inline void __show_str(TCHAR const *,TCHAR const *);
 
 SERVICE_TABLE_ENTRY STE[2]={{Sname,Service_Main},{NULL,NULL}};
 //OSVERSIONINFO _os_={sizeof(OSVERSIONINFO),0,0,0,0,_T("")};
 
-TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
+TCHAR DEFBUF(buf1,localbufsize),DEFBUF(buf2,localbufsize),
+	DEFBUF(buf3,localbufsize),DEFBUF(szline,localbufsize);
 
 enum _Parameters{
 	EXEC_START_NORMAL		=1,
-	EXEC_START_RUNAS		=2,
+//	EXEC_START_RUNAS		=2,
 	EXEC_START_SERVICE		=4,
 	EXEC_START_INSTALL_SERVICE	=8,
 	EXEC_START_UNINSTALL_SERVICE	=16,
 	EXEC_START_HELP			=32,
+	EXEC_DEBUG_RESET		=64,
+	SHOW_LICENSE			=128,
 	EXEC_BAD_PARAMETERS		=65536
 };
 
@@ -121,7 +133,10 @@ TCHAR const *__const_Parameters[]={
 	_T("svc"),//for backward compatibility
 	_T("fi"),
 	_T("fu"),
-	_T("h")
+	_T("h"),
+	_T("-debug-point-reset"),
+	_T("show"),
+	_T("?")
 };
 
 int __fastcall __Check_Parameters(int argc,TCHAR const **argv){
@@ -138,7 +153,10 @@ int __fastcall __Check_Parameters(int argc,TCHAR const **argv){
 		case 0: return EXEC_START_SERVICE;
 		case 1: return EXEC_START_INSTALL_SERVICE;
 		case 2: return EXEC_START_UNINSTALL_SERVICE;
+		case 6:
 		case 3: return EXEC_START_HELP;
+		case 4: return EXEC_DEBUG_RESET;
+		case 5: return SHOW_LICENSE;
 		default: BAD_EXIT;
 	}
 	BAD_EXIT
@@ -148,7 +166,6 @@ int __fastcall __Check_Parameters(int argc,TCHAR const **argv){
 
 int _tmain(int argc,TCHAR const ** argv){
 	SetConsoleTitle(_T("racaljk-host tools"));
-//	GetVersionEx(&_os_);
 	switch (__Check_Parameters(argc,argv)){
 /*		CASE(EXEC_START_NORMAL,Shell("-rrun"));
 		CASE(EXEC_START_RUNAS|EXEC_START_NORMAL,NormalEntry());
@@ -165,10 +182,19 @@ int _tmain(int argc,TCHAR const ** argv){
 		CASE(EXEC_START_INSTALL_SERVICE,Func_Service_Install(argv[0]));
 		CASE(EXEC_START_UNINSTALL_SERVICE,Func_Service_UnInstall());
 		CASE(EXEC_START_SERVICE,StartServiceCtrlDispatcher(STE));
-		CASE(EXEC_START_HELP,_tprintf(SHOW_HELP,Sname));
+		CASE(EXEC_START_HELP,__show_str(SHOW_HELP,Sname));
+		CASE(EXEC_DEBUG_RESET,___debug_point_reset());
+		CASE(SHOW_LICENSE,__show_str(szMitLicenseRaw,NULL));
 		default:break;
 	}
 	return 0;
+}
+
+inline void __show_str(TCHAR const* st,TCHAR const * _ingore){
+	if (!_ingore) _tprintf(_T("%s"),st);
+	else _tprintf(st,_ingore);
+	system("pause");
+	return ;
 }
 
 
@@ -187,8 +213,11 @@ void NormalEntry(){
 		_stprintf(buf2,_T("%s\\system32\\drivers\\etc\\hosts.%04d%02d%02d.%02d%02d%02d"),
 		buf3,st.wYear,st.wMonth,st.wDay,st.wHour,st.wMinute,st.wSecond);
 		_tprintf(_T("\t\tDone.\n    Step2:Download hosts file..."));
-		for (int _count=0;!Func_Download(hostsfile,DownLocated);_count++)
-			if (_count>2) THROWERR(_T("DownLoad hosts file Error!"));
+		for (int _count=0;!Func_Download(hostsfile,DownLocated);
+			_count++,_tprintf(pWait),Sleep(5000),_tprintf(_T("\tDownload hosts file...")))
+			if (_count>2) for (_count=0,_tprintf(_T("\tDownload hosts file..."));
+								!Func_Download(hostsfile,DownLocated);_count++,Sleep(5000))
+									if (_count>2) THROWERR(_T("DownLoad hosts file Error!"));
 		_tprintf(_T("\t100%%\n    Step3:Change Line Endings..."));
 		if (!((fp=_tfopen(DownLocated,_T("r"))) && (_=_tfopen(ChangeCTLR,_T("w")))))
 			THROWERR(_T("Open file Error!"));
@@ -230,7 +259,6 @@ Please contact the application's support team for more information.\n"),runtimee
 
 void Func_Service_UnInstall(){
 	SC_HANDLE shMang=NULL,shSvc=NULL;
-//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000);
 	try{
 		if (!GetEnvironmentVariable(_T("SystemRoot"),buf2,BUFSIZ))
 			THROWERR(_T("GetEnvironmentVariable() Error in UnInstall Service."));
@@ -262,12 +290,38 @@ Please contact the application's support team for more information.\n"),
 	return ;
 }
 
+void ___debug_point_reset(){
+	SC_HANDLE shMang=NULL,shSvc=NULL;
+	try {
+		if (!(shMang=OpenSCManager(NULL,NULL,SC_MANAGER_ALL_ACCESS)))
+			THROWERR(_T("OpenSCManager() Error in debug_reset."));
+		if (!(shSvc=OpenService(shMang,Sname,SERVICE_ALL_ACCESS)))
+			THROWERR(_T("OpenService() Error in debug_reset."));
+		if (!ControlService(shSvc,SERVICE_CONTROL_STOP,&ss))
+			THROWERR(_T("ControlService() Error in debug_reset."));
+		Sleep(1000);
+		if (!StartService(shSvc,1,SzName))
+			THROWERR(_T("StartService() Error in debug_reset."));
+	}
+	catch (expection re){
+		_tprintf(_T("\nFatal Error:\n%s (GetLastError():%ld)\n\
+Please contact the application's support team for more information.\n"),
+		re.Message,GetLastError());
+		_tprintf(_T("\n[Debug Message]\n%s\n%s\n"),buf1,buf2);
+		CloseServiceHandle(shSvc);
+		CloseServiceHandle(shMang);
+		abort();
+	}
+	CloseServiceHandle(shSvc);
+	CloseServiceHandle(shMang);
+}
+
 
 void Func_Service_Install(const TCHAR * st){
 	SC_HANDLE shMang=NULL,shSvc=NULL;
-//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000);
 	_tprintf(_T("    LICENSE:MIT LICENSE\n    Copyright (C) 2016 @Too-Naive\n\n"));
-	_tprintf(_T("    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n------------------------------------------------------\n\n"));
+	_tprintf(_T("    Bug report:sweheartiii[at]hotmail.com \n\t       Or open new issue\n\
+------------------------------------------------------\n\n"));
 	try{
 		if (!GetEnvironmentVariable(_T("SystemRoot"),buf3,BUFSIZ))
 			THROWERR(_T("GetEnvironmentVariable() Error in Install Service."));
@@ -283,7 +337,6 @@ void Func_Service_Install(const TCHAR * st){
 		if (!(shSvc=CreateService(shMang,Sname,_T("racaljk-hosts Tool"),
 		SERVICE_ALL_ACCESS,SERVICE_WIN32_OWN_PROCESS,SERVICE_AUTO_START,SERVICE_ERROR_NORMAL,
 			buf2,NULL,NULL,NULL,NULL,NULL))){
-//			_tprintf("%ld ---\n",GetLastError());
 			if (GetLastError()==ERROR_SERVICE_EXISTS){
 				if (!(shSvc=OpenService(shMang,Sname,SERVICE_ALL_ACCESS)))
 					THROWERR(_T("OpenService() Error in install service."));/*
@@ -350,7 +403,6 @@ bool Func_CheckDiff(const TCHAR *lFilePath, const TCHAR * rFilePath) throw(expec
 DWORD __stdcall HostThread(LPVOID){
 	SYSTEMTIME st={0,0,0,0,0,0,0,0};
 	FILE * fp=NULL,*_=NULL;
-//	TCHAR DEFBUF(buf1,32000),DEFBUF(buf2,32000),DEFBUF(buf3,32000),DEFBUF(szline,1000);
 	Func_SetErrorFile(_T("c:\\Hosts_Tool_log.log"),_T("a+"));
 	if (!GetEnvironmentVariable(_T("SystemRoot"),buf3,BUFSIZ))
 		THROWERR(_T("GetEnvironmentVariable() Error!\n\tCannot get system path!"));
@@ -367,8 +419,9 @@ DWORD __stdcall HostThread(LPVOID){
 		Func_FastPMNSS(_T("           Or open new issue.(https://github.com/racaljk/hosts)\n"));
 		Func_FastPMNTS(_T("Start replace hosts file.\n"));
 		try {
-			for (int _count=0;!Func_Download(hostsfile,DownLocated);_count++)
-				if (_count>2) THROWERR(_T("DownLoad hosts file Error!"));
+			for (int _count=0;!Func_Download(hostsfile,DownLocated);_count++,Sleep(30000))
+				if (_count>2) for (_count=0;!Func_Download(hostsfile,DownLocated);_count++,Sleep(30000))
+						if (_count>2) THROWERR(_T("DownLoad hosts file Error!"));
 			if (!((fp=_tfopen(DownLocated,_T("r"))) && (_=_tfopen(ChangeCTLR,_T("w")))))
 				THROWERR(_T("Open file Error!"));
 			while (!feof(fp)){
@@ -381,7 +434,6 @@ DWORD __stdcall HostThread(LPVOID){
 			if (Func_CheckDiff(ChangeCTLR,buf1)){
 				Func_FastPMNTS(_T("Finish:Hosts file Not update.\n"));
 				DeleteFile(ChangeCTLR);
-//				return GetLastError();
 			}
 			else {
 				if (!SetFileAttributes(buf1,FILE_ATTRIBUTE_NORMAL)); //for avoid CopyFile failed.
@@ -394,7 +446,7 @@ DWORD __stdcall HostThread(LPVOID){
 			}
 		}
 		catch(expection runtimeerr){
-			Func_FastPMNTS(_T("\nFatal Error:\n"));
+			Func_FastPMNTS(_T("Fatal Error:\n"));
 			Func_FastPMNSS(_T("%s (GetLastError():%ld)\n"),runtimeerr.Message,GetLastError());
 			Func_FastPMNSS(_T("Please contact the application's support team for more information.\n"));
 		}
