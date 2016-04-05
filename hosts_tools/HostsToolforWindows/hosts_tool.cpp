@@ -59,14 +59,13 @@ struct expection{
 };
 
 #define SHOW_HELP _T("\n\
-Usage: hosts_tool [-fi | -fu | -h | -? | --debug-point-reset]\n\n\n\
+Usage: hosts_tool [-fi | -fu | -h | -? | -show]\n\n\n\
 Options:\n\
     -h    : Show this help message.\n\
     -?    : Show this help message.\n\
     -fi   : Install Auto-Update hosts service(Service Name:%s).\n\
     -fu   : Uninstall service.\n\
     -show : Show the MIT license(redefined)\n\
-    -debug-point-reset: Restart service\n\
 Example:\n\
     hosts_tool -fi\n\n\
     Copyright (C) 2016 @Too-Naive\n\
@@ -108,7 +107,6 @@ void ___debug_point_reset();
 inline void __show_str(TCHAR const *,TCHAR const *);
 
 SERVICE_TABLE_ENTRY STE[2]={{Sname,Service_Main},{NULL,NULL}};
-//OSVERSIONINFO _os_={sizeof(OSVERSIONINFO),0,0,0,0,_T("")};
 
 TCHAR DEFBUF(buf1,localbufsize),DEFBUF(buf2,localbufsize),
 	DEFBUF(buf3,localbufsize),DEFBUF(szline,localbufsize);
