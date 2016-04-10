@@ -1,9 +1,13 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Last updated: 2016-4-2
 =======
 # Last updated: 2016-4-3
+>>>>>>> racaljk/master
+=======
+# Last updated: 2016-4-8
 >>>>>>> racaljk/master
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
@@ -43,7 +47,7 @@ fe80::1%lo0	localhost
 # Amazon AWS End
 
 # Archive Start
-# 207.241.224.2	archive.org
+207.241.224.22	archive.org
 207.241.226.190	web.archive.org
 # Archive End
 
@@ -78,67 +82,67 @@ fe80::1%lo0	localhost
 # DuckDuckGo End
 
 # Facebook start
-173.252.120.83	fb.me
-173.252.120.83	facebook.com
-173.252.120.83	www.facebook.com
-173.252.120.83	m.facebook.com
-173.252.120.83	mqtt.facebook.com
-173.252.120.83	s-static.ak.facebook.com
-173.252.120.83	profile.ak.facebook.com
-173.252.120.83	static.ak.facebook.com
-173.252.120.83	b.static.ak.facebook.com
-173.252.120.83	graph.facebook.com
-173.252.120.83	ssl.facebook.com
-173.252.120.83	api.facebook.com
-173.252.120.83	secure-profile.facebook.com
-173.252.120.83	secure.facebook.com
-173.252.120.83	zh-cn.facebook.com
-173.252.120.83	login.facebook.com
-173.252.120.83	messages-facebook.com
-173.252.120.83	attachments.facebook.com
-173.252.120.83	touch.facebook.com
-173.252.120.83	apps.facebook.com
-173.252.120.83	upload.facebook.com
-173.252.120.83	developers.facebook.com
-173.252.120.83	act.channel.facebook.com
-173.252.120.83	0-act.channel.facebook.com
-173.252.120.83	1-act.channel.facebook.com
-173.252.120.83	2-act.channel.facebook.com
-173.252.120.83	3-act.channel.facebook.com
-173.252.120.83	4-act.channel.facebook.com
-173.252.120.83	5-act.channel.facebook.com
-173.252.120.83	6-act.channel.facebook.com
-173.252.120.83	inyour-slb-01-05-ash3.facebook.com
-173.252.120.83	origincache-starfacebook-ai-01-05-ash3.facebook.com
-173.252.120.83	beta-chat-01-05-ash3.facebook.com
-173.252.120.83	channel-ecmp-05-ash3.facebook.com
-173.252.120.83	channel-staging-ecmp-05-ash3.facebook.com
-173.252.120.83	channel-testing-ecmp-05-ash3.facebook.com
-173.252.120.83	0-edge-chat.facebook.com
-173.252.120.83	1-edge-chat.facebook.com
-173.252.120.83	2-edge-chat.facebook.com
-173.252.120.83	3-edge-chat.facebook.com
-173.252.120.83	4-edge-chat.facebook.com
-173.252.120.83	5-edge-chat.facebook.com
-173.252.120.83	6-edge-chat.facebook.com
-173.252.120.83	api-read.facebook.com
-173.252.120.83	bigzipfiles.facebook.com
-173.252.120.83	check4.facebook.com
-173.252.120.83	check6.facebook.com
-173.252.120.83	code.facebook.com
-173.252.120.83	connect.facebook.com
-173.252.120.83	edge-chat.facebook.com
-173.252.120.83	pixel.facebook.com
-173.252.120.83	star.c10r.facebook.com
-173.252.120.83	star.facebook.com
-173.252.120.83	zh-tw.facebook.com
-173.252.120.83	b-api.facebook.com
-173.252.120.83	b-graph.facebook.com
-173.252.120.83	orcart.facebook.com
-173.252.120.83	s-static.facebook.com
-173.252.120.83	vupload.facebook.com
-173.252.120.83	vupload2.vvv.facebook.com
-173.252.120.83	d.facebook.com
+173.252.81.7	fb.me
+173.252.81.7	facebook.com
+173.252.81.7	www.facebook.com
+173.252.81.7	m.facebook.com
+173.252.81.7	mqtt.facebook.com
+173.252.81.7	s-static.ak.facebook.com
+173.252.81.7	profile.ak.facebook.com
+173.252.81.7	static.ak.facebook.com
+173.252.81.7	b.static.ak.facebook.com
+173.252.81.7	graph.facebook.com
+173.252.81.7	ssl.facebook.com
+173.252.81.7	api.facebook.com
+173.252.81.7	secure-profile.facebook.com
+173.252.81.7	secure.facebook.com
+173.252.81.7	zh-cn.facebook.com
+173.252.81.7	login.facebook.com
+#50.63.202.88	message-facebook.com
+173.252.81.7	attachments.facebook.com
+173.252.81.7	touch.facebook.com
+173.252.81.7	apps.facebook.com
+173.252.81.7	upload.facebook.com
+173.252.81.7	developers.facebook.com
+173.252.81.7	act.channel.facebook.com
+173.252.81.7	0-act.channel.facebook.com
+173.252.81.7	1-act.channel.facebook.com
+173.252.81.7	2-act.channel.facebook.com
+173.252.81.7	3-act.channel.facebook.com
+173.252.81.7	4-act.channel.facebook.com
+173.252.81.7	5-act.channel.facebook.com
+173.252.81.7	6-act.channel.facebook.com
+173.252.81.7	inyour-slb-01-05-ash3.facebook.com
+173.252.81.7	origincache-starfacebook-ai-01-05-ash3.facebook.com
+173.252.81.7	beta-chat-01-05-ash3.facebook.com
+173.252.81.7	channel-ecmp-05-ash3.facebook.com
+173.252.81.7	channel-staging-ecmp-05-ash3.facebook.com
+173.252.81.7	channel-testing-ecmp-05-ash3.facebook.com
+173.252.81.7	0-edge-chat.facebook.com
+173.252.81.7	1-edge-chat.facebook.com
+173.252.81.7	2-edge-chat.facebook.com
+173.252.81.7	3-edge-chat.facebook.com
+173.252.81.7	4-edge-chat.facebook.com
+173.252.81.7	5-edge-chat.facebook.com
+173.252.81.7	6-edge-chat.facebook.com
+173.252.81.7	api-read.facebook.com
+173.252.81.7	bigzipfiles.facebook.com
+173.252.81.7	check4.facebook.com
+173.252.81.7	check6.facebook.com
+173.252.81.7	code.facebook.com
+173.252.81.7	connect.facebook.com
+173.252.81.7	edge-chat.facebook.com
+173.252.81.7	pixel.facebook.com
+173.252.81.7	star.c10r.facebook.com
+173.252.81.7	star.facebook.com
+173.252.81.7	zh-tw.facebook.com
+173.252.81.7	b-api.facebook.com
+173.252.81.7	b-graph.facebook.com
+173.252.81.7	orcart.facebook.com
+173.252.81.7	s-static.facebook.com
+173.252.81.7	vupload.facebook.com
+173.252.81.7	vupload2.vvv.facebook.com
+173.252.81.7	d.facebook.com
 23.63.99.242	fbexternal-a.akamaihd.net
 23.67.255.208	fbcdn-creative-a.akamaihd.net
 23.63.99.186	fbcdn-video-a-a.akamaihd.net
@@ -171,15 +175,19 @@ fe80::1%lo0	localhost
 72.246.188.19	fbcdn-photos-e-a.akamaihd.net
 23.205.168.10	fbcdn-sphotos-a.akamaihd.net
 23.63.99.209	fbstatic-a.akamaihd.net
-173.252.120.83	fbcdn.net
+173.252.81.7	fbcdn.net
 31.13.95.14	video.xx.fbcdn.net
-31.13.66.9	scontent.xx.fbcdn.net
-31.13.66.9	scontent-a.xx.fbcdn.net
-31.13.66.9	scontent-b.xx.fbcdn.net
-31.13.66.9	scontent-c.xx.fbcdn.net
-31.13.66.9	scontent-d.xx.fbcdn.net
-165.254.42.232	profile.ak.fbcdn.net
-173.252.71.184	vpn.tfbnw.net
+183.111.23.18	scontent.xx.fbcdn.net
+183.111.23.18	scontent-a.xx.fbcdn.net
+183.111.23.18	scontent-b.xx.fbcdn.net
+183.111.23.18	scontent-c.xx.fbcdn.net
+183.111.23.18	scontent-d.xx.fbcdn.net
+183.111.23.18	scontent-e.xx.fbcdn.net
+183.111.23.18	scontent-mxp.xx.fbcdn.net
+183.111.23.18	scontent-a-lax.xx.fbcdn.net
+183.111.23.18	scontent-a-sin.xx.fbcdn.net
+183.111.23.18	scontent-b-lax.xx.fbcdn.net
+183.111.23.18	scontent-b-sin.xx.fbcdn.net
 184.28.188.240	vthumb.ak.fbcdn.net
 184.28.188.152	photos-a.ak.fbcdn.net
 184.28.188.154	photos-b.ak.fbcdn.net
@@ -194,25 +202,18 @@ fe80::1%lo0	localhost
 184.28.188.153	b.static.ak.fbcdn.net
 184.28.188.153	static.ak.fbcdn.net
 184.28.188.153	origincache-ai-01-05-ash3.fbcdn.net
-23.32.248.41	creative.ak.fbcdn.net
-31.13.95.12	ent-a.xx.fbcdn.net
-31.13.95.12	ent-b.xx.fbcdn.net
-31.13.95.12	ent-c.xx.fbcdn.net
-31.13.95.12	ent-d.xx.fbcdn.net
-31.13.95.12	ent-e.xx.fbcdn.net
-31.13.70.7	scontent-a-lax.xx.fbcdn.net
-31.13.79.251	scontent-a-sin.xx.fbcdn.net
-31.13.70.7	scontent-b-lax.xx.fbcdn.net
-183.111.23.18	scontent-b-sin.xx.fbcdn.net
-31.13.82.7	scontent-c.xx.fbcdn.net
-31.13.95.7	scontent-d.xx.fbcdn.net
-31.13.79.224	scontent-e.xx.fbcdn.net
-31.13.86.4	scontent-mxp.xx.fbcdn.net
+183.111.23.18	profile.ak.fbcdn.net
+183.111.23.18	vpn.tfbnw.net
+183.111.23.18	ent-a.xx.fbcdn.net
+183.111.23.18	ent-b.xx.fbcdn.net
+183.111.23.18	ent-c.xx.fbcdn.net
+183.111.23.18	ent-d.xx.fbcdn.net
+183.111.23.18	ent-e.xx.fbcdn.net
 23.207.122.24	s-external.ak.fbcdn.net
 23.34.45.177	s-static.ak.fbcdn.net
 173.252.81.7	static.thefacebook.com
 # 192.168.52.23	ldap.thefacebook.com
-173.252.120.83	attachment.fbsbx.com
+173.252.81.7	attachment.fbsbx.com
 104.78.23.174	connect.facebook.net
 # Facebook end
 

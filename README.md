@@ -1,5 +1,7 @@
 ![](https://www.google.com.sg/logos/doodles/2016/lantern-festival-2016-4824959689949184.2-hp.jpg)
 
+**使用镜像地址获取** [hosts](https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts)
+
 # 欢迎使用hosts！
 
 [![Join the chat at https://gitter.im/racaljk/hosts](https://badges.gitter.im/racaljk/hosts.svg)](https://gitter.im/racaljk/hosts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -13,7 +15,7 @@
 - 启用禁用飞行模式
 - 在系统设置内开关网络
 
-如果不先重置网络的话， hosts 将无法使用。
+如果不先重置网络， hosts 不一定会立即生效。
 
 > **如有其他问题，请访问 [我们的 Wiki 页面](https://github.com/racaljk/hosts/wiki) 。**
 

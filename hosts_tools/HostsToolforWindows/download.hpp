@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 //download.hpp
 //Author:qdxllecrn
 //E-mail:sweheartiii[at]hotmail.com
@@ -46,22 +47,60 @@ inline bool __fastcall Func_Download(const TCHAR *url,const TCHAR *file){//for b
 //download.hpp
 //Author:qdxllecrn
 //E-mail:sweheartiii[at]hotmail.com
+=======
+/*
+ * The MIT License(MIT)(redefined)
+ *
+ * Copyright(c) 2016 Too-Naive E-mail:sweheartiii@hotmail.com
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files(the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, and to permit persons to
+ * whom the Software is furnished to do so, BUT DO NOT SUBLICENSE, AND / OR SELL
+ * OF THE SOFTWARE,subject to the following conditions :
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+//download.hpp
+>>>>>>> racaljk/master
 //Code:https://raw.githubusercontent.com/Too-Naive/Tools/master/download.hpp
 
 #pragma once
 
 #include <windows.h>
 #include <wininet.h>
+<<<<<<< HEAD
+=======
+#include "ptrerr.hpp"
+>>>>>>> racaljk/master
 
 //need wininet.lib
 
 #pragma comment(lib,"wininet.lib")
 
+<<<<<<< HEAD
 #define ___userAgent TEXT("Mozilla/4.0 (compatible; Windows NT 5.1)")
 
 
 bool Func_DownloadEx(const TCHAR * url,const TCHAR * file,const DWORD FileAttributes){
 	const size_t dwBuffer=2048;	//buffer size
+=======
+#define ___userAgent TEXT("Mozilla/4.0 (compatible; Windows NT 6.1)")
+
+bool Func_DownloadEx(const TCHAR * url,const TCHAR * file,const DWORD FileAttributes){
+	const size_t dwBuffer=2048;		//buffer size
+>>>>>>> racaljk/master
 	HINTERNET hWeb,hRequest;		//Internet request handle
 	DWORD dwReadByte=0,dwReserved;		//read byte count
 	char szBuffer[dwBuffer]="";		//read buff
@@ -89,6 +128,9 @@ bool Func_DownloadEx(const TCHAR * url,const TCHAR * file,const DWORD FileAttrib
 inline bool __fastcall Func_Download(const TCHAR *url,const TCHAR *file){//for backward compatibility
 	return Func_DownloadEx(url,file,FILE_ATTRIBUTE_NORMAL);
 }
+<<<<<<< HEAD
 
 
+>>>>>>> racaljk/master
+=======
 >>>>>>> racaljk/master
