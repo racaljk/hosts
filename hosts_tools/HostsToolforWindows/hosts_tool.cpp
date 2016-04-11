@@ -218,7 +218,7 @@ void NormalEntry(){
 		buf3,st.wYear,st.wMonth,st.wDay,st.wHour,st.wMinute,st.wSecond);
 		_tprintf(_T("\t\tDone.\n    Step2:Download hosts file..."));
 		//download
-		for (int errcunt=0;!Func_Download(hostsfile,DownLocated)||
+		for (int errcunt=0;!Func_Download(hostsfile,DownLocated)&&
 			!Func_Download(hostsfile1,DownLocated);errcunt++,_tprintf(pWait),
 			Sleep(5000),_tprintf(_T("\tDownload hosts file...")))
 					if (errcunt>2) THROWERR(_T("DownLoad hosts file Error!"));
@@ -425,7 +425,7 @@ DWORD __stdcall HostThread(LPVOID){
 		buf3,st.wYear,st.wMonth,st.wDay,st.wHour,st.wMinute,st.wSecond);
 		Func_FastPMNTS(_T("Start replace hosts file.\n"));
 		try {
-			for (int errcunt=0;!Func_Download(hostsfile1,DownLocated)||
+			for (int errcunt=0;!Func_Download(hostsfile1,DownLocated)&&
 				!Func_Download(hostsfile,DownLocated);errcunt++,Sleep(10000))
 				if (errcunt>1) THROWERR(_T("DownLoad hosts file Error!"));
 		
