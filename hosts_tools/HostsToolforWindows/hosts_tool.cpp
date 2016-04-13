@@ -438,7 +438,7 @@ void Func_Service_Install(bool _q){
 		_stprintf(buf1,_T("%s\\hoststools.exe"),buf3);
 		_stprintf(buf2,_T("\"%s\\hoststools.exe\" -svc"),buf3);
 		if (request_client) 
-			_stprintf(szline,"%s %s",buf2,szParameters[11]),
+			_stprintf(szline,_T("%s %s"),buf2,szParameters[11]),
 			_tcscpy(buf2,szline),memset(szline,0,sizeof(szline)/sizeof(TCHAR));
 		if (!GetModuleFileName(NULL,szline,sizeof(szline)/sizeof(TCHAR)))
 			THROWERR(_T("GetModuleFileName() Error in Install Service."));
