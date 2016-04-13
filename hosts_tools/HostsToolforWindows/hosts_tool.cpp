@@ -597,7 +597,6 @@ void WINAPI Service_Main(DWORD,LPTSTR *){
 	ss.dwCheckPoint=0;
 	ss.dwWaitHint=0;
 	SetServiceStatus(ssh,&ss);
-	if (request_client) Sleep(1000);
 	if (!(lphdThread[0]=CreateThread(NULL,0,HostThread,NULL,0,NULL)));
 	WaitForSingleObject(lphdThread[0],INFINITE);
 	ss.dwCurrentState=SERVICE_STOPPED;
@@ -617,6 +616,7 @@ void WINAPI Service_Control(DWORD dwControl){
 			ss.dwWaitHint=1000;
 			SetServiceStatus(ssh,&ss);
 			TerminateThread(lphdThread[0],0);
+			if (request_client) CloseHandle(hdPipe);
 			ss.dwCurrentState=SERVICE_STOPPED;
 			ss.dwCheckPoint=0;
 			ss.dwWaitHint=0;
