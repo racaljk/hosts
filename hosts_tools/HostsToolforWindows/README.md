@@ -2,9 +2,8 @@
 
 Download address:[hosts_tool.exe](https://git.io/vVSwE)
 
-Supported Operator System:
 
-Minimum supported:
+#### Minimum Supported Operator System:
 - Client : Microsoft Windows XP Family
 - Server : Microsoft Windows Server 2003 Family
 
