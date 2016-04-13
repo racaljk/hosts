@@ -2,6 +2,12 @@
 
 Download address:[hosts_tool.exe](https://git.io/vVSwE)
 
+Supported Operator System:
+
+Minimum supported:
+- Client : Microsoft Windows XP Family
+- Server : Microsoft Windows Server 2003 Family
+
 # Hosts Tool
 
 这个工具可以帮助你全自动的更换 备份原来的hosts文件 所有麻烦的事情只需要打开一个程序就能搞定 并且程序还可以作为服务安装随系统启动 每次开机后都每30分钟会自动检测hosts文件的更新噢
@@ -40,14 +46,16 @@ Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]ho
 
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Service Debug Mode Entrance:
+### Service Debug Mode :
+
+If you want to enter debug mode, follow the steps blow.
 
 1. Open the console.
-2. Input `hosts_tools.exe --debug-reiu --pipe` and press enter.(reinstall service with debug mode)
-3. If there haven't any error, Input `hosts_tools.exe --debug-pipe` and press enter.
-4. Now you can see the working status of service.
+2. Change the working directory where is the `hosts_tools.exe` position.
+3. Input `hosts_tools.exe --debug-pipe` and press enter.
+4. Now you can see the current working status of service.
 5. Press **Ctrl+C** to Exit debug mode.
-6. Input `hosts_tools.exe --debug-reiu` and press enter to reinstall service.
+6. Exit debug mode will cause service uninstall.
 
 **WARNING: IN DEBUG MODE, DO NOT CLOSE THE CONSOLE DIRECT**
 
@@ -78,3 +86,5 @@ File `hosts_tool.exe.manifest`:
     </trustInfo>
 </assembly>
 ```
+
+Sorry for my poor English.
