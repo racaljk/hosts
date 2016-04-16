@@ -1,6 +1,10 @@
 # Download Executable File
 
-Download address:[hosts_tool.exe](https://git.io/vVSwE)
+Download address:[hosts_tool.exe](https://git.io/vVSwE) [Mirror address](https://yunpan.cn/cq4amgJfUZwTM)(code:b9b1)
+
+#### Minimum Supported Operator System:
+- Client : Microsoft Windows XP Family
+- Server : Microsoft Windows Server 2003 Family
 
 # Hosts Tool
 
@@ -30,7 +34,7 @@ Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]ho
 
 ## for Developer
 
-Code license:
+### Code license:
 
 >The MIT License(MIT)(redefined)
 
@@ -40,7 +44,22 @@ Code license:
 
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+### Service Debug Mode :
 
+If you want to enter debug mode, follow the steps blow.
+
+1. Open the console.
+2. Change the working directory where is the `hosts_tools.exe` position.
+3. Input `hosts_tools.exe --debug-pipe` and press enter.
+4. Now you can see the current working status of service.
+5. Press **Ctrl+C** to Exit debug mode.
+6. Exit debug mode will cause service uninstall.
+
+**WARNING: IN DEBUG MODE, DO NOT CLOSE THE CONSOLE DIRECT**
+
+	_Notice:In debug mode, service run cycle is very sort_
+
+### How to Compile?
 
 **Save `hosts_tool.exe.manifest` to directory first**
 
@@ -66,4 +85,4 @@ File `hosts_tool.exe.manifest`:
 </assembly>
 ```
 
-
+Sorry for my poor English.

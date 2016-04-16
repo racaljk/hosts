@@ -1,0 +1,83 @@
+#!/bin/sh
+# https://github.com/racaljk/hosts
+
+target_hosts=/etc/hosts
+remote_url=https://raw.githubusercontent.com/racaljk/hosts/master/hosts
+mirror_url=https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts
+remote_hosts=$remote_url
+
+tmp_file=/tmp/hosts
+begin_flags="# Copyright (c) 2014"
+end_flags="# Modified hosts end"
+
+download_tool=wget
+wquiet=
+cquiet=
+
+localhost=0
+
+usage="\
+提示:
+  可在此脚本中使用 getopt 管理命令行选项
+  可使用 crontab 定时执行此脚本
+
+用法: lhosts [选项]...
+
+选项:
+  -l, --localhost        替换 localhost 为本地主机名
+  -c, --curl             使用 curl 下载
+  -m, --mirror           使用镜像下载
+  -q, --quiet            静默下载
+  -h, --help             显示帮助信息并退出
+
+示例: lhosts -l -c -m -q"
+
+while test $# -gt 0; do
+    case $1 in
+      --localhost | -l)
+        localhost=1
+        ;;
+      --curl | -c)
+        download_tool=curl
+        ;;
+      --mirror | -m)
+        remote_hosts=$mirror_url
+        ;;
+      --quiet | -q)
+        wquiet=-q
+        cquiet=-s
+        ;;
+      --help | -h)
+        echo -e "${usage}" 1>&2
+        exit 0
+        ;;
+    esac
+    shift
+done
+
+if [ $download_tool = "wget" ]; then
+    $download_tool $wquiet $remote_hosts -O $tmp_file
+else
+# curl
+    $download_tool $cquiet $remote_hosts -o $tmp_file
+fi
+
+if [ $localhost -eq 1 ]; then
+    sed -i "s/localhost/`hostname`/g" $tmp_file
+fi
+
+
+verify_hosts=`cat $target_hosts | grep -q racaljk`
+
+if [ $? -eq 0 ]; then
+# racaljk hosts
+    sudo sed -i "/${begin_flags}/,/${end_flags}/d" $target_hosts
+# DO NOT change `sudo sh -c` to `su -c`
+    sudo sh -c "cat $tmp_file >> $target_hosts"
+else
+# other hosts
+# DO NOT change `sudo sh -c` to `su -c`
+    sudo sh -c "cat $tmp_file > $target_hosts"
+fi
+
+rm -f $tmp_file
