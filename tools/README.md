@@ -4,9 +4,9 @@
 
 ## 支持的平台
 
-- Microsoft Windows (`.bat` script; Qt GUI tool; console tool)
+- Microsoft Windows (`.bat` script; console tool)
 - GNU Linux (bash script)
-- 跨平台的 [**Hozz**](http://ppoffice.github.io/Hozz)
+- 跨平台的 QtGUI tool 以及 [**Hozz**](http://ppoffice.github.io/Hozz)
 
 ## 现有的自动更新Hosts工具
 
