@@ -11,10 +11,6 @@ Server | Microsoft Windows Server 2003 Family
 
 >If you choose `Download`, It means you agreed the MIT license(redefined).
 
-#### Minimum Supported Operator System:
-- Client : Microsoft Windows XP Family
-- Server : Microsoft Windows Server 2003 Family
-
 # Hosts Tool
 
 这个工具可以帮助你全自动的更换 备份原来的hosts文件 所有麻烦的事情只需要打开一个程序就能搞定 如果你愿意，程序还可以作为服务安装随系统启动 每次开机后每隔30分钟会自动检测hosts文件的更新噢
