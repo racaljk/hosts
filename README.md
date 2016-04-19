@@ -1,6 +1,8 @@
+ **目前通过修改hosts的方式是无法实现观看Youtube视频的 详情:[#297](https://github.com/racaljk/hosts/issues/297)**
+ 
 ![](https://www.google.com.sg/logos/doodles/2016/lantern-festival-2016-4824959689949184.2-hp.jpg)
 
-**使用镜像地址获取** [hosts](https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts)
+**使用镜像地址获取** [hosts](https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts) 
 
 # 欢迎使用hosts！
 

@@ -10,4 +10,3 @@ HostsToolforMac（https://github.com/ZzzM/HostToolforMac） 是Mac平台下的�
 ![image](https://github.com/ZzzM/hosts/blob/master/hosts_tools/HostsToolforMac/Preview/manual.gif)
 ####自动更新：
 ![image](https://github.com/ZzzM/hosts/blob/master/hosts_tools/HostsToolforMac/Preview/automatic.gif)
-

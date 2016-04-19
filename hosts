@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Last updated: 2016-4-2
 =======
 # Last updated: 2016-4-3
@@ -12,6 +13,9 @@
 >>>>>>> racaljk/master
 =======
 # Last updated: 2016-4-16
+>>>>>>> racaljk/master
+=======
+# Last updated: 2016-4-19
 >>>>>>> racaljk/master
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
@@ -134,7 +138,7 @@ fe80::1%lo0	localhost
 173.252.81.7	check4.facebook.com
 173.252.81.7	check6.facebook.com
 173.252.81.7	code.facebook.com
-173.252.81.7	connect.facebook.com
+31.13.95.14	connect.facebook.com
 173.252.81.7	edge-chat.facebook.com
 173.252.81.7	pixel.facebook.com
 173.252.81.7	star.c10r.facebook.com
@@ -507,7 +511,7 @@ fe80::1%lo0	localhost
 220.255.2.153	apps.google.com
 220.255.2.153	googlemashups.com
 220.255.2.153	www.googlemashups.com
-64.233.162.87	appengine.google.com
+220.255.2.153	appengine.google.com
 220.255.2.153	uploads.stage.gdata.youtube.com
 220.255.2.153	answers.google.com
 220.255.2.153	wenda.google.com.hk
@@ -590,10 +594,13 @@ fe80::1%lo0	localhost
 # 74.125.248.72	src.chromium.org
 # 74.125.248.73	git.chromium.org
 # 220.255.2.153	codereview.chromium.org
-220.255.2.153	download-chromium.appspot.com
 220.255.2.153	betaspike.appspot.com
-220.255.2.153	m-dot-betaspike.appspot.com
 220.255.2.153	chrome-devtools-frontend.appspot.com
+220.255.2.153	chrometophone.appspot.com
+220.255.2.153	download-chromium.appspot.com
+220.255.2.153	jmoore-dot-android-experiments.appspot.com
+220.255.2.153	lfe-alpo-gm.appspot.com
+220.255.2.153	m-dot-betaspike.appspot.com
 220.255.2.153	accounts.google.com.gi
 220.255.2.153	accounts.google.co.nz
 220.255.2.153	id.google.co.nz
@@ -614,6 +621,7 @@ fe80::1%lo0	localhost
 220.255.2.153	google-code-feed-gadget.googlecode.com
 220.255.2.153	google-code-prettify.googlecode.com
 220.255.2.153	www.googlesource.com
+220.255.2.153	static.googleusercontent.com
 220.255.2.153	android.googlesource.com
 220.255.2.153	cloud.google.com
 220.255.2.153	console.cloud.google.com
@@ -945,7 +953,7 @@ fe80::1%lo0	localhost
 220.255.2.153	mts1.googleapis.com
 220.255.2.153	mts2.googleapis.com
 220.255.2.153	mts3.googleapis.com
-220.255.2.153 ct.googleapis.com
+220.255.2.153	ct.googleapis.com
 # 216.58.221.48	storage.googleapis.com
 # 216.58.221.48	commondatastorage.googleapis.com
 # 216.58.221.48	bucket.commondatastorage.googleapis.com
@@ -1168,6 +1176,7 @@ fe80::1%lo0	localhost
 220.255.2.153	googlegroups.l.googleusercontent.com
 220.255.2.153	orkut-opensocial.l.googleusercontent.com
 220.255.2.153	photos-ugc.l.googleusercontent.com
+220.255.2.153	static.googleusercontent.com
 220.255.2.153	storage.l.googleusercontent.com
 220.255.2.153	storage-ugc.l.googleusercontent.com
 220.255.2.153	a-fc-opensocial.googleusercontent.com
@@ -2848,6 +2857,8 @@ fe80::1%lo0	localhost
 220.255.2.153	certificate-transparency.org
 220.255.2.153	www.certificate-transparency.org
 220.255.2.153	abc.xyz
+64.233.191.121	www.androidexperiments.com
+64.233.191.121	androidexperiments.com
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start

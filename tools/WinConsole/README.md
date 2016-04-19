@@ -1,14 +1,21 @@
 # Download Executable File
 
-Download address:[hosts_tool.exe](https://git.io/vVSwE) [Mirror address](https://yunpan.cn/cq4amgJfUZwTM)(code:b9b1)
+#### Download address:
+- [hosts_tool.exe](https://git.io/vVSwE)
+- [Mirror address](https://yunpan.cn/cq4amgJfUZwTM)(code:b9b1)
 
-#### Minimum Supported Operator System:
-- Client : Microsoft Windows XP Family
-- Server : Microsoft Windows Server 2003 Family
+OS type | Minimun Supported Version
+--------|-------------------
+WorkStation | Microsoft Windows XP Family
+Server | Microsoft Windows Server 2003 Family
+
+>If you choose `Download`, It means you agreed the MIT license(redefined).
 
 # Hosts Tool
 
-这个工具可以帮助你全自动的更换 备份原来的hosts文件 所有麻烦的事情只需要打开一个程序就能搞定 并且程序还可以作为服务安装随系统启动 每次开机后都每30分钟会自动检测hosts文件的更新噢
+这个工具可以帮助你全自动的更换 备份原来的hosts文件 所有麻烦的事情只需要打开一个程序就能搞定 如果你愿意，程序还可以作为服务安装随系统启动 每次开机后每隔30分钟会自动检测hosts文件的更新噢
+
+**在此特别感谢[@qwerty258](https://github.com/qwerty258)为本程序提供了Visual Studio的工程文件**
 
 ## How to use?
 
@@ -22,15 +29,15 @@ main program file: `hosts_tool.exe`
 
 ## 注意事项
 
-如果安装服务 程序会往`%SystemRoot%`下复制一个`hosts_tool.exe`文件用来作为服务启动的主程序
+1.如果安装服务 程序会往`%SystemRoot%`下复制一个`hosts_tool.exe`文件用来作为服务启动的主程序
 
-安装服务后 日志文件会保存在`C:\Hosts_Tool_log.log`下 您可以通过查看日志观察服务的工作状态
+2.安装服务后 日志文件会保存在`C:\Hosts_Tool_log.log`下 您可以通过查看日志观察服务的工作状态
 
-卸载服务请使用原来的`hosts_tool.exe`文件 请不要在命令行中直接执行`hosts_tool -fu`(如执行 需要手动删除`%SystemRoot%`目录下的`hoststools.exe`)
+3.卸载服务请使用原来的`hosts_tool.exe`文件 请不要在命令行中直接执行`hosts_tool -fu`(如执行 需要手动删除`%SystemRoot%`目录下的`hoststools.exe`)
 
-请间隔一段时间后清理`%SystemRoot%\system32\drivers\etc\`文件夹 (因为可能堆满了备份的文件)
+4.请间隔一段时间后清理`%SystemRoot%\system32\drivers\etc\`文件夹 (因为可能堆满了备份的文件)
 
-Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]hotmail.com (请记得带上日志文件)
+5.Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]hotmail.com (请记得带上日志文件)
 
 ## for Developer
 
@@ -43,6 +50,8 @@ Bug Report: 请开新的issue并`@Too-Naive`或者发邮件给 sweheartiii[at]ho
 >The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 >THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+>If you use the project's source code or its derivative products (including but not limited to the executable file), it means that you have agreed to the terms of this license and comply with the terms of the license. If you do not agree to this license agreement, please do not use this project's source code and its derivatives (including but not limited to the executable file).
 
 ### Service Debug Mode :
 

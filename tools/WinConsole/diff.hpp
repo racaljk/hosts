@@ -34,11 +34,11 @@ bool Func_CheckDiff(const TCHAR *lFilePath, const TCHAR * rFilePath) throw(){
         return false;
     char *lBuffer = new char[BUFFER_SIZE];
     char *rBuffer = new char[BUFFER_SIZE];
-    if (!lBuffer||!rBuffer) 
+    if (!lBuffer||!rBuffer)
 		_tprintf(_T("Can't allocate memory to buffer in Func_diff\n")),abort();
     do {
-    	fread(lBuffer,sizeof(char),BUFFER_SIZE,lFile);
-    	fread(rBuffer,sizeof(char),BUFFER_SIZE,rFile);
+	fread(lBuffer,sizeof(char),BUFFER_SIZE,lFile);
+	fread(rBuffer,sizeof(char),BUFFER_SIZE,rFile);
         if (memcmp(lBuffer, rBuffer, BUFFER_SIZE)||
 			((!feof(lFile)&&feof(rFile))||(feof(lFile)&&!(feof(rFile))))){
             delete[] lBuffer;

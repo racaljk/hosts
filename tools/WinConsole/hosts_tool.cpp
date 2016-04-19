@@ -106,8 +106,8 @@ Options:\n\
 #define PIPE_TIMEOUT 5000
 #define BUFSIZE 4096
 
-typedef struct 
-{ 
+typedef struct
+{
 	OVERLAPPED oOverlap;
 	HANDLE hPipeInst;
 	TCHAR chRequest[BUFSIZE];
@@ -652,7 +652,7 @@ void Func_Service_Install(bool _q){
 =======
 =======
 		_stprintf(buf2,_T("\"%s\\hoststools.exe\" -svc"),buf3);
-		if (request_client) 
+		if (request_client)
 			_stprintf(szline,_T("%s %s"),buf2,szParameters[11]),
 			_tcscpy(buf2,szline),memset(szline,0,sizeof(szline)/sizeof(TCHAR));
 >>>>>>> racaljk/master
@@ -713,7 +713,7 @@ void Func_Service_Install(bool _q){
 			else
 				if (!StartService(shSvc,1,SzName))
 					THROWERR(_T("StartService() Failed."));
-					else 
+					else
 				MessageBox(NULL,_T("Service started successfully"),_T("Congratulations!"),
 				MB_SETFOREGROUND|MB_ICONINFORMATION);
 		}
@@ -781,7 +781,7 @@ Please contact the application's support team for more information.\n"),
 }
 
 HANDLE ___pipeopen(){
-	while (1){ 
+	while (1){
 		if ((hdPipe = CreateFile(pipeName,GENERIC_READ|GENERIC_WRITE,0,
 			NULL,OPEN_EXISTING,0,NULL))!=INVALID_HANDLE_VALUE)
 			break;
@@ -792,7 +792,7 @@ HANDLE ___pipeopen(){
 }
 
 DWORD ___pipesentmessage(const TCHAR * szSent){
-	DWORD dwReserved=PIPE_READMODE_MESSAGE;	
+	DWORD dwReserved=PIPE_READMODE_MESSAGE;
     if (!SetNamedPipeHandleState(hdPipe,&dwReserved,NULL,NULL));
     if (!WriteFile(hdPipe,szSent,(lstrlen(szSent)+1)*sizeof(TCHAR),&dwReserved,NULL));
     return GetLastError();
@@ -852,8 +852,12 @@ DWORD __stdcall HostThread(LPVOID){
 			for (int errcunt=0;!Func_Download(hostsfile1,DownLocated)&&
 				!Func_Download(hostsfile,DownLocated);errcunt++,Sleep(request_client?1000:10000))
 				if (errcunt>1) THROWERR(_T("DownLoad hosts file Error!"));
+<<<<<<< HEAD:hosts_tools/HostsToolforWindows/hosts_tool.cpp
 		
 >>>>>>> racaljk/master
+=======
+
+>>>>>>> racaljk/master:tools/WinConsole/hosts_tool.cpp
 			if (!((fp=_tfopen(DownLocated,_T("r"))) && (_=_tfopen(ChangeCTLR,_T("w")))))
 				THROWERR(_T("Open file Error!"));
 			while (!feof(fp)){
@@ -977,18 +981,18 @@ void WINAPI Service_Control(DWORD dwControl){
 =======
 
 DWORD __stdcall OpenPipeService(LPVOID){
-	HANDLE hConnectEvent; 
-	OVERLAPPED oConnect; 
-	LPPIPEINST lpPipeInst; 
-	DWORD dwWait, cbRet; 
-	BOOL fSuccess, fPendingIO; 
+	HANDLE hConnectEvent;
+	OVERLAPPED oConnect;
+	LPPIPEINST lpPipeInst;
+	DWORD dwWait, cbRet;
+	BOOL fSuccess, fPendingIO;
 	if (!(hConnectEvent = CreateEvent(NULL,TRUE,TRUE,NULL)))
 		return _tprintf(_T("CreateEvent failed with %ld.\n"), GetLastError());
 	oConnect.hEvent = hConnectEvent;
 	fPendingIO = CreateAndConnectInstance(&oConnect);
 	while (1){
 		dwWait = WaitForSingleObjectEx(hConnectEvent,INFINITE,TRUE);
-		switch (dwWait){ 
+		switch (dwWait){
 		case 0:
 			if (fPendingIO)
 				if (!(fSuccess = GetOverlappedResult(hdPipe,&oConnect,&cbRet,FALSE)))
@@ -1004,34 +1008,34 @@ DWORD __stdcall OpenPipeService(LPVOID){
 			break;
 		default:
 			return printf("WaitForSingleObjectEx (%ld)\n", GetLastError());
-		} 
-	} 
+		}
+	}
 	return 0;
-} 
-void WINAPI CompletedWriteRoutine(DWORD dwErr,DWORD cbWritten,LPOVERLAPPED lpOverLap){ 
+}
+void WINAPI CompletedWriteRoutine(DWORD dwErr,DWORD cbWritten,LPOVERLAPPED lpOverLap){
 	LPPIPEINST lpPipeInst;
 	BOOL fRead = FALSE;
 	lpPipeInst = (LPPIPEINST) lpOverLap;
 	if ((dwErr == 0) && (cbWritten == lpPipeInst->cbToWrite)){
-		fRead = ReadFileEx(lpPipeInst->hPipeInst,lpPipeInst->chRequest, 
+		fRead = ReadFileEx(lpPipeInst->hPipeInst,lpPipeInst->chRequest,
 		BUFSIZE*sizeof(TCHAR),(LPOVERLAPPED) lpPipeInst,
 		(LPOVERLAPPED_COMPLETION_ROUTINE) CompletedReadRoutine);
 	}
 	if (!fRead) DisconnectAndClose(lpPipeInst);
-} 
+}
 
 void WINAPI CompletedReadRoutine(DWORD dwErr,DWORD cbBytesRead,LPOVERLAPPED lpOverLap){
 	LPPIPEINST lpPipeInst;
 	BOOL fWrite = FALSE;
 	lpPipeInst = (LPPIPEINST) lpOverLap;
-	if ((dwErr == 0) && (cbBytesRead != 0)){ 
+	if ((dwErr == 0) && (cbBytesRead != 0)){
 		GetAnswerToRequest(lpPipeInst);
 		fWrite = WriteFileEx(lpPipeInst->hPipeInst,lpPipeInst->chReply,
 			lpPipeInst->cbToWrite,(LPOVERLAPPED) lpPipeInst,
 			(LPOVERLAPPED_COMPLETION_ROUTINE) CompletedWriteRoutine);
 	}
 	if (!fWrite) DisconnectAndClose(lpPipeInst);
-} 
+}
 
 void DisconnectAndClose(LPPIPEINST lpPipeInst){
 	if (! DisconnectNamedPipe(lpPipeInst->hPipeInst))
@@ -1039,10 +1043,10 @@ void DisconnectAndClose(LPPIPEINST lpPipeInst){
 	CloseHandle(lpPipeInst->hPipeInst);
 	if (lpPipeInst != NULL)
 		HeapFree(GetProcessHeap(),0, lpPipeInst);
-} 
+}
 
-BOOL CreateAndConnectInstance(LPOVERLAPPED lpoOverlap) 
-{ 
+BOOL CreateAndConnectInstance(LPOVERLAPPED lpoOverlap)
+{
 	if (!(hdPipe = CreateNamedPipe(pipeName,PIPE_ACCESS_DUPLEX |FILE_FLAG_OVERLAPPED,
 		PIPE_TYPE_MESSAGE |	PIPE_READMODE_MESSAGE |	PIPE_WAIT,
 		PIPE_UNLIMITED_INSTANCES,BUFSIZE*sizeof(TCHAR),BUFSIZE*sizeof(TCHAR),
@@ -1051,8 +1055,8 @@ BOOL CreateAndConnectInstance(LPOVERLAPPED lpoOverlap)
 	return ConnectToNewClient(hdPipe, lpoOverlap);
 }
 
-BOOL ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo) 
-{ 
+BOOL ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo)
+{
 	BOOL fConnected, fPendingIO = FALSE;
 	if ((fConnected = ConnectNamedPipe(hPipe, lpo)))
 		return 0*printf("ConnectNamedPipe failed with %ld.\n", GetLastError());
@@ -1061,11 +1065,11 @@ BOOL ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo)
 		fPendingIO = TRUE;
 		break;
 	case ERROR_PIPE_CONNECTED:
-		if (SetEvent(lpo->hEvent)) 
+		if (SetEvent(lpo->hEvent))
 			break;
 	default:
 			return 0*printf("ConnectNamedPipe failed with %ld.\n", GetLastError());
-	} 
+	}
 	return fPendingIO;
 }
 
