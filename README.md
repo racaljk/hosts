@@ -40,7 +40,9 @@
 
 ## Android
 请 新建/修改 `/system/etc/hosts` 文件，并将我们的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件中的内容全部内容复制到该文件中并保存。
-也可以下载[科学Host.apk](https://github.com/crianzy/hosts/raw/android/tools/Android/%E7%A7%91%E5%AD%A6Host.apk), 可以获取最新的host文件并修改系统host (需要手机Root才能正常使用)
+
+> 也可以下载[科学Host.apk](https://github.com/crianzy/hosts/raw/android/tools/Android/%E7%A7%91%E5%AD%A6Host.apk)
+可以获取最新的host文件并修改系统host (需要手机Root才能正常使用)
 
 
 ## iOS
