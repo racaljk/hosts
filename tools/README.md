@@ -24,6 +24,9 @@
 
   - [`script_tool_for_linux.sh`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh): Linux 环境下的 hosts 一键部署脚本，由 [@lstoars](https://github.com/lstoars) 贡献; [@fluviusmagnus](https://github.com/fluviusmagnus) 提供增强版本。
 
+ - **Andorid** : Android 环境下的 hosts 获取工具(适用于 Android4.0 或以上, 暂时还不支持自动更新, 需要手动点击按钮更新host文件)
+  - 基于 Java 开发。由 [@crianzy](https://github.com/crianzy) 贡献。
+
 ## 其他工具
 
 - Hozz: 跨平台的 hosts 自动 管理/更新 工具。是 [@ppoffice](https://github.com/ppoffice) 的项目。

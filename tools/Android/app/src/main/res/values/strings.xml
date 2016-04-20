@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">科学 Host</string>
+    <string name="get_last_host">获取最新的科学host</string>
+    <string name="huifu_host">恢复host</string>
+    <string name="read_host">查看当前host</string>
+    <string name="about">关于</string>
+    <string name="get_root_fail">获取root权限失败</string>
+    <string name="network_error">网络错误请稍后再试</string>
+    <string name="about_detail">
+        <![CDATA[
+        科学Host中获取的Host都是来自
+        <a href="https://github.com/racaljk">racaljk</a>
+        的
+        <a href="https://github.com/racaljk/hosts">hosts开源项目</a>
+        \n我只是一个host 的搬运工
+        \n在这里特别感谢 <a href="https://github.com/racaljk">racaljk</a>提供的 <a href="https://github.com/racaljk/hosts">开源hosts</a>
+        ]]>
+    </string>
+
+    <string name="host_github">
+        <![CDATA[
+        host 开源地址:
+        <a href="https://github.com/racaljk/hosts">github.com/racaljk/hosts</a>
+        ]]>
+    </string>
+    <string name="app_github">
+        <![CDATA[
+        科学Host 开源地址:
+        <a href="https://github.com/racaljk/hosts">github.com/racaljk/hosts</a>
+         ]]>
+    </string>
+
+    <string name="your_mobile_have_no_root">您的手机没有root 将无法修改hsot文件, 请root 后再尝试</string>
+    <string name="huifu_host_tips">恢复host成功</string>
+    <string name="get_last_host_tips">获取host成功</string>
+    <string name="loading">loading...</string>
+
+</resources>
