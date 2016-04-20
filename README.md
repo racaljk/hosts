@@ -1,4 +1,4 @@
- **目前通过修改hosts的方式是无法实现观看Youtube视频的 详情:[#297](https://github.com/racaljk/hosts/issues/297)**
+ **目前通过修改hosts无法实现观看Youtube视频 详情:[#297](https://github.com/racaljk/hosts/issues/297)**
  
 ![](https://www.google.com.sg/logos/doodles/2016/lantern-festival-2016-4824959689949184.2-hp.jpg)
 
@@ -26,7 +26,7 @@
 用文本编辑器（如记事本等）打开文件：
 
     C:\Windows\System32\drivers\etc\hosts
-    
+
 并将我们的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件中的内容全部内容复制到该文件中并保存。
 
 > 注意：如果遇到无法保存，请右键文件hosts并找到“属性” -> “安全”，然后选择你登陆的用户名，最后点击编辑，勾选“写入”即可。
@@ -49,7 +49,7 @@
 ## Linux
 请 新建/修改 `/etc/hosts` 文件，并将我们的[hosts](https://raw.githubusercontent.com/racaljk/hosts/master/hosts)文件中的内容全部内容复制到该文件中并保存。
 
-或是开启终端（快捷键为<kbd>Ctrl + Alt + T</kbd>）并直接使用下述命令：
+或是开启终端（快捷键为<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>）并直接使用下述命令：
 
     bash -c 'wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -qO /tmp/hosts && sudo mv /tmp/hosts /etc/hosts'
     
