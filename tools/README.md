@@ -17,7 +17,7 @@
   - 使用 **C++** 构建。由 [@Too-Naive](https://github.com/Too-Naive) 贡献
 
  - **MacOS** : Mac 环境下的 hosts 自动部署更新应用(适用于 OS X 10.10 或以上)
-  - 基于 Swift 开发。由 [@ZzzM](https://github.com/ZzzM) 贡献。
+  - 基于 **Swift** 开发。由 [@ZzzM](https://github.com/ZzzM) 贡献。
 
  - **Script**: 集合了各种系统下的脚本工具。
   - `tool.bat`[(点我下载)](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat): Windows 环境下的 hosts 一键部署脚本，由 [@redapple0204](https://github.com/redapple0204) 与 [@lizongzeshunshun](https://github.com/lizongzeshunshun) 贡献。以及 [@lideming](https://github.com/lideming) 提供的重要更新。
