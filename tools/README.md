@@ -2,11 +2,16 @@
 
 我们提供了一系列工具，让您除了手动以"复制/粘贴"的方式部署和更新hosts之外，有一种更方便、一键式的方式来应用我们的hosts。
 
-## 支持的平台
+## 系统 & 对应工具
 
-- Microsoft Windows (`.bat` script; console tool)
-- GNU Linux (bash script)
-- 跨平台的 QtGUI tool 以及 [**Hozz**](http://ppoffice.github.io/Hozz)
+操作系统 | 可用工具
+--------|---------
+Microsoft Windows | `.bat` script; console tool
+Mac OS | Mac OS tool
+GNU Linux | bash script
+Any platform | QtGUI tool(except MacOS); [**Hozz**](http://ppoffice.github.io/Hozz)
+
+向下拉查看详细工具描述
 
 ## 现有的自动更新Hosts工具
 
