@@ -20,9 +20,9 @@
   - 基于 **Swift** 开发。由 [@ZzzM](https://github.com/ZzzM) 贡献。
 
  - **Script**: 集合了各种系统下的脚本工具。
-  - `tool.bat`[(点我下载)](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat): Windows 环境下的 hosts 一键部署脚本，由 [@redapple0204](https://github.com/redapple0204) 与 [@lizongzeshunshun](https://github.com/lizongzeshunshun) 贡献。以及 [@lideming](https://github.com/lideming) 提供的重要更新。
+  - [`windows.bat`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat): Windows 环境下的 hosts 一键部署脚本，由 [@redapple0204](https://github.com/redapple0204) 与 [@lizongzeshunshun](https://github.com/lizongzeshunshun) 贡献。以及 [@lideming](https://github.com/lideming) 提供的重要更新。
 
-  - `tool.sh`[(点我下载)](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh): Linux 环境下的 hosts 一键部署脚本，由 [@lstoars](https://github.com/lstoars) 贡献; [@fluviusmagnus](https://github.com/fluviusmagnus) 提供增强版本。
+  - [`linux.sh`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh): Linux 环境下的 hosts 一键部署脚本，由 [@lstoars](https://github.com/lstoars) 贡献; [@fluviusmagnus](https://github.com/fluviusmagnus) 提供增强版本。
 
 ## 其他工具
 
