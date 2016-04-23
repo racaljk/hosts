@@ -3449,32 +3449,43 @@ fe80::1%lo0	localhost
 # OneDrive End
 
 # SoundCloud Start
-68.232.44.96	a1.sndcdn.com
-68.232.44.127	api.soundcloud.com
-68.232.44.127	api-mobile.soundcloud.com
-68.232.44.127	api-v2.soundcloud.com
-68.232.44.96	a-v2.sndcdn.com
-54.192.127.227	cf-media.sndcdn.com
-68.232.45.67	ec-media.soundcloud.com
-68.232.46.220	ec-rtmp-media.soundcloud.com
-54.76.196.137	eventgateway.soundcloud.com
-54.76.196.137	eventlogger.soundcloud.com
-68.232.44.96	i1.sndcdn.com
-68.232.44.96	i2.sndcdn.com
-68.232.44.96	i3.sndcdn.com
-54.192.138.234	i4.sndcdn.com
-62.161.94.230	logs1403.xiti.com
-72.21.91.127	m.soundcloud.com
-203.190.124.18	pixel.quantserve.com
-68.232.44.127	promoted.soundcloud.com
-23.207.123.120	sb.scorecardresearch.com
-203.190.124.16	secure.quantserve.com
-68.232.44.127	soundcloud.com
-111.119.3.1	soundcloud.hs.llnwd.net
-72.21.91.96	style.sndcdn.com
-68.232.44.96	va.sndcdn.com
-68.232.44.127	visuals.soundcloud.com
-68.232.44.96	wis.sndcdn.com
+93.184.220.127	soundcloud.com
+93.184.220.127	www.soundcloud.com
+93.184.220.127	m.soundcloud.com
+93.184.220.127	api.soundcloud.com
+93.184.220.127	api-mobile.soundcloud.com
+93.184.220.127	api-v2.soundcloud.com
+93.184.220.127	promoted.soundcloud.com
+93.184.220.127	visuals.soundcloud.com
+93.184.220.127	on.soundcloud.com
+66.228.50.217	blog.soundcloud.com
+72.21.91.96	a1.sndcdn.com
+72.21.91.96	a-v2.sndcdn.com
+# DNS works fine
+#52.84.213.247	i1.sndcdn.com
+#52.84.213.247	i2.sndcdn.com
+#52.84.213.247	i3.sndcdn.com
+#52.84.213.247	i4.sndcdn.com
+93.184.220.96	va.sndcdn.com
+# DNS works fine
+#52.84.213.129	wis.sndcdn.com
+93.184.221.77	ec-media.sndcdn.com
+93.184.220.96	ec-preview-media.sndcdn.com
+72.21.81.167	ec-media.soundcloud.com
+93.184.222.220	ec-rtmp-media.soundcloud.com
+54.230.99.234	cf-media.sndcdn.com
+# DNS works fine
+#54.76.196.137	l9bjkkhaycw6f8f4.soundcloud.com
+#54.76.196.137	eventgateway.soundcloud.com
+#54.76.196.137	eventlogger.soundcloud.com
+#62.161.94.230	logs1403.xiti.com
+#203.190.124.27	pixel.quantserve.com
+#203.190.124.15	secure.quantserve.com
+#203.190.124.12	anycast-asia.quantserve.com.akadns.net
+104.118.93.251	sb.scorecardresearch.com
+# Domain not found
+#111.119.3.1	soundcloud.hs.llnwd.net
+93.184.220.96	style.sndcdn.com
 # SoundCloud End
 
 # Startpage Start
