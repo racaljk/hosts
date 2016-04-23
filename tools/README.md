@@ -11,8 +11,6 @@ Mac OS | Mac OS tool
 GNU Linux | bash script
 Any platform | QtGUI tool(except MacOS); [**Hozz**](http://ppoffice.github.io/Hozz)
 
-向下拉查看详细工具描述
-
 ## 现有的自动更新Hosts工具
 
  - **QtGUI** : GUI工具
