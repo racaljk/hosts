@@ -3474,14 +3474,14 @@ fe80::1%lo0	localhost
 72.21.81.167	ec-media.soundcloud.com
 93.184.222.220	ec-rtmp-media.soundcloud.com
 54.230.99.234	cf-media.sndcdn.com
-# DNS works fine
+# Cannot access AWS
 #54.76.196.137	l9bjkkhaycw6f8f4.soundcloud.com
 #54.76.196.137	eventgateway.soundcloud.com
 #54.76.196.137	eventlogger.soundcloud.com
+# DNS works fine
 #62.161.94.230	logs1403.xiti.com
 #203.190.124.27	pixel.quantserve.com
 #203.190.124.15	secure.quantserve.com
-#203.190.124.12	anycast-asia.quantserve.com.akadns.net
 104.118.93.251	sb.scorecardresearch.com
 # Domain not found
 #111.119.3.1	soundcloud.hs.llnwd.net
