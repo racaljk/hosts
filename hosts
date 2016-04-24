@@ -2847,21 +2847,21 @@ fe80::1%lo0	localhost
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
-74.125.25.109	gmail-imap.l.google.com
-74.125.25.16	googlemail-imap.l.google.com
-74.125.25.108	gmail-smtp.l.google.com
-74.125.25.16	googlemail-smtp.l.google.com
-74.125.25.109	gmail-pop.l.google.com
-74.125.25.16	googlemail-pop.l.google.com
-74.125.25.109	imap.gmail.com
-74.125.25.16	imap.googlemail.com
-74.125.25.109	smtp.gmail.com
-74.125.25.16	smtp.googlemail.com
-74.125.25.109	pop.gmail.com
-74.125.25.16	pop.googlemail.com
-74.125.25.109	gmail-smtp-msa.l.google.com
-74.125.25.27	gmail-smtp-in.l.google.com
-74.125.25.14	gmr-smtp-in.l.google.com
+173.194.219.109	gmail-imap.l.google.com
+173.194.219.16	googlemail-imap.l.google.com
+173.194.219.109	gmail-smtp.l.google.com
+173.194.219.16	googlemail-smtp.l.google.com
+173.194.219.109	gmail-pop.l.google.com
+173.194.219.16	googlemail-pop.l.google.com
+173.194.219.109	imap.gmail.com
+173.194.219.16	imap.googlemail.com
+173.194.219.109	smtp.gmail.com
+173.194.219.16	smtp.googlemail.com
+173.194.219.109	pop.gmail.com
+173.194.219.16	pop.googlemail.com
+173.194.219.109	gmail-smtp-msa.l.google.com
+74.125.21.27	gmail-smtp-in.l.google.com
+74.125.21.14	gmr-smtp-in.l.google.com
 # Gmail SMTP/POP/IMAP End
 
 # Google:stun Server Start
@@ -3448,6 +3448,11 @@ fe80::1%lo0	localhost
 204.79.197.213	nhuhga.dm2301.livefilestore.com
 # OneDrive End
 
+# Openwrt Start
+78.24.191.177 openwrt.org
+78.24.191.177 www.openwrt.org
+# Openwrt End
+
 # SoundCloud Start
 93.184.220.127	soundcloud.com
 93.184.220.127	www.soundcloud.com
@@ -3505,6 +3510,11 @@ fe80::1%lo0	localhost
 103.245.222.249	vimeo-hp-videos.global.ssl.fastly.net
 198.245.92.39	click.email.vimeo.com
 # Vimeo End
+
+# Telegram Start
+149.154.167.99 www.telegram.org
+149.154.167.99 telegram.org
+# Telegram End
 
 # Wikipedia Start
 208.80.154.224	www.wikipedia.org
