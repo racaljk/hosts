@@ -2847,21 +2847,21 @@ fe80::1%lo0	localhost
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
-173.194.219.109	 gmail-imap.l.google.com
-173.194.219.16	 googlemail-imap.l.google.com
-173.194.219.109	 gmail-smtp.l.google.com
-173.194.219.16	 googlemail-smtp.l.google.com
-173.194.219.109	 gmail-pop.l.google.com
-173.194.219.16	 googlemail-pop.l.google.com
-173.194.219.109	 imap.gmail.com
-173.194.219.16	 imap.googlemail.com
-173.194.219.109	 smtp.gmail.com
-173.194.219.16	 smtp.googlemail.com
-173.194.219.109	 pop.gmail.com
-173.194.219.16	 pop.googlemail.com
-173.194.219.109	 gmail-smtp-msa.l.google.com
-74.125.21.27	 gmail-smtp-in.l.google.com
-74.125.21.14	 gmr-smtp-in.l.google.com
+173.194.219.109 gmail-imap.l.google.com
+173.194.219.16  googlemail-imap.l.google.com
+173.194.219.109 gmail-smtp.l.google.com
+173.194.219.16  googlemail-smtp.l.google.com
+173.194.219.109 gmail-pop.l.google.com
+173.194.219.16  googlemail-pop.l.google.com
+173.194.219.109 imap.gmail.com
+173.194.219.16  imap.googlemail.com
+173.194.219.109 smtp.gmail.com
+173.194.219.16  smtp.googlemail.com
+173.194.219.109 pop.gmail.com
+173.194.219.16  pop.googlemail.com
+173.194.219.109 gmail-smtp-msa.l.google.com
+74.125.21.27  gmail-smtp-in.l.google.com
+74.125.21.14  gmr-smtp-in.l.google.com
 # Gmail SMTP/POP/IMAP End
 
 # Google:stun Server Start
@@ -3512,8 +3512,8 @@ fe80::1%lo0	localhost
 # Vimeo End
 
 # Telegram Start
-149.154.167.99 www.telegram.org
-149.154.167.99 telegram.org
+149.154.167.99  www.telegram.org
+149.154.167.99  telegram.org
 # Telegram End
 
 # Wikipedia Start
