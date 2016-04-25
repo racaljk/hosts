@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-4-19
+# Last updated: 2016-4-25
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -122,7 +122,7 @@ fe80::1%lo0	localhost
 173.252.81.7	check4.facebook.com
 173.252.81.7	check6.facebook.com
 173.252.81.7	code.facebook.com
-173.252.81.7	connect.facebook.com
+31.13.95.14	connect.facebook.com
 173.252.81.7	edge-chat.facebook.com
 173.252.81.7	pixel.facebook.com
 173.252.81.7	star.c10r.facebook.com
@@ -206,7 +206,7 @@ fe80::1%lo0	localhost
 173.252.81.7	static.thefacebook.com
 # 192.168.52.23	ldap.thefacebook.com
 173.252.81.7	attachment.fbsbx.com
-31.13.95.14		connect.facebook.net
+104.78.23.174	connect.facebook.net
 # Facebook end
 
 # FlipBoard start
@@ -578,13 +578,13 @@ fe80::1%lo0	localhost
 # 74.125.248.72	src.chromium.org
 # 74.125.248.73	git.chromium.org
 # 220.255.2.153	codereview.chromium.org
-220.255.2.153	download-chromium.appspot.com
 220.255.2.153	betaspike.appspot.com
+220.255.2.153	chrome-devtools-frontend.appspot.com
 220.255.2.153	chrometophone.appspot.com
+220.255.2.153	download-chromium.appspot.com
+220.255.2.153	jmoore-dot-android-experiments.appspot.com
 220.255.2.153	lfe-alpo-gm.appspot.com
 220.255.2.153	m-dot-betaspike.appspot.com
-220.255.2.153	chrome-devtools-frontend.appspot.com
-220.255.2.153 	jmoore-dot-android-experiments.appspot.com
 220.255.2.153	accounts.google.com.gi
 220.255.2.153	accounts.google.co.nz
 220.255.2.153	id.google.co.nz
@@ -606,8 +606,6 @@ fe80::1%lo0	localhost
 220.255.2.153	google-code-prettify.googlecode.com
 220.255.2.153	www.googlesource.com
 220.255.2.153	android.googlesource.com
-64.233.191.121 	www.androidexperiments.com
-64.233.191.121 	androidexperiments.com
 220.255.2.153	cloud.google.com
 220.255.2.153	console.cloud.google.com
 220.255.2.153	developers.google.com
@@ -694,6 +692,10 @@ fe80::1%lo0	localhost
 220.255.2.153	8c953efe117cb4ee14eaffe2b417623a104ce4e6.googledrive.com
 220.255.2.153	v3.cache1.c.docs.google.com
 220.255.2.153	domains.google.com
+220.255.2.153	domains.google
+220.255.2.153	www.domains.google
+220.255.2.153	www.registry.google
+220.255.2.153	registry.google
 220.255.2.153	dl-ssl.google.com
 220.255.2.153	dl.google.com
 220.255.2.153	earth.google.com
@@ -925,6 +927,7 @@ fe80::1%lo0	localhost
 220.255.2.153	content.googleapis.com
 220.255.2.153	maps.googleapis.com
 220.255.2.153	origin-commondatastorage.googleapis.com
+216.58.221.112	commondatastorage.googleapis.com
 220.255.2.153	play.googleapis.com
 220.255.2.153	plus.googleapis.com
 220.255.2.153	redirector-bigcache.googleapis.com
@@ -940,7 +943,6 @@ fe80::1%lo0	localhost
 220.255.2.153	mts3.googleapis.com
 220.255.2.153	ct.googleapis.com
 # 216.58.221.48	storage.googleapis.com
-# 216.58.221.48	commondatastorage.googleapis.com
 # 216.58.221.48	bucket.commondatastorage.googleapis.com
 # 216.58.221.48	chromium-browser-symbols.commondatastorage.googleapis.com
 # 216.58.221.48	c.commondatastorage.googleapis.com
@@ -956,6 +958,8 @@ fe80::1%lo0	localhost
 220.255.2.153	base3.googlehosted.com
 220.255.2.153	base4.googlehosted.com
 220.255.2.153	base5.googlehosted.com
+#216.239.38.121	ghs.googlehosted.com
+#72.14.249.180	ghs-svc-https-c1196.ghs-ssl.googlehosted.com
 220.255.2.153	s0.2mdn.net
 220.255.2.153	s1.2mdn.net
 220.255.2.153	service.urchin.com
@@ -1161,6 +1165,7 @@ fe80::1%lo0	localhost
 220.255.2.153	googlegroups.l.googleusercontent.com
 220.255.2.153	orkut-opensocial.l.googleusercontent.com
 220.255.2.153	photos-ugc.l.googleusercontent.com
+220.255.2.153	static.googleusercontent.com
 220.255.2.153	storage.l.googleusercontent.com
 220.255.2.153	storage-ugc.l.googleusercontent.com
 220.255.2.153	a-fc-opensocial.googleusercontent.com
@@ -2841,24 +2846,26 @@ fe80::1%lo0	localhost
 220.255.2.153	certificate-transparency.org
 220.255.2.153	www.certificate-transparency.org
 220.255.2.153	abc.xyz
+64.233.191.121	www.androidexperiments.com
+64.233.191.121	androidexperiments.com
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
-74.125.25.109	gmail-imap.l.google.com
-74.125.25.16	googlemail-imap.l.google.com
-74.125.25.108	gmail-smtp.l.google.com
-74.125.25.16	googlemail-smtp.l.google.com
-74.125.25.109	gmail-pop.l.google.com
-74.125.25.16	googlemail-pop.l.google.com
-74.125.25.109	imap.gmail.com
-74.125.25.16	imap.googlemail.com
-74.125.25.109	smtp.gmail.com
-74.125.25.16	smtp.googlemail.com
-74.125.25.109	pop.gmail.com
-74.125.25.16	pop.googlemail.com
-74.125.25.109	gmail-smtp-msa.l.google.com
-74.125.25.27	gmail-smtp-in.l.google.com
-74.125.25.14	gmr-smtp-in.l.google.com
+64.233.188.109	gmail-imap.l.google.com
+64.233.188.16	googlemail-imap.l.google.com
+64.233.188.108	gmail-smtp.l.google.com
+64.233.188.16	googlemail-smtp.l.google.com
+64.233.188.109	gmail-pop.l.google.com
+64.233.188.16	googlemail-pop.l.google.com
+64.233.188.109	imap.gmail.com
+64.233.188.16	imap.googlemail.com
+64.233.188.109	smtp.gmail.com
+64.233.188.16	smtp.googlemail.com
+64.233.188.109	pop.gmail.com
+64.233.188.16	pop.googlemail.com
+64.233.188.109	gmail-smtp-msa.l.google.com
+64.233.188.27	gmail-smtp-in.l.google.com
+64.233.188.14	gmr-smtp-in.l.google.com
 # Gmail SMTP/POP/IMAP End
 
 # Google:stun Server Start
@@ -2919,7 +2926,7 @@ fe80::1%lo0	localhost
 # Google:gcm End
 
 # Google:A-GPS Start
-64.233.188.192	supl.google.com
+64.233.171.192	supl.google.com
 # Google:A-GPS End
 
 # Google CN Start
@@ -3446,32 +3453,43 @@ fe80::1%lo0	localhost
 # OneDrive End
 
 # SoundCloud Start
-68.232.44.96	a1.sndcdn.com
-68.232.44.127	api.soundcloud.com
-68.232.44.127	api-mobile.soundcloud.com
-68.232.44.127	api-v2.soundcloud.com
-68.232.44.96	a-v2.sndcdn.com
-54.192.127.227	cf-media.sndcdn.com
-68.232.45.67	ec-media.soundcloud.com
-68.232.46.220	ec-rtmp-media.soundcloud.com
-54.76.196.137	eventgateway.soundcloud.com
-54.76.196.137	eventlogger.soundcloud.com
-68.232.44.96	i1.sndcdn.com
-68.232.44.96	i2.sndcdn.com
-68.232.44.96	i3.sndcdn.com
-54.192.138.234	i4.sndcdn.com
-62.161.94.230	logs1403.xiti.com
-72.21.91.127	m.soundcloud.com
-203.190.124.18	pixel.quantserve.com
-68.232.44.127	promoted.soundcloud.com
-23.207.123.120	sb.scorecardresearch.com
-203.190.124.16	secure.quantserve.com
-68.232.44.127	soundcloud.com
-111.119.3.1	soundcloud.hs.llnwd.net
-72.21.91.96	style.sndcdn.com
-68.232.44.96	va.sndcdn.com
-68.232.44.127	visuals.soundcloud.com
-68.232.44.96	wis.sndcdn.com
+93.184.220.127	soundcloud.com
+93.184.220.127	www.soundcloud.com
+93.184.220.127	m.soundcloud.com
+93.184.220.127	api.soundcloud.com
+93.184.220.127	api-mobile.soundcloud.com
+93.184.220.127	api-v2.soundcloud.com
+93.184.220.127	promoted.soundcloud.com
+93.184.220.127	visuals.soundcloud.com
+93.184.220.127	on.soundcloud.com
+66.228.50.217	blog.soundcloud.com
+72.21.91.96	a1.sndcdn.com
+72.21.91.96	a-v2.sndcdn.com
+# DNS works fine
+#52.84.213.247	i1.sndcdn.com
+#52.84.213.247	i2.sndcdn.com
+#52.84.213.247	i3.sndcdn.com
+#52.84.213.247	i4.sndcdn.com
+93.184.220.96	va.sndcdn.com
+# DNS works fine
+#52.84.213.129	wis.sndcdn.com
+93.184.221.77	ec-media.sndcdn.com
+93.184.220.96	ec-preview-media.sndcdn.com
+72.21.81.167	ec-media.soundcloud.com
+93.184.222.220	ec-rtmp-media.soundcloud.com
+54.230.99.234	cf-media.sndcdn.com
+# Cannot access AWS
+#54.76.196.137	l9bjkkhaycw6f8f4.soundcloud.com
+#54.76.196.137	eventgateway.soundcloud.com
+#54.76.196.137	eventlogger.soundcloud.com
+# DNS works fine
+#62.161.94.230	logs1403.xiti.com
+#203.190.124.27	pixel.quantserve.com
+#203.190.124.15	secure.quantserve.com
+104.118.93.251	sb.scorecardresearch.com
+# Domain not found
+#111.119.3.1	soundcloud.hs.llnwd.net
+93.184.220.96	style.sndcdn.com
 # SoundCloud End
 
 # Startpage Start
@@ -3493,377 +3511,8 @@ fe80::1%lo0	localhost
 # Vimeo End
 
 # Wikipedia Start
-208.80.154.224	www.wikipedia.org
-198.35.26.112	upload.wikimedia.org
-208.80.154.224	bits.wikimedia.org
-208.80.154.224	ab.wikipedia.org
-208.80.154.224	ace.wikipedia.org
-208.80.154.224	af.wikipedia.org
-208.80.154.224	ak.wikipedia.org
-208.80.154.224	als.wikipedia.org
-208.80.154.224	am.wikipedia.org
-208.80.154.224	an.wikipedia.org
-208.80.154.224	ang.wikipedia.org
-208.80.154.224	ar.wikipedia.org
-208.80.154.224	arc.wikipedia.org
-208.80.154.224	arz.wikipedia.org
-208.80.154.224	as.wikipedia.org
-208.80.154.224	ast.wikipedia.org
-208.80.154.224	av.wikipedia.org
-208.80.154.224	ay.wikipedia.org
-208.80.154.224	az.wikipedia.org
-208.80.154.224	ba.wikipedia.org
-208.80.154.224	bar.wikipedia.org
-208.80.154.224	bat-smg.wikipedia.org
-208.80.154.224	bcl.wikipedia.org
-208.80.154.224	bg.wikipedia.org
-208.80.154.224	bh.wikipedia.org
-208.80.154.224	bi.wikipedia.org
-208.80.154.224	bjn.wikipedia.org
-208.80.154.224	bm.wikipedia.org
-208.80.154.224	bn.wikipedia.org
-208.80.154.224	bo.wikipedia.org
-208.80.154.224	bpy.wikipedia.org
-208.80.154.224	br.wikipedia.org
-208.80.154.224	bs.wikipedia.org
-208.80.154.224	bug.wikipedia.org
-208.80.154.224	bxr.wikipedia.org
-208.80.154.224	ca.wikipedia.org
-208.80.154.224	cbk-zam.wikipedia.org
-208.80.154.224	cdo.wikipedia.org
-208.80.154.224	ce.wikipedia.org
-208.80.154.224	ceb.wikipedia.org
-208.80.154.224	ch.wikipedia.org
-208.80.154.224	chr.wikipedia.org
-208.80.154.224	chy.wikipedia.org
-208.80.154.224	ckb.wikipedia.org
-208.80.154.224	co.wikipedia.org
-208.80.154.224	cr.wikipedia.org
-208.80.154.224	crh.wikipedia.org
-208.80.154.224	cs.wikipedia.org
-208.80.154.224	csb.wikipedia.org
-208.80.154.224	cu.wikipedia.org
-208.80.154.224	cv.wikipedia.org
-208.80.154.224	cy.wikipedia.org
-208.80.154.224	da.wikipedia.org
-208.80.154.224	de.wikipedia.org
-208.80.154.224	diq.wikipedia.org
-208.80.154.224	dsb.wikipedia.org
-208.80.154.224	dv.wikipedia.org
-208.80.154.224	dz.wikipedia.org
-208.80.154.224	ee.wikipedia.org
-208.80.154.224	el.wikipedia.org
-208.80.154.224	eml.wikipedia.org
-208.80.154.224	en.wikipedia.org
-208.80.154.224	eo.wikipedia.org
-208.80.154.224	es.wikipedia.org
-208.80.154.224	et.wikipedia.org
-208.80.154.224	eu.wikipedia.org
-208.80.154.224	ext.wikipedia.org
-208.80.154.224	fa.wikipedia.org
-208.80.154.224	ff.wikipedia.org
-208.80.154.224	fi.wikipedia.org
-208.80.154.224	fiu-vro.wikipedia.org
-208.80.154.224	fj.wikipedia.org
-208.80.154.224	fo.wikipedia.org
-208.80.154.224	fr.wikipedia.org
-208.80.154.224	frp.wikipedia.org
-208.80.154.224	frr.wikipedia.org
-208.80.154.224	fur.wikipedia.org
-208.80.154.224	fy.wikipedia.org
-208.80.154.224	ga.wikipedia.org
-208.80.154.224	gag.wikipedia.org
-208.80.154.224	gan.wikipedia.org
-208.80.154.224	gd.wikipedia.org
-208.80.154.224	gl.wikipedia.org
-208.80.154.224	glk.wikipedia.org
-208.80.154.224	gn.wikipedia.org
-208.80.154.224	got.wikipedia.org
-208.80.154.224	gu.wikipedia.org
-208.80.154.224	gv.wikipedia.org
-208.80.154.224	ha.wikipedia.org
-208.80.154.224	hak.wikipedia.org
-208.80.154.224	haw.wikipedia.org
-208.80.154.224	he.wikipedia.org
-208.80.154.224	hi.wikipedia.org
-208.80.154.224	hif.wikipedia.org
-208.80.154.224	hr.wikipedia.org
-208.80.154.224	hsb.wikipedia.org
-208.80.154.224	ht.wikipedia.org
-208.80.154.224	hu.wikipedia.org
-208.80.154.224	hy.wikipedia.org
-208.80.154.224	ia.wikipedia.org
-208.80.154.224	id.wikipedia.org
-208.80.154.224	ie.wikipedia.org
-208.80.154.224	ig.wikipedia.org
-208.80.154.224	ik.wikipedia.org
-208.80.154.224	ilo.wikipedia.org
-208.80.154.224	io.wikipedia.org
-208.80.154.224	is.wikipedia.org
-208.80.154.224	it.wikipedia.org
-208.80.154.224	iu.wikipedia.org
-208.80.154.224	ja.wikipedia.org
-208.80.154.224	jbo.wikipedia.org
-208.80.154.224	jv.wikipedia.org
-208.80.154.224	ka.wikipedia.org
-208.80.154.224	kaa.wikipedia.org
-208.80.154.224	kab.wikipedia.org
-208.80.154.224	kbd.wikipedia.org
-208.80.154.224	kg.wikipedia.org
-208.80.154.224	ki.wikipedia.org
-208.80.154.224	kk.wikipedia.org
-208.80.154.224	kl.wikipedia.org
-208.80.154.224	km.wikipedia.org
-208.80.154.224	kn.wikipedia.org
-208.80.154.224	ko.wikipedia.org
-208.80.154.224	koi.wikipedia.org
-208.80.154.224	krc.wikipedia.org
-208.80.154.224	ks.wikipedia.org
-208.80.154.224	ksh.wikipedia.org
-208.80.154.224	ku.wikipedia.org
-208.80.154.224	kv.wikipedia.org
-208.80.154.224	kw.wikipedia.org
-208.80.154.224	ky.wikipedia.org
-208.80.154.224	la.wikipedia.org
-208.80.154.224	lad.wikipedia.org
-208.80.154.224	lb.wikipedia.org
-208.80.154.224	lbe.wikipedia.org
-208.80.154.224	lez.wikipedia.org
-208.80.154.224	lg.wikipedia.org
-208.80.154.224	li.wikipedia.org
-208.80.154.224	lij.wikipedia.org
-208.80.154.224	lmo.wikipedia.org
-208.80.154.224	ln.wikipedia.org
-208.80.154.224	lo.wikipedia.org
-208.80.154.224	lt.wikipedia.org
-208.80.154.224	ltg.wikipedia.org
-208.80.154.224	lv.wikipedia.org
-208.80.154.224	map-bms.wikipedia.org
-208.80.154.224	mdf.wikipedia.org
-208.80.154.224	mg.wikipedia.org
-208.80.154.224	mhr.wikipedia.org
-208.80.154.224	mi.wikipedia.org
-208.80.154.224	mk.wikipedia.org
-208.80.154.224	ml.wikipedia.org
-208.80.154.224	mn.wikipedia.org
-208.80.154.224	mo.wikipedia.org
-208.80.154.224	mr.wikipedia.org
-208.80.154.224	mrj.wikipedia.org
-208.80.154.224	ms.wikipedia.org
-208.80.154.224	mt.wikipedia.org
-208.80.154.224	mwl.wikipedia.org
-208.80.154.224	my.wikipedia.org
-208.80.154.224	myv.wikipedia.org
-208.80.154.224	mzn.wikipedia.org
-208.80.154.224	na.wikipedia.org
-208.80.154.224	nah.wikipedia.org
-208.80.154.224	nap.wikipedia.org
-208.80.154.224	nds-nl.wikipedia.org
-208.80.154.224	nds.wikipedia.org
-208.80.154.224	ne.wikipedia.org
-208.80.154.224	new.wikipedia.org
-208.80.154.224	nov.wikipedia.org
-208.80.154.224	nrm.wikipedia.org
-208.80.154.224	nso.wikipedia.org
-208.80.154.224	nv.wikipedia.org
-208.80.154.224	ny.wikipedia.org
-208.80.154.224	oc.wikipedia.org
-208.80.154.224	om.wikipedia.org
-208.80.154.224	or.wikipedia.org
-208.80.154.224	os.wikipedia.org
-208.80.154.224	pa.wikipedia.org
-208.80.154.224	pag.wikipedia.org
-208.80.154.224	pam.wikipedia.org
-208.80.154.224	pap.wikipedia.org
-208.80.154.224	pcd.wikipedia.org
-208.80.154.224	pdc.wikipedia.org
-208.80.154.224	pfl.wikipedia.org
-208.80.154.224	pi.wikipedia.org
-208.80.154.224	pih.wikipedia.org
-208.80.154.224	pl.wikipedia.org
-208.80.154.224	pms.wikipedia.org
-208.80.154.224	pnb.wikipedia.org
-208.80.154.224	pnt.wikipedia.org
-208.80.154.224	ps.wikipedia.org
-208.80.154.224	pt.wikipedia.org
-208.80.154.224	qu.wikipedia.org
-208.80.154.224	rm.wikipedia.org
-208.80.154.224	rmy.wikipedia.org
-208.80.154.224	rn.wikipedia.org
-208.80.154.224	ro.wikipedia.org
-208.80.154.224	roa-rup.wikipedia.org
-208.80.154.224	roa-tara.wikipedia.org
-208.80.154.224	ru.wikipedia.org
-208.80.154.224	rue.wikipedia.org
-208.80.154.224	rw.wikipedia.org
-208.80.154.224	sa.wikipedia.org
-208.80.154.224	sah.wikipedia.org
-208.80.154.224	sc.wikipedia.org
-208.80.154.224	scn.wikipedia.org
-208.80.154.224	sco.wikipedia.org
-208.80.154.224	sd.wikipedia.org
-208.80.154.224	se.wikipedia.org
-208.80.154.224	sg.wikipedia.org
-208.80.154.224	sh.wikipedia.org
-208.80.154.224	si.wikipedia.org
-208.80.154.224	simple.wikipedia.org
-208.80.154.224	sk.wikipedia.org
-208.80.154.224	sl.wikipedia.org
-208.80.154.224	sm.wikipedia.org
-208.80.154.224	sn.wikipedia.org
-208.80.154.224	so.wikipedia.org
-208.80.154.224	sq.wikipedia.org
-208.80.154.224	sr.wikipedia.org
-208.80.154.224	srn.wikipedia.org
-208.80.154.224	ss.wikipedia.org
-208.80.154.224	st.wikipedia.org
-208.80.154.224	stq.wikipedia.org
-208.80.154.224	su.wikipedia.org
-208.80.154.224	sv.wikipedia.org
-208.80.154.224	sw.wikipedia.org
-208.80.154.224	szl.wikipedia.org
-208.80.154.224	ta.wikipedia.org
-208.80.154.224	te.wikipedia.org
-208.80.154.224	tet.wikipedia.org
-208.80.154.224	tg.wikipedia.org
-208.80.154.224	th.wikipedia.org
-208.80.154.224	ti.wikipedia.org
-208.80.154.224	tk.wikipedia.org
-208.80.154.224	tl.wikipedia.org
-208.80.154.224	tn.wikipedia.org
-208.80.154.224	to.wikipedia.org
-208.80.154.224	tpi.wikipedia.org
-208.80.154.224	tr.wikipedia.org
-208.80.154.224	ts.wikipedia.org
-208.80.154.224	tt.wikipedia.org
-208.80.154.224	tum.wikipedia.org
-208.80.154.224	tw.wikipedia.org
-208.80.154.224	ty.wikipedia.org
-208.80.154.224	udm.wikipedia.org
-208.80.154.224	ug.wikipedia.org
-208.80.154.224	uk.wikipedia.org
-208.80.154.224	ur.wikipedia.org
-208.80.154.224	uz.wikipedia.org
-208.80.154.224	ve.wikipedia.org
-208.80.154.224	vec.wikipedia.org
-208.80.154.224	vep.wikipedia.org
-208.80.154.224	vi.wikipedia.org
-208.80.154.224	vls.wikipedia.org
-208.80.154.224	vo.wikipedia.org
-208.80.154.224	wa.wikipedia.org
-208.80.154.224	war.wikipedia.org
-208.80.154.224	wo.wikipedia.org
-208.80.154.224	wuu.wikipedia.org
-208.80.154.224	xal.wikipedia.org
-208.80.154.224	xh.wikipedia.org
-208.80.154.224	xmf.wikipedia.org
-208.80.154.224	yi.wikipedia.org
-208.80.154.224	yo.wikipedia.org
-208.80.154.224	za.wikipedia.org
-208.80.154.224	zea.wikipedia.org
-208.80.154.224	zh-classical.wikipedia.org
-208.80.154.224	zh-min-nan.wikipedia.org
-208.80.154.224	zh-yue.wikipedia.org
-208.80.154.224	zh.wikipedia.org
-208.80.154.224	zu.wikipedia.org
+198.35.26.96	zh.wikipedia.org
 198.35.26.108	zh.m.wikipedia.org
-208.80.154.224	www.mediawiki.org
-208.80.154.224	www.wikibooks.org
-208.80.154.224	www.wikidata.org
-208.80.154.224	www.wikimedia.org
-208.80.154.224	www.wikimediafoundation.org
-208.80.154.224	www.wikinews.org
-208.80.154.224	www.wikiquote.org
-208.80.154.224	www.wikisource.org
-208.80.154.224	www.wikiversity.org
-208.80.154.224	www.wikivoyage.org
-208.80.154.224	www.wiktionary.org
-208.80.154.224	m.mediawiki.org
-208.80.154.224	m.wikibooks.org
-208.80.154.224	m.wikidata.org
-208.80.154.224	m.wikimedia.org
-208.80.154.224	m.wikimediafoundation.org
-208.80.154.224	m.wikinews.org
-208.80.154.224	m.wikipedia.org
-208.80.154.224	m.wikiquote.org
-208.80.154.224	m.wikisource.org
-208.80.154.224	m.wikiversity.org
-208.80.154.224	m.wikivoyage.org
-208.80.154.224	m.wiktionary.org
-208.80.154.224	mediawiki.org
-208.80.154.224	wikibooks.org
-208.80.154.224	wikidata.org
-208.80.154.224	wikimedia.org
-208.80.154.224	wikimediafoundation.org
-208.80.154.224	wikinews.org
-208.80.154.224	wikipedia.org
-208.80.154.224	wikiquote.org
-208.80.154.224	wikisource.org
-208.80.154.224	wikiversity.org
-208.80.154.224	wikivoyage.org
-208.80.154.224	wiktionary.org
-91.198.174.192	wikibooks.org
-91.198.174.192	www.wikibooks.org
-91.198.174.192	en.wikibooks.org
-91.198.174.192	es.wikibooks.org
-91.198.174.192	zh.wikibooks.org
-91.198.174.192	fr.wikibooks.org
-91.198.174.192	de.wikibooks.org
-91.198.174.192	it.wikibooks.org
-91.198.174.192	ja.wikibooks.org
-91.198.174.192	wikinews.org
-91.198.174.192	www.wikinews.org
-91.198.174.192	en.wikinews.org
-91.198.174.192	zh.wikinews.org
-91.198.174.192	fr.wikinews.org
-91.198.174.192	de.wikinews.org
-91.198.174.192	es.wikinews.org
-91.198.174.192	it.wikinews.org
-91.198.174.192	ja.wikinews.org
-91.198.174.192	wikiquote.org
-91.198.174.192	www.wikiquote.org
-91.198.174.192	en.wikiquote.org
-91.198.174.192	zh.wikiquote.org
-91.198.174.192	fr.wikiquote.org
-91.198.174.192	de.wikiquote.org
-91.198.174.192	es.wikiquote.org
-91.198.174.192	it.wikiquote.org
-91.198.174.192	ja.wikiquote.org
-91.198.174.192	zh.wikisource.org
-91.198.174.192	fr.wikisource.org
-91.198.174.192	de.wikisource.org
-91.198.174.192	en.wikisource.org
-91.198.174.192	it.wikisource.org
-91.198.174.192	ja.wikisource.org
-91.198.174.192	es.wikisource.org
-91.198.174.192	wiktionary.org
-91.198.174.192	www.wiktionary.org
-91.198.174.192	en.wiktionary.org
-91.198.174.192	zh.wiktionary.org
-91.198.174.192	fr.wiktionary.org
-91.198.174.192	de.wiktionary.org
-91.198.174.192	it.wiktionary.org
-91.198.174.192	es.wiktionary.org
-91.198.174.192	ja.wiktionary.org
-91.198.174.192	wikimedia.org
-91.198.174.192	www.wikimedia.org
-91.198.174.192	commons.wikimedia.org
-91.198.174.192	mail.wikimedia.org
-91.198.174.192	meta.wikimedia.org
-91.198.174.192	wikimediafoundation.org
-91.198.174.192	www.wikimediafoundation.org
-91.198.174.192	mediawiki.org
-91.198.174.192	www.mediawiki.org
-208.80.154.241	bugs.wikimedia.org
-208.80.154.241	bugzilla.wikimedia.org
-208.80.154.241	noc.wikimedia.org
-208.80.154.241	stats.wikimedia.org
-208.80.154.11	dumps.wikimedia.org
-208.80.154.11	download.wikimedia.org
-208.80.154.146	ticket.wikimedia.org
-91.198.174.208	upload.wikimedia.org
-208.80.154.160	irc.wikimedia.org
-208.80.154.53	ganglia.wikimedia.org
 # Wikipedia End
 
 # WordPress Start
@@ -3994,6 +3643,10 @@ fe80::1%lo0	localhost
 # Github start
 192.30.252.141	gist.github.com
 # Github end
+
+#TensorFlow start
+64.233.188.121 www.tensorflow.org
+#TensorFlow end
 
 # W3schools Start
 68.232.44.251	w3schools.com
