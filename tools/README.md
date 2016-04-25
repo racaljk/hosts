@@ -24,7 +24,7 @@ Any platform | QtGUI tool(except MacOS); [**Hozz**](http://ppoffice.github.io/Ho
 
   - [`linux.sh`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh): Linux 环境下的 hosts 一键部署脚本。
 
-  - [`lhosts`](http://keving.pythonanywhere.com/hosts_scripts/lhosts):?????????????????????????????????????????????
+  - [`lhosts`](http://keving.pythonanywhere.com/hosts_scripts/lhosts):Linux 环境下的 hosts 部署脚本。不同于 `linux.sh` ， `lhosts` 使用命令行选项控制各种功能，略微复杂但更强大方便。
 
 ## 其他工具
 
