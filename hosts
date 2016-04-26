@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-4-25
+# Last updated: 2016-4-27
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -12,6 +12,17 @@
 fe80::1%lo0	localhost
 
 # Modified hosts start
+
+# Medium.com Start
+# CMCC-HK Cache Server
+# 219.76.4.3	medium.com
+# 219.76.4.3	cdn-static-1.medium.com
+# 219.76.4.3	cdn-images-1.medium.com
+# Official Server
+104.16.120.127	medium.com
+104.16.120.145	cdn-static-1.medium.com
+104.16.120.145	cdn-images-1.medium.com
+# Medium.com End
 
 # Amazon AWS Start
 27.0.1.125	ap-northeast-1.console.aws.amazon.com
