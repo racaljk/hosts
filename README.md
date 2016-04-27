@@ -16,8 +16,8 @@
 
 如果不先重置网络， hosts 不一定会立即生效。
 
-> **如有其他问题，请访问 [我们的 Wiki 页面](https://github.com/racaljk/hosts/wiki) 。**
-
+> **如有其他问题，请访问 [我们的 Wiki 页面](https://github.com/racaljk/hosts/wiki) 。**    
+>**使用本项目之前，请先阅读下方的用户协议**
 
 ## Windows
 用文本编辑器（如记事本等）打开文件：
