@@ -1,31 +1,33 @@
-# Hosts Tool Pool
+平台 | 类型
+--------|---------
+Microsoft Windows | 批处理; 终端工具; HostsTool 应用（可跨平台）
+Mac OS | hosts Tool 应用
+*nix | 脚本
+跨平台 | [**Hozz**](http://ppoffice.github.io/Hozz) 应用 (未收录在本项目)
 
-我们提供了一系列工具，让您除了手动以"复制/粘贴"的方式部署和更新hosts之外，有一种更方便、一键式的方式来应用我们的hosts。
+## 简介
 
-## 支持的平台
+ - **QtGUI** (C++):
+     * Windows 平台 QT GUI 应用（可跨平台）
 
-- Microsoft Windows (`.bat` script; console tool)
-- GNU Linux (bash script)
-- 跨平台的 QtGUI tool 以及 [**Hozz**](http://ppoffice.github.io/Hozz)
+ - **WinConsole** (C++) :
+     * Windows 平台的终端工具
 
-## 现有的自动更新Hosts工具
+ - **MacOS** (Swift):
+     * Mac 环境下的 hosts 自动部署应用 (适用于 OS X 10.10 或以上)
 
- - **QtGUI** : GUI工具
-  - 使用 **C++** 构建， GUI 基于 **Qt** 。由 [@racaljk](https://github.com/racaljk) 贡献
+ - **脚本**:
+     - [**windows.bat**](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat):
+         * Windows 环境下的 hosts 一键部署脚本。
 
- - **WinConsole** : Windows环境下的Console工具
-  - 使用 **C++** 构建。由 [@Too-Naive](https://github.com/Too-Naive) 贡献
+     - [**linux.sh**](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh):
+         * *nix 环境下的 hosts 一键部署脚本。
 
- - **MacOS** : Mac 环境下的 hosts 自动部署更新应用(适用于 OS X 10.10 或以上)
-  - 基于 Swift 开发。由 [@ZzzM](https://github.com/ZzzM) 贡献。
+     - [**lhosts**](http://keving.pythonanywhere.com/hosts_scripts/lhosts):
+         * linux.sh 后继版，使用命令行选项更新 hosts，更便于作为定时任务执行。
 
- - **Script**: 集合了各种系统下的脚本工具。
-  - [`script_tool_for_windows.bat`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_windows.bat): Windows 环境下的 hosts 一键部署脚本，由 [@redapple0204](https://github.com/redapple0204) 与 [@lizongzeshunshun](https://github.com/lizongzeshunshun) 贡献。以及 [@lideming](https://github.com/lideming) 提供的重要更新。
-
-  - [`script_tool_for_linux.sh`](http://keving.pythonanywhere.com/hosts_scripts/script_tool_for_linux.sh): Linux 环境下的 hosts 一键部署脚本，由 [@lstoars](https://github.com/lstoars) 贡献; [@fluviusmagnus](https://github.com/fluviusmagnus) 提供增强版本。
-
-## 其他工具
-
-- Hozz: 跨平台的 hosts 自动 管理/更新 工具。是 [@ppoffice](https://github.com/ppoffice) 的项目。
-    - [项目主页](http://ppoffice.github.io/Hozz)
-    - [项目Github主页](https://github.com/ppoffice/Hozz)
+ - **跨平台**：
+     - **Hozz** (Javascripts):
+         * 跨平台的 hosts 更新工具。维护者 [@ppoffice](https://github.com/ppoffice)
+         * **Hozz** [首页](http://ppoffice.github.io/Hozz)
+         * **Hozz** on [Github](https://github.com/ppoffice/Hozz)

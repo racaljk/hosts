@@ -7,6 +7,6 @@ HostsToolforMac（https://github.com/ZzzM/HostToolforMac） 是Mac平台下的�
 ####hosts由 (https://github.com/racaljk/hosts.git) 提供
 ##预览
 ####手动更新：
-![image](https://github.com/ZzzM/hosts/blob/master/hosts_tools/HostsToolforMac/Preview/manual.gif)
+![image](https://raw.githubusercontent.com/racaljk/hosts/master/tools/MacOS/Preview/manual.gif)
 ####自动更新：
-![image](https://github.com/ZzzM/hosts/blob/master/hosts_tools/HostsToolforMac/Preview/automatic.gif)
+![image2](https://raw.githubusercontent.com/racaljk/hosts/master/tools/MacOS/Preview/automatic.gif)

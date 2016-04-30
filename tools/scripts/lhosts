@@ -1,83 +1,118 @@
 #!/bin/sh
-# https://github.com/racaljk/hosts
+site=https://github.com/racaljk/hosts
 
-target_hosts=/etc/hosts
-remote_url=https://raw.githubusercontent.com/racaljk/hosts/master/hosts
-mirror_url=https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts
-remote_hosts=$remote_url
+thisname=${0##*/}
 
-tmp_file=/tmp/hosts
-begin_flags="# Copyright (c) 2014"
-end_flags="# Modified hosts end"
+HOSTS=/etc/hosts
+REMOTE="/tmp/hosts.rmt"
 
-download_tool=wget
-wquiet=
-cquiet=
+MAIN="https://raw.githubusercontent.com/racaljk/hosts/master/hosts"
+MIRROR="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts"
+HOSTS_URL="$MAIN"
 
-localhost=0
+NET_TOOL="wget"
+QWGET=
+QCURL=
 
-usage="\
+usage() {
+    cat >&2 <<EOL
 提示:
-  可在此脚本中使用 getopt 管理命令行选项
-  可使用 crontab 定时执行此脚本
+  可使用 crontab 定时执行脚本 (请确保 sudo 无需输入密码)
 
-用法: lhosts [选项]...
+用法: $thisname [选项]...
+默认从 $site 获取 hosts 文件 (更新文件内 localhost 为 `hostname`)
+替换到 $HOSTS 中
 
 选项:
-  -l, --localhost        替换 localhost 为本地主机名
   -c, --curl             使用 curl 下载
-  -m, --mirror           使用镜像下载
+  -m, --mirror           使用镜像地址
   -q, --quiet            静默下载
-  -h, --help             显示帮助信息并退出
+  -u, --url              自定义 hosts 源地址
+  -h, -1, --help         显示帮助信息并退出
 
-示例: lhosts -l -c -m -q"
+退出状态：
+  0  正常
+  1  一般问题 (例如：命令行参数错误)
+  2  严重问题 (例如：文件下载失败)
 
-while test $# -gt 0; do
-    case $1 in
-      --localhost | -l)
-        localhost=1
-        ;;
-      --curl | -c)
-        download_tool=curl
-        ;;
-      --mirror | -m)
-        remote_hosts=$mirror_url
-        ;;
-      --quiet | -q)
-        wquiet=-q
-        cquiet=-s
-        ;;
-      --help | -h)
-        echo -e "${usage}" 1>&2
-        exit 0
-        ;;
+参考:
+
+    $thisname -cmq
+
+自定义源：
+
+    $thisname -cqu $MIRROR
+
+EOL
+}
+
+hosts_get() {
+    if [ "$NET_TOOL" = "wget" ]; then
+        "$NET_TOOL" $QWGET "$HOSTS_URL" -O "$REMOTE"
+    else
+        # use curl
+        "$NET_TOOL" $QCURL "$HOSTS_URL" -o "$REMOTE"
+    fi
+
+    if [ "$?" -ne 0 ]; then
+        echo -e "\nhosts 下载失败" >&2
+        exit 2
+    fi
+}
+
+hosts_update() {
+    local old="$1"
+    local rmt="$2"
+    local tmp="/tmp/hosts.swp"
+    local begin="# Copyright (c) 2014"
+    local end="# Modified hosts end"
+
+    sed -e "s/localhost/`hostname`/g" "$rmt" > "$tmp"
+    rm -f "$rmt"
+
+    # check if racaljk hosts, or do nothing
+    if grep -q racaljk "$old"; then
+        sed -e "/$begin/,/$end/d" "$old" >> "$tmp"
+    fi
+
+    sudo mv "$tmp" "$old"
+}
+
+CMD=`getopt -o cmqu:h1 --long curl,mirror,quiet,url:help -n \
+    "$thisname" -- "$@"` || exit 1
+
+eval set -- "$CMD"
+
+while true; do
+    case "$1" in
+        -c|--curl)
+            NET_TOOL=curl
+            shift
+            ;;
+        -m|--mirror)
+            HOSTS_URL="$MIRROR"
+            shift
+            ;;
+        -q|--quiet)
+            QWGET=-q
+            QCURL=-s
+            shift
+            ;;
+        -u|--url)
+            HOSTS_URL="$2"
+            shift 2
+            ;;
+        -h|-1|--help)
+            usage
+            exit 0
+            shift
+            ;;
+        --)
+            shift
+            break
+            ;;
     esac
-    shift
 done
 
-if [ $download_tool = "wget" ]; then
-    $download_tool $wquiet $remote_hosts -O $tmp_file
-else
-# curl
-    $download_tool $cquiet $remote_hosts -o $tmp_file
-fi
-
-if [ $localhost -eq 1 ]; then
-    sed -i "s/localhost/`hostname`/g" $tmp_file
-fi
-
-
-verify_hosts=`cat $target_hosts | grep -q racaljk`
-
-if [ $? -eq 0 ]; then
-# racaljk hosts
-    sudo sed -i "/${begin_flags}/,/${end_flags}/d" $target_hosts
-# DO NOT change `sudo sh -c` to `su -c`
-    sudo sh -c "cat $tmp_file >> $target_hosts"
-else
-# other hosts
-# DO NOT change `sudo sh -c` to `su -c`
-    sudo sh -c "cat $tmp_file > $target_hosts"
-fi
-
-rm -f $tmp_file
+hosts_get
+hosts_update "$HOSTS" "$REMOTE"
