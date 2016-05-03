@@ -10,7 +10,7 @@
 
 
 ## 更新 hosts
-* 下述指令均可能覆盖现有 hosts ，请先确认是否需要备份。推荐使用本项目的 [**Host Tools**](https://github.com/racaljk/hosts/tree/master/tools) 来自动化 备份/配置 的工作。
+* 下述指令均可能覆盖现有 hosts ，请先确认是否需要备份。推荐使用本项目的 [**Host Tools**](https://github.com/racaljk/hosts/tree/tools) 来自动化 备份/配置 的工作。
 
 * 若更新 hosts 未立即生效，请重置网络：
   - 在系统设置内开关网络
