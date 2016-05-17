@@ -2,12 +2,6 @@
 * text=auto
 
 # Declare files that will always have CRLF line endings on checkout.
-*.bat eol=crlf
-tools/WinConsole/*.cpp eol=crlf
-tools/WinConsole/*.hpp eol=crlf
 
 # Denote all files that are truly binary and should not be modified.
-*.png binary
-*.jpg binary
-*.gif binary
-*.lib binary
+*.bat binary

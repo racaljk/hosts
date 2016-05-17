@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Last updated: 2016-4-2
 =======
 # Last updated: 2016-4-3
@@ -20,6 +21,9 @@
 >>>>>>> racaljk/master
 =======
 # Last updated: 2016-4-27
+>>>>>>> racaljk/master
+=======
+# Last updated: 2016-5-1
 >>>>>>> racaljk/master
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
@@ -894,10 +898,24 @@ fe80::1%lo0	localhost
 220.255.2.153	gm2.ggpht.com
 220.255.2.153	gm3.ggpht.com
 220.255.2.153	gm4.ggpht.com
+220.255.2.153	lh0.ggpht.com
+220.255.2.153	lh1.ggpht.com
+220.255.2.153	lh2.ggpht.com
+220.255.2.153	lh3.ggpht.com
+220.255.2.153	lh4.ggpht.com
+220.255.2.153	lh5.ggpht.com
+220.255.2.153	lh6.ggpht.com
 220.255.2.153	nt0.ggpht.com
 220.255.2.153	nt1.ggpht.com
 220.255.2.153	nt2.ggpht.com
 220.255.2.153	nt3.ggpht.com
+220.255.2.153	yt0.ggpht.com
+220.255.2.153	yt1.ggpht.com
+220.255.2.153	yt2.ggpht.com
+220.255.2.153	yt3.ggpht.com
+220.255.2.153	yt4.ggpht.com
+220.255.2.153	yt5.ggpht.com
+220.255.2.153	yt6.ggpht.com
 220.255.2.153	accounts.gstatic.com
 220.255.2.153	maps.gstatic.com
 220.255.2.153	ssl.gstatic.com
@@ -1170,6 +1188,7 @@ fe80::1%lo0	localhost
 220.255.2.153	source.android.com
 220.255.2.153	market.android.com
 220.255.2.153	play.google.com
+220.255.2.153	payments.google.com
 220.255.2.153	android.clients.google.com
 
 # Googleusercontent Start
@@ -3569,7 +3588,7 @@ fe80::1%lo0	localhost
 
 # Wikipedia Start
 198.35.26.96	zh.wikipedia.org
-198.35.26.108	zh.m.wikipedia.org
+198.35.26.97	zh.m.wikipedia.org
 # Wikipedia End
 
 # WordPress Start
