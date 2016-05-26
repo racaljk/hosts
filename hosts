@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-05-22
+# Last updated: 2016-05-24
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -207,6 +207,15 @@ fe80::1%lo0	localhost
 # 192.168.52.23	ldap.thefacebook.com
 173.252.81.7	attachment.fbsbx.com
 104.78.23.174	connect.facebook.net
+192.0.78.12	live.fb.com
+192.0.78.12	work.fb.com
+192.0.78.12	techprep.fb.com
+192.0.78.12	nonprofits.fb.com
+192.0.78.12	managingbias.fb.com
+192.0.78.12	rightsmanager.fb.com
+192.0.78.12	instantarticles.fb.com
+192.0.66.2	messengerplatform.fb.com
+199.201.64.67	threatexchange.fb.com
 # Facebook end
 
 # FlipBoard start
@@ -801,6 +810,8 @@ fe80::1%lo0	localhost
 220.255.2.153	plus.google.com.hk
 220.255.2.153	plus.url.google.com
 220.255.2.153	plus.url.google.com.hk
+220.255.2.153	spaces.google.com
+220.255.2.153	vr.google.com
 220.255.2.153	reader.google.com
 220.255.2.153	research.google.com
 220.255.2.153	sb.google.com
@@ -860,6 +871,8 @@ fe80::1%lo0	localhost
 220.255.2.153	www.registry.google
 220.255.2.153	www.domains.google
 220.255.2.153	registry.google
+220.255.2.153 servicemanagement.clients6.google.com
+220.255.2.153 cloudconsole-pa.clients6.google.com
 
 # gstatic Start
 220.255.2.153	geo0.ggpht.com
@@ -3666,8 +3679,8 @@ fe80::1%lo0	localhost
 #TensorFlow end
 
 # W3schools Start
-68.232.44.251	w3schools.com
-68.232.44.251	www.w3schools.com
+#68.232.44.251	w3schools.com
+#68.232.44.251	www.w3schools.com
 # W3schools End
 
 # Medium start
