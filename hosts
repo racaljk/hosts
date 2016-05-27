@@ -3690,4 +3690,25 @@ fe80::1%lo0	localhost
 103.245.222.101	cdn-images-2.medium.com
 # Medium end
 
+# Tumblr Start
+66.6.42.30	tumblr.com
+66.6.42.30	www.tumblr.com
+66.6.42.34	mx.tumblr.com
+66.6.42.34	assets.tumblr.com
+66.6.41.34	px.srvcs.tumblr.com
+54.192.98.136	31.media.tumblr.com
+54.192.98.136	32.media.tumblr.com
+209.197.3.20	33.media.tumblr.com
+68.232.35.63	secure.assets.tumblr.com
+54.192.86.85	media.tumblr.com
+66.6.43.21	cynicallys.tumblr.com
+209.197.3.20	67.media.tumblr.com
+54.230.75.48	65.media.tumblr.com
+192.229.237.98	66.media.tumblr.com
+54.230.74.143	vt.tumblr.com
+66.6.43.23	api.tumblr.com
+66.6.41.34	ls.srvcs.tumblr.com
+54.230.74.176	secure.static.tumblr.com
+# Tumblr End
+
 # Modified hosts end
