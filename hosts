@@ -3709,6 +3709,21 @@ fe80::1%lo0	localhost
 66.6.43.23	api.tumblr.com
 66.6.41.34	ls.srvcs.tumblr.com
 54.230.74.176	secure.static.tumblr.com
+54.230.75.191	media.tumblr.com
+54.182.4.222	media.tumblr.com
+54.230.75.191	31.media.tumblr.com
+54.230.74.176	assets.tumblr.com
+54.230.213.24	assets.tumblr.com
+54.192.111.4	secure.assets.tumblr.com
+66.6.41.23	api.tumblr.com
+54.230.74.216	vt.tumblr.com
+54.230.151.138	vt.tumblr.com
+52.84.189.141	vt.tumblr.com
+66.6.42.34	ls.srvcs.tumblr.com
+54.230.75.191	65.media.tumblr.com
+54.192.111.6	secure.static.tumblr.com
+54.230.213.90	secure.static.tumblr.com
+54.230.74.143	secure.static.tumblr.com
 # Tumblr End
 
 # Modified hosts end
