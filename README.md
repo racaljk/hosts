@@ -4,7 +4,7 @@
 
 **使用本项目之前，请先阅读此 README 及下方的许可协议**
 
-**目前通过修改 hosts 无法观看 YouTube 视频 详情: [Issue #297](https://github.com/racaljk/hosts/issues/297)**
+**如果在使用过程中遇到问题 如无法连接xxx等 请参阅: [常见问题解答](https://github.com/racaljk/hosts/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94)**
 
 **使用镜像地址获取** [**hosts**](https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts)
 
