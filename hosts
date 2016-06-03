@@ -1,6 +1,10 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
+<<<<<<< HEAD
 # Last updated: 2016-05-27
+=======
+# Last updated: 2016-05-26
+>>>>>>> 6882c910702fd38252f0b2f18ebcec6d7a2dad6a
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3529,6 +3533,21 @@ fe80::1%lo0	localhost
 37.0.88.36	support.startpage.com
 37.0.88.36	blog.startpage.com
 # Startpage End
+<<<<<<< HEAD
+=======
+# Tumblr Start
+66.6.42.30	tumblr.com
+66.6.42.30	www.tumblr.com
+66.6.42.30	laodcn.tumblr.com
+66.6.42.34	mx.tumblr.com
+66.6.42.34	assets.tumblr.com
+66.6.41.34	px.srvcs.tumblr.com
+54.192.98.136	31.media.tumblr.com
+54.192.98.136	32.media.tumblr.com
+209.197.3.20	33.media.tumblr.com
+68.232.35.63	secure.assets.tumblr.com
+# Tumblr End
+>>>>>>> 6882c910702fd38252f0b2f18ebcec6d7a2dad6a
 
 # Vimeo Start
 104.156.85.217	vimeo.com
@@ -3690,6 +3709,7 @@ fe80::1%lo0	localhost
 103.245.222.101	cdn-images-2.medium.com
 # Medium end
 
+<<<<<<< HEAD
 # Tumblr Start
 66.6.42.30	tumblr.com
 66.6.41.23	api.tumblr.com
@@ -3726,4 +3746,6 @@ fe80::1%lo0	localhost
 54.230.74.143	secure.static.tumblr.com
 # Tumblr End
 
+=======
+>>>>>>> 6882c910702fd38252f0b2f18ebcec6d7a2dad6a
 # Modified hosts end
