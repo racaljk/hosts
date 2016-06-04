@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Last updated: 2016-4-2
 =======
 # Last updated: 2016-4-3
@@ -28,6 +29,9 @@
 >>>>>>> racaljk/master
 =======
 # Last updated: 2016-05-27
+>>>>>>> racaljk/master
+=======
+# Last updated: 2016-06-04
 >>>>>>> racaljk/master
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
@@ -572,6 +576,13 @@ fe80::1%lo0	localhost
 220.255.2.153	www.textcube.com
 220.255.2.153	www.blogspot.com
 220.255.2.153	blogspot.com
+220.255.2.153	1.bp.blogspot.com
+220.255.2.153	2.bp.blogspot.com
+220.255.2.153	3.bp.blogspot.com
+220.255.2.153	4.bp.blogspot.com
+220.255.2.153	5.bp.blogspot.com
+220.255.2.153	6.bp.blogspot.com
+220.255.2.153	android-developers.blogspot.com
 220.255.2.153	books.google.com
 220.255.2.153	books.google.com.hk
 220.255.2.153	bks0.books.google.com
@@ -3791,5 +3802,10 @@ fe80::1%lo0	localhost
 54.230.213.90	secure.static.tumblr.com
 54.230.74.143	secure.static.tumblr.com
 # Tumblr End
+
+# Smartdnsproxy start
+103.28.248.96	www.smartdnsproxy.com
+184.72.50.35	support.smartdnsproxy.com
+# Smartdnsproxy end
 
 # Modified hosts end

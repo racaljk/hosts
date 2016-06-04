@@ -6,19 +6,23 @@ Microsoft Windows | 批处理, 终端工具, HostsTool 应用（可跨平台）
 Mac OS | hosts Tool 应用
 Android | Android应用
 *nix | 脚本
-跨平台 | [**Hozz**](http://ppoffice.github.io/Hozz) 应用 (外部项目)
+跨平台 | Haskell-终端应用,[**Hozz**](http://ppoffice.github.io/Hozz) 应用 (外部项目)
 
 ## 简介
+
 ### cross-platform-Qt
 - QT GUI 应用（可跨平台，C++ 编写）
 
-### Windows
+### [Windows](https://github.com/HostsTools/Windows)
 - Windows 平台的终端工具（C++ 编写）
 
-### OSX
+### [Haskell-Console](https://github.com/HostsTools/Haskell-Console)
+- 跨平台的终端工具(Haskell编写)
+
+### [OSX](https://github.com/HostsTools/OSX)
 - Mac 环境下的 hosts 自动部署应用 (适用于 OS X 10.10 或以上, Swift 编写)
 
-### Android
+### [Android](https://github.com/HostsTools/Android)
 - Android 下的 hosts 更新应用(Java 编写)
 
 ### 脚本
