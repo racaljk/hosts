@@ -54,6 +54,7 @@ a.out
 #
 !.gitignore
 !.gitattributes
+!.github/
 
 # stgit generated dirs
 patches-*
