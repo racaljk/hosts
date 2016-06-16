@@ -3682,6 +3682,8 @@ fe80::1%lo0	localhost
 
 # Github start
 192.30.252.141	gist.github.com
+#185.31.17.184 	github.global.ssl.fastly.net
+103.245.222.184 github.global.ssl.fastly.net
 # Github end
 
 #TensorFlow start
