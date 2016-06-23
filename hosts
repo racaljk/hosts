@@ -3745,4 +3745,17 @@ fe80::1%lo0	localhost
 184.72.50.35	support.smartdnsproxy.com
 # Smartdnsproxy end
 
+# Line Start
+182.92.24.51  gd2w.line.naver.jp
+184.25.56.204 dl.profile.line.naver.jp
+184.25.56.162 dl.stickershop.line.naver.jp
+119.235.235.84  gd2.line.naver.jp
+125.209.252.11	gd2g.line.naver.jp
+125.209.254.13	gd2i.line.naver.jp
+125.209.222.202	gd2k.line.naver.jp
+125.209.254.33	gd2s.line.naver.jp
+203.104.160.11	gd2u.line.naver.jp
+113.52.56.21	gd2v.line.naver.jp
+# Line End
+
 # Modified hosts end
