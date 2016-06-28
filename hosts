@@ -1018,6 +1018,7 @@ fe80::1%lo0	localhost
 220.255.2.153	tip.golang.org
 220.255.2.153	tour.golang.org
 220.255.2.153	goo.gl
+220.255.2.153	pay.app.goo.gl
 220.255.2.153	g.co
 220.255.2.153	www.google.org
 220.255.2.153	blog.google.org
