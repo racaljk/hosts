@@ -2461,6 +2461,7 @@ fe80::1%lo0	localhost
 220.255.2.153	chromoting-oauth.talkgadget.google.com
 220.255.2.153	chromoting-host.talkgadget.google.com
 220.255.2.153	chromoting-client.talkgadget.google.com
+220.255.2.153	remoting-pa.googleapis.com
 220.255.2.153	contacts.google.com
 220.255.2.153	youtube.com
 220.255.2.153	www.youtube.com
@@ -3064,20 +3065,20 @@ fe80::1%lo0	localhost
 # inoreader End
 
 # Instagram Start
-52.20.140.226	instagram.com
-23.61.203.218	www.instagram.com
-23.61.203.218	i.instagram.com
+31.13.70.52	instagram.com
+31.13.70.52	www.instagram.com
+31.13.70.52	i.instagram.com
 31.13.70.52	api.instagram.com
-23.61.203.218	help.instagram.com
-23.61.203.218	blog.instagram.com
+31.13.70.52	help.instagram.com
+31.13.70.52	blog.instagram.com
 74.117.178.40	graph.instagram.com
-23.61.203.218	logger.instagram.com
-23.61.203.218	badges.instagram.com
+31.13.70.52	logger.instagram.com
+31.13.70.52	badges.instagram.com
 31.13.95.48	platform.instagram.com
-23.61.203.218	maps.instagram.com
-23.61.203.218	scontent.cdninstagram.com
-23.61.203.218	scontent-a.cdninstagram.com
-23.61.203.218	scontent-b.cdninstagram.com
+31.13.70.52	maps.instagram.com
+31.13.70.52	scontent.cdninstagram.com
+31.13.70.52	scontent-a.cdninstagram.com
+31.13.70.52	scontent-b.cdninstagram.com
 184.51.15.142	igcdn-photos-a-a.akamaihd.net
 184.51.15.142	igcdn-photos-b-a.akamaihd.net
 184.51.15.142	igcdn-photos-c-a.akamaihd.net
@@ -3703,8 +3704,8 @@ fe80::1%lo0	localhost
 #TensorFlow end
 
 # W3schools Start
-#68.232.44.251	w3schools.com
-#68.232.44.251	www.w3schools.com
+68.232.44.251	w3schools.com
+68.232.44.251	www.w3schools.com
 # W3schools End
 
 # Medium start
