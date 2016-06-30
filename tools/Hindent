@@ -1,0 +1,29 @@
+#!/bin/bash
+
+hosts_date() {
+    local date=$(git log --date=short "$1" | \
+                        grep -o "[0-9]\+-[0-9]\+-[0-9]\+" -m 1)
+
+    sed -i "s/[0-9]\+-[0-9]\+-[0-9]\+/$(echo "$date")/" "$1"
+}
+
+hosts_line() {
+    dos2unix -q "$1"
+}
+
+hosts_format() {
+    local cur="\([0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+\)[[:blank:]]\+"
+    local fmt="\1$(echo -e "\t")"
+
+    sed -i "s/$(echo "$cur")/$(echo "$fmt")/g" "$1"
+}
+
+if [ "$1" = "" ]; then
+    echo -e "Error, requires an argument!\n\n"
+    echo -e "Example:\n\ntools/Hindent hosts"
+    exit -1
+fi
+
+hosts_date "$1"
+hosts_format "$1"
+hosts_line "$1"

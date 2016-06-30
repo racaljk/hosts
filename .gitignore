@@ -55,6 +55,7 @@ a.out
 !.gitignore
 !.gitattributes
 !.github/
+!.travis.yml
 
 # stgit generated dirs
 patches-*

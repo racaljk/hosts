@@ -20,8 +20,9 @@ usage() {
   可使用 crontab 定时执行脚本 (请确保 sudo 无需输入密码)
 
 用法: $thisname [选项]...
-默认从 $site 获取 hosts 文件 (更新文件内 localhost 为 `hostname`)
-替换到 $HOSTS 中。更新前备份原 hosts 至 /etc/hosts.bak
+默认从 $site 获取 hosts 文件，
+并更新其中的 localhost 为 `hostname`
+更新前，原 hosts 备份至 /etc/hosts.bak
 
 选项:
   -w, --wget             使用 wget 下载
@@ -51,9 +52,10 @@ hosts_get() {
         "$NET_TOOL" $QWGET "$HOSTS_URL" -O "$REMOTE"
     else
         # use curl
-    if [ "$QCURL" = "" ]; then
-        echo "正在更新 hosts ..."
-    fi
+        if [ "$QCURL" = "" ]; then
+            echo "正在更新 hosts ..."
+        fi
+
         "$NET_TOOL" -# $QCURL "$HOSTS_URL" -o "$REMOTE"
     fi
 
@@ -64,26 +66,28 @@ hosts_get() {
 }
 
 hosts_update() {
-    local old="$1"
+    local loc="$1"
     local rmt="$2"
-    local tmp="/tmp/hosts.swp"
+    local swp="hosts.swp"
     local bak="/etc/hosts.bak"
     local begin="# Copyright (c) 2014"
     local end="# Modified hosts end"
 
-    sed -e "s/localhost/`hostname`/g" "$rmt" > "$tmp"
+    sed -e "s/localhost/`hostname`/g" "$rmt" > "$swp"
     rm -f "$rmt"
 
+    sudo cp "$loc" "$bak"
+
     # check if racaljk hosts, or do nothing
-    if grep -q racaljk "$old"; then
-        sed -e "/$begin/,/$end/d" "$old" >> "$tmp"
+    if grep -q racaljk "$loc"; then
+        sed -e "/$begin/,/$end/d" "$loc" >> "$swp"
     fi
 
-    sudo cp "$old" "$bak"
-    cat "$tmp" | sudo tee "$old" > /dev/null
+    sudo sh -c "cat $swp > $loc"
+    rm -f "$swp"
 }
 
-CMD=`getopt -o wmqu:h1 --long wget,mirror,quiet,url:help -n \
+CMD=`getopt -o wmqu:h1 --long wget,mirror,quiet,url:,help -n \
     "$thisname" -- "$@"` || exit 1
 
 eval set -- "$CMD"
