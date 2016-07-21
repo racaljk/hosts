@@ -3720,6 +3720,10 @@ fe80::1%lo0	localhost
 103.245.222.249	travis-ci-org.global.ssl.fastly.net
 # Travis CI fastly CDN End
 
+# Github start
+# 192.30.253.119	gist.github.com
+# Github end
+
 #TensorFlow start
 64.233.188.121	www.tensorflow.org
 #TensorFlow end
