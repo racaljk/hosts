@@ -27,6 +27,11 @@
   - 启用禁用飞行模式
   - 重启系统
 
+### Max自动更新
+* 运行sudo crontab -e
+增加执行脚本的任务
+脚本为autogenerate
+
 ### Windows
 用文本编辑器（如 [Notepad++](https://notepad-plus-plus.org/)）打开文件：
 
