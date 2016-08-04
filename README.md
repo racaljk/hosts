@@ -16,7 +16,7 @@
 [chat-room]: https://gitter.im/racaljk/hosts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge "Gitter chat room"
 [travis-metadata]: https://travis-ci.org/racaljk/hosts.svg "Travis CI Metadata"
 [travis-status]: https://travis-ci.org/racaljk/hosts "Travis CI Status"
-[coding.net]: http://i.imgur.com/JDpN8Bd.png
+[coding.net]: https://i.imgur.com/JDpN8Bd.png
 [coding-link]: https://coding.net/u/scaffrey/p/hosts/git "Coding"
 [mirror_of_hosts]: https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts
 
@@ -26,7 +26,7 @@
 * **Windows** 平台:
    1. 用文本编辑器（如 [Notepad++](https://notepad-plus-plus.org/)）打开：`
   %SystemRoot%\System32\drivers\etc\hosts`
-  > ![](http://i.imgur.com/BwW2cft.jpg)
+  > ![](https://i.imgur.com/BwW2cft.jpg)
 
    2. 将 [hosts][github-hosts] 全部内容复制到上面的文件内并保存。
    > 注意：如果遇到无法保存，请右键文件hosts并找到“属性” -> “安全”，然后选择你登陆的用户名，最后点击编辑，勾选“写入”即可。
