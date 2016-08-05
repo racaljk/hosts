@@ -3861,4 +3861,11 @@ fe80::1%lo0	localhost
 46.17.101.80	download.apkpure.com
 # apkpure End
 
+# Disqus start
+23.235.37.134	apkpure.disqus.com
+23.235.37.134	disqus.com
+23.235.37.134	www.disqus.com
+23.235.37.134	referrer.disqus.com
+# Disqus end
+
 # Modified hosts end
