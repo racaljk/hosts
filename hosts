@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-08-07
+# Last updated: 2016-08-11
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3798,6 +3798,7 @@ fe80::1%lo0	localhost
 98.138.253.109	yahoo.com
 77.238.184.150	ying.com
 183.177.81.75	downloadr.flickr.com
+50.18.192.250	duckduckgo-owned-server.yahoo.net
 # Yahoo End
 
 # Travis CI fastly CDN Start
@@ -3805,7 +3806,7 @@ fe80::1%lo0	localhost
 # Travis CI fastly CDN End
 
 # Github start
-192.30.253.112	gist.github.com
+192.30.253.113	gist.github.com
 # Github end
 
 #TensorFlow start
