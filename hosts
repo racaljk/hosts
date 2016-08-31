@@ -3920,4 +3920,10 @@ fe80::1%lo0	localhost
 170.149.168.162	www.nytimes.com
 #nytimes for mobile End
 
+# telegram Start
+149.154.167.99	telegram.org
+149.154.167.99	desktop.telegram.org
+149.154.167.99	core.telegram.org
+# telegram End
+
 # Modified hosts end
