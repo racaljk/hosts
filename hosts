@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-09-02
+# Last updated: 2016-09-13
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -154,6 +154,8 @@ fe80::1%lo0	localhost
 31.13.95.17	secure.facebook.com
 31.13.95.17	zh-cn.facebook.com
 31.13.95.17	login.facebook.com
+31.13.95.17	i.facebook.com
+31.13.95.17	im.facebook.com
 #50.63.202.88	message-facebook.com
 31.13.95.17	attachments.facebook.com
 31.13.95.17	touch.facebook.com
@@ -288,39 +290,39 @@ fe80::1%lo0	localhost
 # FlipBoard End
 
 # Twitter Start
-185.45.5.45	twitter.com
-185.45.5.45	www.twitter.com
+104.244.42.3	twitter.com
+104.244.42.3	www.twitter.com
 104.244.42.5	t.co
-185.45.5.45	api.twitter.com
-185.45.5.45	mobile.twitter.com
-185.45.5.45	support.twitter.com
-185.45.5.45	upload.twitter.com
-185.45.5.45	tweetdeck.twitter.com
-185.45.5.45	syndication.twitter.com
-185.45.5.45	syndication-o.twitter.com
-185.45.5.45	platform.twitter.com
-185.45.5.45	about.twitter.com
-185.45.5.45	blog.twitter.com
-185.45.5.45	p.twitter.com
-185.45.5.45	betastream.twitter.com
-185.45.5.45	dev.twitter.com
-185.45.5.45	pic.twitter.com
-185.45.5.45	search.twitter.com
-185.45.5.45	status.twitter.com
-185.45.5.45	assets0.twitter.com
-185.45.5.45	assets1.twitter.com
-185.45.5.45	assets2.twitter.com
-185.45.5.45	assets3.twitter.com
-185.45.5.45	static.twitter.com
-185.45.5.45	help.twitter.com
-185.45.5.45	ton.twitter.com
-185.45.5.45	s.twitter.com
-185.45.5.45	analytics.twitter.com
-185.45.5.45	urls-real.api.twitter.com
-185.45.5.45	userstream.twitter.com
-185.45.5.45	sitestream.twitter.com
-185.45.5.45	stream.twitter.com
-185.45.5.45	tdweb.twitter.com
+104.244.42.3	api.twitter.com
+104.244.42.3	mobile.twitter.com
+104.244.42.3	support.twitter.com
+104.244.42.3	upload.twitter.com
+104.244.42.3	tweetdeck.twitter.com
+104.244.42.3	syndication.twitter.com
+104.244.42.3	syndication-o.twitter.com
+104.244.42.3	platform.twitter.com
+104.244.42.3	about.twitter.com
+104.244.42.3	blog.twitter.com
+104.244.42.3	p.twitter.com
+104.244.42.3	betastream.twitter.com
+104.244.42.3	dev.twitter.com
+104.244.42.3	pic.twitter.com
+104.244.42.3	search.twitter.com
+104.244.42.3	status.twitter.com
+104.244.42.3	assets0.twitter.com
+104.244.42.3	assets1.twitter.com
+104.244.42.3	assets2.twitter.com
+104.244.42.3	assets3.twitter.com
+104.244.42.3	static.twitter.com
+104.244.42.3	help.twitter.com
+104.244.42.3	ton.twitter.com
+104.244.42.3	s.twitter.com
+104.244.42.3	analytics.twitter.com
+104.244.42.3	urls-real.api.twitter.com
+104.244.42.3	userstream.twitter.com
+104.244.42.3	sitestream.twitter.com
+104.244.42.3	stream.twitter.com
+104.244.42.3	tdweb.twitter.com
 173.236.110.98	twitpic.com
 173.236.110.98	m1.twitpic.com
 173.236.110.98	web1.twitpic.com
@@ -381,11 +383,11 @@ fe80::1%lo0	localhost
 104.244.42.132	web.tweetdeck.com
 104.244.42.132	www.tweetdeck.com
 104.244.42.132	downloads.tweetdeck.com
-185.45.5.45	cdn.syndication.twimg.com
-185.45.5.45	cdn.syndication.twitter.com
-185.45.5.45	cdn.api.twitter.com
-185.45.5.45	preview.cdn.twitter.com
-185.45.5.45	apps.twitter.com
+104.244.42.3	cdn.syndication.twimg.com
+104.244.42.3	cdn.syndication.twitter.com
+104.244.42.3	cdn.api.twitter.com
+104.244.42.3	preview.cdn.twitter.com
+104.244.42.3	apps.twitter.com
 # Twitter End
 
 # Gmail web Start
@@ -401,6 +403,7 @@ fe80::1%lo0	localhost
 220.255.2.153	mail.google.com
 220.255.2.153	www.gmail.com
 220.255.2.153	mail-settings.google.com
+64.233.188.121	m.android.com
 # Gmail web End
 
 # Google Start
@@ -700,6 +703,7 @@ fe80::1%lo0	localhost
 220.255.2.153	chromium.googlesource.com
 220.255.2.153	kernel.googlesource.com
 220.255.2.153	android-review.googlesource.com
+220.255.2.153	r.android.com
 220.255.2.153	gwt.googlesource.com
 220.255.2.153	code.google.com
 220.255.2.153	uploads.code.google.com
@@ -812,6 +816,7 @@ fe80::1%lo0	localhost
 220.255.2.153	groups.google.com.hk
 220.255.2.153	groups-beta.google.com
 220.255.2.153	productforums.google.com
+220.255.2.153	a77db9aa-a-7b23c8ea-s-sites.googlegroups.com
 220.255.2.153	blob-s-docs.googlegroups.com
 220.255.2.153	health.google.com
 220.255.2.153	images.google.com
@@ -853,6 +858,7 @@ fe80::1%lo0	localhost
 220.255.2.153	cbks1.google.com
 220.255.2.153	cbks2.google.com
 220.255.2.153	cbks3.google.com
+220.255.2.153	ipv4.google.com
 220.255.2.153	mw1.google.com
 220.255.2.153	mw2.google.com
 220.255.2.153	mt.google.com
@@ -913,6 +919,7 @@ fe80::1%lo0	localhost
 220.255.2.153	plus.url.google.com
 220.255.2.153	plus.url.google.com.hk
 220.255.2.153	spaces.google.com
+220.255.2.153	pixel.google.com
 220.255.2.153	vr.google.com
 220.255.2.153	reader.google.com
 220.255.2.153	research.google.com
@@ -977,6 +984,7 @@ fe80::1%lo0	localhost
 220.255.2.153	cloudconsole-pa.clients6.google.com
 220.255.2.153	iam.clients6.google.com
 220.255.2.153	clientauthconfig.clients6.google.com
+220.255.2.153	realtimesupport.clients6.google.com
 220.255.2.153	360suite.google.com
 220.255.2.153	optimize.google.com
 216.58.203.85	attribution.google.com
@@ -1295,6 +1303,7 @@ fe80::1%lo0	localhost
 64.233.188.121	b.android.com
 64.233.188.121	tools.android.com
 220.255.2.153	source.android.com
+220.255.2.153	a.android.com
 220.255.2.153	market.android.com
 220.255.2.153	play.google.com
 220.255.2.153	payments.google.com
@@ -3084,6 +3093,7 @@ fe80::1%lo0	localhost
 64.233.188.121	www.thegobridgeoglepuzzle.com
 64.233.188.121	www.googlezeitgeist.com
 64.233.188.121	news.dartlang.org
+64.233.188.121	dartpad.dartlang.org
 # Google:ghs End
 
 # Google:gcm Start
@@ -3693,6 +3703,7 @@ fe80::1%lo0	localhost
 # Wikipedia Start
 198.35.26.96	zh.wikipedia.org
 198.35.26.96	zh.m.wikipedia.org
+91.198.174.192	en.wikipedia.org
 # Wikipedia End
 
 # WordPress Start
