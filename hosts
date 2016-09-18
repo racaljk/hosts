@@ -3629,17 +3629,17 @@ fe80::1%lo0	localhost
 # MEGA End
 
 # OneDrive Start
-#65.55.163.79	account.live.com
+65.55.163.79	account.live.com
 #204.79.197.217	mail.live.com
-#23.59.136.70	auth.gfx.ms
-#131.253.61.66	login.live.com
-#204.79.197.217	onedrive.live.com
-#23.212.129.202	p.sfx.ms
-#134.170.30.15	people.live.com
-#134.170.30.15	profile.live.com
-#134.170.111.96	skyapi.onedrive.live.com
+23.59.136.70	auth.gfx.ms
+131.253.61.66	login.live.com
+204.79.197.217	onedrive.live.com
+23.212.129.202	p.sfx.ms
+134.170.30.15	people.live.com
+134.170.30.15	profile.live.com
+134.170.111.96	skyapi.onedrive.live.com
 #134.170.104.168	storage.live.com
-#204.79.197.213	nhuhga.dm2301.livefilestore.com
+204.79.197.213	nhuhga.dm2301.livefilestore.com
 # OneDrive End
 
 # SoundCloud Start
