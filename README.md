@@ -46,8 +46,8 @@
 也可以 `有目的地` 在  [`Issues`][issues] 模块中 进行 `高级搜索`,  
 也可以使用 Google 泛泛地查一下所遇到的问题, 看看有没有 `前人踩过的坑`.  
 [wiki]: https://github.com/racaljk/hosts/wiki  
-如果 **经过努力**, 问题 依旧无法解决, 可以在 [`Issues`][issues]模块中 创建一个新的 `issue`.
-具体的说明, 会在您 **实际创建** `issue` 的时候 有所提及.
+如果 **经过努力**, 问题 依旧无法解决, 可以在 [`Issues`][issues]模块中 创建一个新的 `issue`.  
+具体的说明, 会在您 **实际创建** `issue` 的时候 有所提及.  
 [issues]: https://github.com/racaljk/hosts/issues?utf8=%E2%9C%93&q=
 
 
