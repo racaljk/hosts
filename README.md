@@ -44,6 +44,36 @@
   >  - 替换 hosts 文件后，相关记录可能不会立即生效，可以关闭开启网络，或启用禁用飞行模式<br/>
   >    让域名解析立即生效
 
+
+## 如何解决 使用中的问题
+本项目的 [`Wiki`][wiki] 模块中, 收录一些 `Google`、`YouTube` 等常见的问题解决方案.  
+您可以按照 Wiki 中的提示, 在当先 `项目顶部搜索框` 中搜索关键 `您想要的关键字`,  
+也可以 `有目的地` 在  [`Issues`][issues] 模块中 进行 `高级搜索`,  
+也可以使用 Google 泛泛地查一下所遇到的问题, 看看有没有 `前人踩过的坑`.  
+[wiki]: https://github.com/racaljk/hosts/wiki  
+如果 **经过努力**, 问题 依旧无法解决, 可以在 [`Issues`][issues]模块中 创建一个新的 `issue`.
+[issues]: https://github.com/racaljk/hosts/issues?utf8=%E2%9C%93&q=
+
+
+## 如何找到 可用ip
+参看 https://github.com/racaljk/hosts/issues/685
+
+
+## 如何贡献以及维护 可用ip
+首先 `Fork` 本项目 到 `自己账户`(以下简称 `F`), 然后修改 `F` 中的代码后,  
+提交到 `F`, 然后使用 `Github` 的 `Pull Request`(以下简称 `PR`) 功能, 进行推送.  
+**注意:** 请不要提交 `无意义` 或者 `有争议` 的代码.  
+具体的说明, 会在您 **实际提交** `PR` 的时候 有所提及.
+
+
+## 如何更新 已 Fork 到自己名下的项目
+- 方法一 (简单粗暴)  
+删除 `F`, 重新 `Fork` 当前项目 到 `自己账户`.  
+
+- 方法二 (使用 `upstream`)  
+参看: https://www.zhihu.com/question/20171506  
+
+
 ## 更多
 
 - [关于中国的互联网](https://github.com/racaljk/hosts/wiki/关于中国的互联网)
