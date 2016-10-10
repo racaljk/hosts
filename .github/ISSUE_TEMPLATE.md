@@ -1,3 +1,5 @@
+### 如果您认真阅读了下述文本, 并同意相关协议, 那么请在您真正提交之前, 删除本模版所有文本(包涵本段加粗文本), 并填写上本次提交的简单描述, 用于大家分析讨论.
+
 您好，感谢您开 Issue 来反馈信息，在提交前，请确保您已经检查了以下内容!
 - 如有关" Google 无法连接" / " YouTube 视频无法播放"等问题 请参阅[常见问题解答](https://github.com/racaljk/hosts/wiki/The-hosts-FAQ)
 - 已经阅读了 [Wiki 页面](https://github.com/racaljk/hosts/wiki)
