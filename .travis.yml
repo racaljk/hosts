@@ -1,0 +1,6 @@
+language: c
+sudo: false
+dist: trusty
+
+script:
+    - bash tools/checkhosts.sh hosts

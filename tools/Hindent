@@ -1,0 +1,41 @@
+#!/bin/bash
+# https://github.com/racaljk/hosts
+
+date_amend()
+{
+	# check if hosts file changes
+	if git diff --exit-code "$1" > /dev/null; then
+		# hosts file is not changed,
+		# the date string will be set to the git log records.
+		local repo_date=$(git log --date=short -n1 "$1" | \
+				grep -Pom1 "\d+-\d+-\d+")
+		sed -i "s/[0-9]\+-[0-9]\+-[0-9]\+/$repo_date/" "$1"
+	else
+		# hosts file has been changed,
+		# set date string to the system date.
+		sed -i "s/[0-9]\+-[0-9]\+-[0-9]\+/$(date +%F)/" "$1"
+	fi
+}
+
+eol_amend()
+{
+	dos2unix -q "$1"
+}
+
+style_amend()
+{
+	local orig="\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)[[:blank:]]\+"
+	local modified="\1$(echo -e "\t")"
+
+	sed -i "s/$orig/$modified/g" "$1"
+}
+
+if [ -z "$1" ]; then
+	echo "Usage: $0 [your-hosts-file]"
+	exit 1
+fi
+
+
+eol_amend "$1"
+date_amend "$1"
+style_amend "$1"
