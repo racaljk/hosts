@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-10-22
+# Last updated: 2016-10-23
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -12,28 +12,7 @@
 # Modified hosts start
 
 # Amazon AWS Start
-54.239.31.69	aws.amazon.com
-54.239.30.25	console.aws.amazon.com
-54.239.96.90	ap-northeast-1.console.aws.amazon.com
-54.240.226.81	ap-southeast-1.console.aws.amazon.com
-54.240.193.125	ap-southeast-2.console.aws.amazon.com
-54.239.38.102	eu-west-1.console.aws.amazon.com
-54.239.54.102	eu-central-1.console.aws.amazon.com
-54.231.49.3	s3.amazonaws.com
-54.239.31.128	s3-console-us-standard.console.aws.amazon.com
 52.219.0.4	s3-ap-northeast-1.amazonaws.com
-54.231.242.170	s3-ap-southeast-1.amazonaws.com
-54.231.251.21	s3-ap-southeast-2.amazonaws.com
-52.218.16.140	s3-eu-west-1.amazonaws.com
-54.231.193.37	s3-eu-central-1.amazonaws.com
-52.92.72.2	s3-sa-east-1.amazonaws.com
-54.231.236.6	s3-us-west-1.amazonaws.com
-54.231.168.160	s3-us-west-2.amazonaws.com
-177.72.244.194	sa-east-1.console.aws.amazon.com
-176.32.114.59	us-west-1.console.aws.amazon.com
-54.240.254.230	us-west-2.console.aws.amazon.com
-52.216.80.48	github-cloud.s3.amazonaws.com
-54.231.48.40	github-com.s3.amazonaws.com
 # Amazon AWS End
 
 # Apkpure Start
@@ -87,10 +66,10 @@
 218.254.1.13	db.tt
 218.254.1.13	dropbox.com
 218.254.1.13	m.dropbox.com
+218.254.1.13  www.dropbox.com
 218.254.1.13	www.v.dropbox.com
 218.254.1.13	dl-debug.dropbox.com
 #######
-162.125.65.1	www.dropbox.com
 52.85.76.60	linux.dropbox.com
 108.160.172.193	d.dropbox.com
 108.160.172.193	d.v.dropbox.com
@@ -333,7 +312,7 @@
 220.255.2.153	a.orkut.gmodules.com
 220.255.2.153	www.googlestore.com
 220.255.2.153	ig.ig.gmodules.com
-220.255.2.153	redirector.c.youtube.com
+203.208.51.32	redirector.c.youtube.com
 220.255.2.153	relay.google.com
 220.255.2.153	image.google.com
 220.255.2.153	mapsengine.google.com
@@ -694,7 +673,6 @@
 220.255.2.153	news.google.com.hk
 220.255.2.153	news.google.com.tw
 220.255.2.153	orkut.google.com
-220.255.2.153	www.orkut.com
 220.255.2.153	www.orkut.gmodules.com
 220.255.2.153	pack.google.com
 220.255.2.153	photos.google.com
@@ -2271,7 +2249,7 @@
 216.58.217.12	proxy.googlezip.net
 216.58.217.12	compress.googlezip.net
 216.58.217.12	proxy-dev.googlezip.net
-220.255.2.153	polymer-project.org
+216.239.34.21	polymer-project.org
 220.255.2.153	www.polymer-project.org
 220.255.2.153	talkgadget.l.google.com
 220.255.2.153	hangouts.google.com
@@ -2313,6 +2291,7 @@
 220.255.2.153	i9.ytimg.com
 220.255.2.153	s.ytimg.com
 220.255.2.153	manifest.googlevideo.com
+203.208.39.232	redirector.googlevideo.com
 64.233.162.83	onetoday.google.com
 64.233.162.83	notifications.google.com
 
