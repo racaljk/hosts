@@ -793,6 +793,8 @@
 220.255.2.153	datastudio.google.com
 220.255.2.153	studykit.google.com
 220.255.2.153	business.google.com
+220.255.2.153	www.google-analytics.com
+220.255.2.153	ssl.google-analytics.com
 
 # gstatic Start
 220.255.2.153	geo0.ggpht.com
@@ -843,7 +845,7 @@
 220.255.2.153	chart.apis.google.com
 220.255.2.153	googleapis.com
 220.255.2.153	www.googleapis.com
-64.233.188.214	ajax.googleapis.com
+220.255.2.153	ajax.googleapis.com
 220.255.2.153	android.googleapis.com
 220.255.2.153	bigcache.googleapis.com
 220.255.2.153	chart.googleapis.com
