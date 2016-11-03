@@ -557,6 +557,7 @@
 64.233.162.81	www.googlesource.com
 64.233.162.81	android.googlesource.com
 64.233.162.81	cloud.google.com
+64.233.162.81	ssh.cloud.google.com
 64.233.162.81	packages.cloud.google.com
 64.233.162.81	console.cloud.google.com
 64.233.162.81	status.cloud.google.com
@@ -788,6 +789,8 @@
 64.233.162.81	iam.clients6.google.com
 64.233.162.81	clientauthconfig.clients6.google.com
 64.233.162.81	realtimesupport.clients6.google.com
+64.233.162.81	datastore.clients6.google.com
+64.233.162.81	clouderrorreporting.clients6.google.com
 64.233.162.81	360suite.google.com
 64.233.162.81	optimize.google.com
 216.58.203.85	attribution.google.com
