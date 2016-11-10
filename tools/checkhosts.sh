@@ -7,9 +7,9 @@ DATE_BREAK=0
 
 chk_eol()
 {
-	echo -e "- Check line endings:\n"
+	echo -e " * Check line endings:\n"
 
-	if file "$1" | grep "CRLF" -q; then
+	if file "$1" | grep -q "CRLF"; then
 		echo -e "\033[41mDOS line endings have appeared, " \
 			"it must be coverted now!\033[0m\n\n"
 		LINE_BREAK=1
@@ -18,39 +18,46 @@ chk_eol()
 	fi
 }
 
+# Check TAB on hosts records.
+# Check leading and trailing whitespace.
+#
 chk_format()
 {
-	echo -e "- Check hosts format:\n"
+	echo -e " * Check hosts format:\n"
 
-	grep -P "\d+\.\d+\.\d+\.\d+" "$1" > 1.txt
-	grep -P "\d+\.\d+\.\d+\.\d+\t\w+" "$1" > 2.txt
+	# Filter all hosts records.
+	cat "$1" | grep -Pv "^\s*#" | grep -P "(\d+\.){3}\d+" > 1.swp
+	# Trailing whitespace detection.
+	grep -P "[ \t]+$" "$1" >> 1.swp
+	# Filter good format hosts records.
+	cat "$1" | grep -Pv "^\s*#" | grep -P "^(\d+\.){3}\d+\t\w" > 2.swp
 
-	if ! diff 1.txt 2.txt > 0.txt; then
-		echo -e "\n\033[41mhosts format mismatch! " \
+	if ! diff 1.swp 2.swp > 0.swp; then
+		echo -e "\033[41mhosts format mismatch! " \
 			"The following rules should be normalized:\033[0m"
-		cat 0.txt
+		cat 0.swp
 		FORMAT_BREAK=1
 	else
 		echo -e "\033[42mAll is well!\033[0m"
 	fi
 
 	echo -e "\n"
-	rm -f 0.txt 1.txt 2.txt
+	rm -f 0.swp 1.swp 2.swp
 }
 
 chk_date()
 {
-	# get the system date
+	# system date
 	local real_date=$(date +%F)
-	# get the hosts last modified in git log records
+	# The last change of the hosts file.
 	local repo_date=$(git log --date=short "$1" | grep -Pom1 "\d+-\d+-\d+")
 	# date string in hosts file.
 	local hosts_date=$(grep -Po "\d+-\d+-\d+" "$1")
 
-	echo -e "- Check hosts date:\n"
+	echo -e " * Check hosts date:\n"
 
 	# check if hosts file changes
-	if git diff --exit-code "$1" > /dev/null 2>&1; then
+	if git diff --exit-code "$1" &> /dev/null; then
 		# hosts file is not changed, compare file's date with git log.
 		if [ "$repo_date" != "$hosts_date" ]; then
 			echo -e "\033[41mhosts date mismatch, last modified " \
@@ -81,13 +88,12 @@ result()
 	echo "hosts format mismatch?   [ $FORMAT_BREAK ]"
 	echo "hosts date mismatch?     [ $DATE_BREAK ]"
 
-	local ret=$(expr $LINE_BREAK + $FORMAT_BREAK + $DATE_BREAK)
-	exit $ret
+	exit $(( $LINE_BREAK + $FORMAT_BREAK + $DATE_BREAK ))
 }
 
 if [ -z "$1" ]; then
-	echo "Usage: $0 [your-hosts-file]"
-	exit 1
+	echo "Usage: $0 [hosts-file]"
+	exit 4
 fi
 
 chk_eol "$1"

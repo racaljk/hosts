@@ -1,12 +1,12 @@
 #!/bin/bash
-#
-# lhosts: update your hosts file from https://github.com/racaljk/hosts
+# Update your hosts file from：
+# https://github.com/racaljk/hosts
 #
 
 myname=${0##*/}
 
 HOSTS="/etc/hosts"
-BACKUP_FILE="/etc/hosts.bak"
+BACKUP_FILE="/etc/hosts.$myname.$(date +%Y%m%d%H%M%S).bak"
 REMOTE_FILE="/tmp/hosts.rmt"
 
 MAIN="https://raw.githubusercontent.com/racaljk/hosts/master/hosts"
@@ -17,20 +17,29 @@ NET_TOOLS="curl"
 QWGET=
 QCURL=
 
+RANGE=
+BEGIN_MARK="#-- $myname BEGIN MARK --#"
+END_MARK="#-- $myname END MARK --#"
+
 usage()
 {
 	cat <<EOL
-注:
-  可以使用 crontab 定时执行脚本 (root 身份运行或 sudo 无需输入密码)
-  更新前，原 hosts 备份至 $BACKUP_FILE
+提示:
+  1. 可以使用 crontab 定时执行脚本 (root 身份运行或 sudo 免密码);
+
+  2. 使用 $myname 下载的 hosts 会被加上范围标记，每次更新会保留范围外的
+     全部内容。首次使用 $myname 会自动保留原hosts内容，请放心使用。
+
+  3. 更新前，本地 hosts 备份至 $BACKUP_FILE 并每次保留时间戳，方便随时查找恢复
 
 用法: $myname [选项]...
 
 选项:
-  -w, --wget             使用 wget 下载
-  -m, --mirror           从镜像地址获取 hosts
+  -m, --mirror           从镜像仓库获取 hosts (下载更快)
   -q, --quiet            静默模式
+  -r, --range <range>    范围模式
   -u, --url <url>        自定义 hosts 源地址
+  -w, --wget             使用 wget 下载
   -h, -1, --help         显示帮助信息并退出
 
 退出状态：
@@ -38,19 +47,21 @@ usage()
   1  命令行参数错误
   2  文件下载失败
 
-参考:
+范围模式：
+    将本地 hosts 指定范围的内容，保存到下载的 hosts 内，例如：
 
-    $myname -mq
+    $myname -mr "1,20"  更新时，本地 hosts 1~20 行保存到下载的 hosts 中
 
 自定义源：
-
-    $myname -qu $MIRROR
+    $myname -u $MIRROR
 
 EOL
 }
 
 get_hosts()
 {
+	local swp="/tmp/hosts.swp"
+
 	# If the quiet mode is turned off, print some messages.
 	if [ -z "$QCURL" ]; then
 		echo "正在更新 hosts..."
@@ -68,6 +79,10 @@ get_hosts()
 		echo "hosts 下载失败" >&2
 		exit 2
 	fi
+
+	# Add range mark
+	sed -e "1 i\\$BEGIN_MARK" -e "$ a\\$END_MARK" "$REMOTE_FILE" > "$swp"
+	mv -f "$swp" "$REMOTE_FILE"
 }
 
 backup_hosts()
@@ -78,20 +93,24 @@ backup_hosts()
 update_hosts()
 {
 	local swp="/tmp/hosts.swp"
-	local begin_mark="# Copyright (c) 2014"
-	local end_mark="# Modified hosts end"
 
-	# Reserved host name rules.
-	grep -m 1 $(hostname) "$HOSTS" > "$swp"
-
-	# If racaljk hosts has used, clean racaljk hosts up, and retain
-	# the rest of the hosts rules.
-	#
-	# If not, entire hosts file will be clean up, you should get back
-	# some rules from the backup files on demand.
-	#
-	if grep -q "racaljk" "$HOSTS"; then
-		sed "/$begin_mark/,/$end_mark/d" "$HOSTS" >> "$swp"
+	if [ ! -z "$RANGE" ]; then
+		# Range mode on
+		sed -n "$RANGE"p "$HOSTS" > "$swp"
+	else
+		# Range mode off, auto set marker if no marker in the local hosts file.
+		if cat /etc/hosts | grep "$BEGIN_MARK"; then
+			echo 'Find MARK and handle the marker range only'
+		else
+			echo 'Not find MARK, Auto set marker and save hosts content'
+			echo $BEGIN_MARK | sudo tee -a /etc/hosts
+			echo $END_MARK | sudo tee -a /etc/hosts
+			echo 'Hosts update success!'
+		fi
+		# Range mode off, handle marker in the local hosts file.
+		if grep -q "$BEGIN_MARK" "$HOSTS"; then
+			sed "/$BEGIN_MARK/,/$END_MARK/d" "$HOSTS" >> "$swp"
+		fi
 	fi
 
 	cat "$REMOTE_FILE" >> "$swp"
@@ -100,36 +119,40 @@ update_hosts()
 	rm -f "$swp" "$REMOTE_FILE"
 }
 
-LONGOPTS="wget,mirror,quiet,url:,help"
-CMD=$(getopt -o wmqu:h1 --long $LONGOPTS -n "$myname" -- "$@") || exit 1
+LONGOPTS="wget,mirror,quiet,url:,range:,help"
+CMD=$(getopt -o wmqu:r:h1 --long $LONGOPTS -n "$myname" -- "$@") || exit 1
 
 eval set -- "$CMD"
 
 while true; do
 	case "$1" in
-		-w|--wget)
+	-w|--wget)
 		NET_TOOLS="wget"
 		shift
 		;;
-		-m|--mirror)
+	-m|--mirror)
 		HOSTS_URL="$MIRROR"
 		shift
 		;;
-		-q|--quiet)
+	-q|--quiet)
 		QWGET=-q
 		QCURL=-s
 		shift
 		;;
-		-u|--url)
+	-u|--url)
 		HOSTS_URL="$2"
 		shift 2
 		;;
-		-h|-1|--help)
+	-r|--range)
+		RANGE="$2"
+		shift 2
+		;;
+	-h|-1|--help)
 		usage
 		exit 0
 		shift
 		;;
-		--)
+	--)
 		shift
 		break
 		;;
