@@ -11,6 +11,19 @@
 
 # Modified hosts start
 
+# WikiLeaks Start
+wikileaks.org	95.211.113.154
+www.wikileaks.org	95.211.113.154
+shop.wikileaks.org	95.211.113.154
+wardiaries.wikileaks.org	95.211.113.154
+file.wikileaks.org	95.211.113.154
+wardiary.wikileaks.org	95.211.113.154
+search.wikileaks.org	95.211.113.154
+911.wikileaks.org	95.211.113.154
+collateralmurder.wikileaks.org	95.211.113.154
+cablegate.wikileaks.org	95.211.113.154
+# WikiLeaks End
+
 # Armorgames Start
 93.184.220.39	cache.armorgames.com
 93.184.220.39	gamemedia.armorgames.com
