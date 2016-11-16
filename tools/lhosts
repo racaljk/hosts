@@ -6,7 +6,7 @@
 myname=${0##*/}
 
 HOSTS="/etc/hosts"
-BACKUP_FILE="/etc/hosts.bak"
+BACKUP_FILE="/etc/hosts.$myname.$(date +%Y%m%d%H%M%S).bak"
 REMOTE_FILE="/tmp/hosts.rmt"
 
 MAIN="https://raw.githubusercontent.com/racaljk/hosts/master/hosts"
@@ -28,12 +28,9 @@ usage()
   1. 可以使用 crontab 定时执行脚本 (root 身份运行或 sudo 免密码);
 
   2. 使用 $myname 下载的 hosts 会被加上范围标记，每次更新会保留范围外的
-     全部内容。
+     全部内容。首次使用 $myname 会自动保留原hosts内容，请放心使用。
 
-     [注意]：首次使用 $myname 时，由于本地 hosts 内无范围标记的指示，
-             所以会清空所有内容。如需保留，请使用 "范围模式" 更新。
-
-  3. 更新前，本地 hosts 备份至 $BACKUP_FILE
+  3. 更新前，本地 hosts 备份至 $BACKUP_FILE 并每次保留时间戳，方便随时查找恢复
 
 用法: $myname [选项]...
 
@@ -101,6 +98,15 @@ update_hosts()
 		# Range mode on
 		sed -n "$RANGE"p "$HOSTS" > "$swp"
 	else
+		# Range mode off, auto set marker if no marker in the local hosts file.
+		if cat /etc/hosts | grep "$BEGIN_MARK"; then
+			echo 'Find MARK and handle the marker range only'
+		else
+			echo 'Not find MARK, Auto set marker and save hosts content'
+			echo $BEGIN_MARK | sudo tee -a /etc/hosts
+			echo $END_MARK | sudo tee -a /etc/hosts
+			echo 'Hosts update success!'
+		fi
 		# Range mode off, handle marker in the local hosts file.
 		if grep -q "$BEGIN_MARK" "$HOSTS"; then
 			sed "/$BEGIN_MARK/,/$END_MARK/d" "$HOSTS" >> "$swp"
