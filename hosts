@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-11-13
+# Last updated: 2016-11-16
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3287,13 +3287,15 @@
 # Wikipedia End
 
 # WordPress Start
-68.232.44.121	www.gravatar.com
-68.232.44.121	0.gravatar.com
-68.232.44.121	1.gravatar.com
-68.232.44.121	2.gravatar.com
-68.232.44.121	s.gravatar.com
-192.0.80.242	lb.gravatar.com
-192.0.80.242	secure.gravatar.com
+192.0.73.2	www.gravatar.com
+192.0.73.2	0.gravatar.com
+192.0.73.2	1.gravatar.com
+192.0.73.2	2.gravatar.com
+192.0.73.2	lb.gravatar.com
+192.0.73.2	secure.gravatar.com
+192.0.80.241	s.gravatar.com
+192.0.80.239	en.gravatar.com
+#192.0.80.240	en.gravatar.com
 192.0.81.250	botd2.wordpress.com
 66.155.9.238	dashboard.wordpress.com
 66.155.9.238	en.blog.wordpress.com
