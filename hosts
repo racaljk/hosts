@@ -72,10 +72,6 @@
 185.12.83.2	support.bundlestars.com
 # BundleStars End
 
-# bandwagonhost.com Start
-104.20.6.63	bandwagonhost.com
-# bandwagonhost.com End
-
 # Disqus Start
 151.101.100.134	disqus.com
 151.101.100.134	www.disqus.com
@@ -303,8 +299,6 @@
 61.91.161.217	clients4.google.com
 61.91.161.217	clients5.google.com
 61.91.161.217	clients6.google.com
-61.91.161.217	clouderrorreporting.clients6.google.com
-61.91.161.217	datastore.clients6.google.com
 61.91.161.217	contributor.google.com
 61.91.161.217	dns.google.com
 61.91.161.217	desktop.google.com
@@ -319,7 +313,6 @@
 61.91.161.217	fonts.google.com
 61.91.161.217	goto.google.com
 61.91.161.217	gxc.google.com
-61.91.161.217	get.google.com
 61.91.161.217	gsuite.google.com
 61.91.161.217	history.google.com
 61.91.161.217	myactivity.google.com
@@ -508,6 +501,7 @@
 61.91.161.217	officialandroid.blogspot.com
 61.91.161.217	android-developers.blogspot.com
 61.91.161.217	android-developers.blogspot.hk
+61.91.161.217	program-think.blogspot.com
 61.91.161.217	developers.googleblog.com
 61.91.161.217	books.google.com
 61.91.161.217	books.google.com.hk
@@ -567,7 +561,6 @@
 61.91.161.217	packages.cloud.google.com
 61.91.161.217	console.cloud.google.com
 61.91.161.217	status.cloud.google.com
-61.91.161.217	ssh.cloud.google.com
 61.91.161.217	developers.google.com
 61.91.161.217	cloudssh.developers.google.com
 61.91.161.217	codelabs.developers.google.com
@@ -804,7 +797,6 @@
 61.91.161.217	studykit.google.com
 61.91.161.217	business.google.com
 61.91.161.217	google-analytics.com
-61.91.161.217	artsandculture.google.com
 
 # gstatic Start
 61.91.161.217	geo0.ggpht.com
@@ -3252,38 +3244,38 @@
 # Tumblr End
 
 # Twitter Start
-110.4.24.178	twitter.com
-110.4.24.178	www.twitter.com
-110.4.24.178	t.co
-110.4.24.178	api.twitter.com
-110.4.24.178	mobile.twitter.com
-110.4.24.178	support.twitter.com
-110.4.24.178	upload.twitter.com
-110.4.24.178	tweetdeck.twitter.com
-110.4.24.178	syndication.twitter.com
-110.4.24.178	platform.twitter.com
-110.4.24.178	about.twitter.com
-110.4.24.178	blog.twitter.com
-110.4.24.178	betastream.twitter.com
-110.4.24.178	dev.twitter.com
-110.4.24.178	pic.twitter.com
-110.4.24.178	search.twitter.com
-110.4.24.178	status.twitter.com
-110.4.24.178	assets0.twitter.com
-110.4.24.178	assets1.twitter.com
-110.4.24.178	assets2.twitter.com
-110.4.24.178	assets3.twitter.com
-110.4.24.178	assets4.twitter.com
-110.4.24.178	static.twitter.com
-110.4.24.178	help.twitter.com
-110.4.24.178	ton.twitter.com
-110.4.24.178	s.twitter.com
-110.4.24.178	analytics.twitter.com
-110.4.24.178	urls-real.api.twitter.com
-110.4.24.178	userstream.twitter.com
-110.4.24.178	sitestream.twitter.com
-110.4.24.178	stream.twitter.com
-110.4.24.178	tdweb.twitter.com
+202.171.253.111	twitter.com
+202.171.253.111	www.twitter.com
+185.45.5.36	t.co
+202.171.253.111	api.twitter.com
+202.171.253.111	mobile.twitter.com
+202.171.253.111	support.twitter.com
+202.171.253.111	upload.twitter.com
+202.171.253.111	tweetdeck.twitter.com
+202.171.253.111	syndication.twitter.com
+202.171.253.111	platform.twitter.com
+202.171.253.111	about.twitter.com
+202.171.253.111	blog.twitter.com
+202.171.253.111	betastream.twitter.com
+202.171.253.111	dev.twitter.com
+202.171.253.111	pic.twitter.com
+202.171.253.111	search.twitter.com
+202.171.253.111	status.twitter.com
+202.171.253.111	assets0.twitter.com
+202.171.253.111	assets1.twitter.com
+202.171.253.111	assets2.twitter.com
+202.171.253.111	assets3.twitter.com
+202.171.253.111	assets4.twitter.com
+202.171.253.111	static.twitter.com
+202.171.253.111	help.twitter.com
+202.171.253.111	ton.twitter.com
+202.171.253.111	s.twitter.com
+202.171.253.111	analytics.twitter.com
+202.171.253.111	urls-real.api.twitter.com
+202.171.253.111	userstream.twitter.com
+202.171.253.111	sitestream.twitter.com
+202.171.253.111	stream.twitter.com
+202.171.253.111	tdweb.twitter.com
 173.236.110.98	twitpic.com
 173.236.110.98	m1.twitpic.com
 173.236.110.98	web1.twitpic.com
@@ -3319,10 +3311,10 @@
 104.244.42.132	web.tweetdeck.com
 104.244.42.132	www.tweetdeck.com
 104.244.42.132	downloads.tweetdeck.com
-110.4.24.178	cdn.syndication.twimg.com
-110.4.24.178	cdn.syndication.twitter.com
-110.4.24.178	apps.twitter.com
-110.4.24.178	debates.twitter.com
+202.171.253.111	cdn.syndication.twimg.com
+202.171.253.111	cdn.syndication.twitter.com
+202.171.253.111	apps.twitter.com
+202.171.253.111	debates.twitter.com
 # Twitter End
 
 # Vimeo Start
