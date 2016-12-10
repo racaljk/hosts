@@ -1,18 +1,6 @@
 language: c
-sudo: requried
+sudo: false
 dist: trusty
 
-before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq -y gettext
-
-install:
-    - wget -q https://github.com/racaljk/hosts/releases/download/checkhosts/dos2unix-7.3.4.tar.gz
-    - tar xf dos2unix-7.3.4.tar.gz
-    - cd dos2unix-7.3.4 && make && sudo make prefix=/usr install
-    - cd ..
-
 script:
-    # Be permissive, unset following enviroment
-    - export STRICT_HOSTS_FORMAT=1
     - bash tools/checkhosts.sh hosts

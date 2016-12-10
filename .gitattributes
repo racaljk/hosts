@@ -1,7 +1,16 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 
-# Declare files that will always have CRLF line endings on checkout.
+# hosts file always be normalized on checkin.
+hosts text
 
-# Denote all files that are truly binary and should not be modified.
-*.bat binary
+# Always be normalized to LF line endings on checkin and converted files
+# to native line endings on checkout.
+*.md text
+*.yml text
+*.sh text
+Hindent text
+lhosts text
+
+# Don't modify binary files.
+*.zip binary
