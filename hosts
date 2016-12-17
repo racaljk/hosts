@@ -3404,12 +3404,124 @@
 204.0.5.34	us.js2.yimg.com
 106.10.138.240	us.yahoo.com
 183.177.81.75	www.flickr.com
-106.10.138.240	www.yahoo.com
-98.138.253.109	yahoo.com
+106.10.138.240  www.yahoo.com
+98.138.253.109  yahoo.com
 77.238.184.150	ying.com
 183.177.81.75	downloadr.flickr.com
 50.18.192.250	duckduckgo-owned-server.yahoo.net
 116.214.11.98	tw.mobi.yahoo.com
 # Yahoo End
+
+#Games Start
+#SpeedRunner
+64.233.189.121 league.speedrunners.doubledutchgames.com
+
+#Warframe
+172.245.126.217 api.warframe.com
+
+#Origin
+172.245.126.217 accounts.ea.com signin.ea.com gateway.ea.com
+
+#UPlay
+172.245.126.217 api-ubiservices.ubi.com
+172.245.126.217 public-ubiservices.ubi.com
+172.245.126.217 lb-upc-dmx.ubisoft.com
+172.245.126.217 msr-api-ubiservices.ubi.com
+172.245.126.217 ubisoft-uplay-savegames.s3.amazonaws.com
+
+#Rocket League
+172.245.126.217 psyonix-rl.appspot.com
+
+#DOOM
+172.245.126.217 dfw-stm.zionprod.systems
+172.245.126.217 fra-stm.zionprod.systems
+172.245.126.217 prod-grustm01-gateway1-cf.zionprod.systems
+172.245.126.217 dfw-ping-stm.doom.amok.systems
+172.245.126.217 fra-ping-stm.doom.amok.systems
+172.245.126.217 prod-iadstm01-gateway1-cf.zionprod.systems
+172.245.126.217 prod-sinstm01-gateway1-cf.zionprod.systems
+172.245.126.217 prod-pdxstm01-gateway1-cf.zionprod.systems
+172.245.126.217 prod-dubstm01-gateway1-cf.zionprod.systems
+172.245.126.217 prod-sydstm01-gateway1-cf.zionprod.systems
+172.245.126.217 prod-iadstm01-gateway2-cf.zionprod.systems
+172.245.126.217 prod-sydstm01-gateway2-cf.zionprod.systems
+172.245.126.217 prod-sinstm01-gateway2-cf.zionprod.systems
+172.245.126.217 prod-dubstm01-gateway2-cf.zionprod.systems
+172.245.126.217 prod-pdxstm01-gateway2-cf.zionprod.systems
+172.245.126.217 prod-iadstm01-gateway3-cf.zionprod.systems
+172.245.126.217 prod-sinstm01-gateway3-cf.zionprod.systems
+172.245.126.217 prod-grustm01-gateway3-cf.zionprod.systems
+172.245.126.217 prod-dubstm01-gateway3-cf.zionprod.systems
+172.245.126.217 prod-pdxstm01-gateway3-cf.zionprod.systems
+172.245.126.217 1us-west-1-prod-pdxstm01-httpping.zionprod.systems
+172.245.126.217 1eu-west-1-prod-dubstm01-httpping.zionprod.systems
+172.245.126.217 us-east-1-prod-iadstm01-httpping.zionprod.systems
+172.245.126.217 prod-iadglb01-starlord-cf.zionprod.systems
+172.245.126.217 dfw-gatekeeper-live-stm.doom.amok.systems
+172.245.126.217 services.bethesda.net
+172.245.126.217 dfw-gobbler.doom.amok.systems
+
+#Dead by Daylight
+172.245.126.217 ghs.googlehosted.com
+172.245.126.217 api-1-0-0.live.virginia.dbd.bhvronline.com
+172.245.126.217 status.bhvronline.com
+172.245.126.217 latest.live.virginia.dbd.bhvronline.com
+
+#Evolve
+172.245.126.217 508223012e5a5ff19f30a391b2bdadc0.my.2k.com
+172.245.126.217 798ce2d1755b23f16c6b1100d73fa464.my.2k.com
+172.245.126.217 0eaa48923bc27d93552bf100519bbf7b.my.2k.com
+172.245.126.217 88617557f1789a427b307e225b111db9.my.2k.com
+172.245.126.217 c80e487cd7fed21dfb05e01fe8be8b6e.my.2k.com
+172.245.126.217 97a4baee4e74619c4d6d51d27a6d061c.my.2k.com
+172.245.126.217 matchmaking.4v1game.net
+172.245.126.217 dsx-1-b.4v1game.net
+172.245.126.217 dsx-1-a-sin-1.4v1game.net
+172.245.126.217 89oy3rnjqlo2u849.4v1game.net
+172.245.126.217 profile-prd-1-0.4v1game.net
+172.245.126.217 prd-news-feed-v1.4v1game.net
+172.245.126.217 dsx-1-a-nrt-1.4v1game.net
+172.245.126.217 evolve.hydra.agoragames.com
+172.245.126.217 prd-offloader.trstc.net
+172.245.126.217 profile-prd-1-1.4v1game.net
+
+#Forza Horizon 3
+172.245.126.217 fe3.delivery.mp.microsoft.com
+172.245.126.217 notifications.services.forzamotorsport.net
+172.245.126.217 sls.update.microsoft.com
+172.245.126.217 fh3.rtep.msgamestudios.com
+172.245.126.217 v10.vortex-win.data.microsoft.com
+172.245.126.217 userpresence.xboxlive.com
+172.245.126.217 sessiondirectory.xboxlive.com
+172.245.126.217 achievements.xboxlive.com
+172.245.126.217 userstats.xboxlive.com
+172.245.126.217 xsts.auth.xboxlive.com
+172.245.126.217 music.xboxlive.com
+172.245.126.217 social.xboxlive.com
+172.245.126.217 profile.xboxlive.com
+172.245.126.217 rta.xboxlive.com
+172.245.126.217 title.mgt.xboxlive.com
+172.245.126.217 user.auth.xboxlive.com
+172.245.126.217 login.live.com
+172.245.126.217 notify.xboxlive.com
+172.245.126.217 userpresence.xboxlive.com
+172.245.126.217 titlestorage.xboxlive.com
+172.245.126.217 gameserverds.xboxlive.com
+172.245.126.217 sessiondirectory.xboxlive.com
+172.245.126.217 presence-heartbeat.xboxlive.com
+172.245.126.217 device.auth.xboxlive.com
+172.245.126.217 collections.md.mp.microsoft.com
+172.245.126.217 licensing.mp.microsoft.com
+172.245.126.217 smartmatch.xboxlive.com
+172.245.126.217 sessiondirectory.xboxlive.com
+172.245.126.217 gameservices.fh3.forzamotorsport.net
+172.245.126.217 sls.update.microsoft.com
+172.245.126.217 fe2.update.microsoft.com
+172.245.126.217 displaycatalog.mp.microsoft.cm
+172.245.126.217 settings-win.data.microsoft.com
+172.245.126.217 nexus.officeapps.live.com
+172.245.126.217 images-eds.xboxlive.com
+172.245.126.217 ssw.live.com
+#Games end
 
 # Modified hosts end
