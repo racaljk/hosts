@@ -1,30 +1,30 @@
 [![doodle]][doodle-story]
 
-[doodle]: http://www.g20.org/images/logo.png "undefined"
-[doodle-story]: http://www.g20.org/
+[doodle]: https://www.google.com/logos/doodles/2016/340th-anniversary-of-the-determination-of-the-speed-of-light-5651280530767872-hp2x.gif "测定光速 340 周年纪念日"
+[doodle-story]: https://www.google.com.hk/search?q=%E5%85%89%E9%80%9F%E6%B5%8B%E9%87%8F
 
 **使用本项目之前，请先阅读此 [README](README.md) 及下方的许可协议**
 
-**请务必注意,如果正确修改hosts后还是无法使用Google,在求助前请首先尝试通过https进行访问，如[https://www.google.com/](https://www.google.com/)**
+**注意: Google 等网站请通过 https 方式访问，如** https://www.google.com/ncr
 
-|       [聊天室][chat-room]       |    [hosts 格式检测][travis-status]    |  [镜像hosts][mirror_of_hosts]  |  [常见问题解答][faq]  |
+|      [聊天室][chat-room]       |    [hosts 格式检测][travis-status]    |  [镜像hosts][mirror_of_hosts]  |  [常见问题解答][faq] |
 | :----------------------------: | :-----------------------------------: |  :---------------------------: |  :-----------------: |
-|  [![chat-metadata]][chat-room] |  [![travis-metadata]][travis-status]  |   [![coding.net]][coding-link]  |  [![faq_icon]][faq] | 
+|  [![chat-metadata]][chat-room] |  [![travis-metadata]][travis-status]  |  [![coding.net]][coding-link]  |  [![faq-icon]][faq]  |
 
-[chat-metadata]: https://badges.gitter.im/racaljk/hosts.svg "Join the chat at https://gitter.im/racaljk/hosts"
+[chat-metadata]: https://badges.gitter.im/racaljk/hosts.svg "Join the chat"
 [chat-room]: https://gitter.im/racaljk/hosts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge "Gitter chat room"
 [travis-metadata]: https://travis-ci.org/racaljk/hosts.svg "Travis CI Metadata"
 [travis-status]: https://travis-ci.org/racaljk/hosts "Travis CI Status"
-[coding.net]: https://i.imgur.com/JDpN8Bd.png
+[coding.net]: https://cloud.githubusercontent.com/assets/7419875/21286217/c6642eb2-c488-11e6-94b1-8ad01d31ac9d.png
 [coding-link]: https://coding.net/u/scaffrey/p/hosts/git "Coding"
 [mirror_of_hosts]: https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts
-[faq_icon]: http://www.easyicon.net/api/resizeApi.php?id=1190784&size=64
-[faq]: https://github.com/racaljk/hosts/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94
+[faq-icon]: http://www.easyicon.net/api/resizeApi.php?id=1190784&size=48
+[faq]: https://github.com/racaljk/hosts/wiki/The-hosts-FAQ
 
-## 如何更新 hosts？
-**推荐**使用项目内 [Host Tools](tools) 来**自动地 备份/更新** hosts。
+## 更新 hosts
+#### 推荐使用项目内的 [应用/工具](tools) 来自动备份/更新 hosts 文件
 
-* **Windows** 平台:
+* **Windows**
    1. 用文本编辑器（如 [Notepad++](https://notepad-plus-plus.org/)）打开：`
   %SystemRoot%\System32\drivers\etc\hosts`
   > ![](https://i.imgur.com/BwW2cft.jpg)
@@ -33,13 +33,11 @@
    > 注意：如果遇到无法保存，请右键文件hosts并找到“属性” -> “安全”，然后选择你登陆的用户名，最后点击编辑，勾选“写入”即可。
 
 * **其他平台**请将 [hosts][github-hosts] 全部内容复制到`/etc/hosts`中并保存。
-> 附：[各平台 hosts 位置](http://www.wikiwand.com/zh/Hosts%E6%96%87%E4%BB%B6#/.E6.96.87.E4.BB.B6.E4.BD.8D.E7.BD.AE.E5.8F.8A.E9.BB.98.E8.AE.A4.E5.86.85.E5.AE.B9)
+> 附：[各平台 hosts 位置](https://github.com/racaljk/hosts/wiki/各平台-hosts-文件位置)
 
 **注意**： 若更新后，hosts 没有立即生效，请重置网络：
 
-   - 在系统设置内开关网络
-   - 启用禁用飞行模式
-   - 重启系统
+- 在系统设置内开关网络，或启用禁用飞行模式
 
 ## 更多
 - [关于中国的互联网](https://github.com/racaljk/hosts/wiki/关于中国的互联网)

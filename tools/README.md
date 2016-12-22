@@ -1,29 +1,25 @@
-**除脚本外，其他工具已迁移至  [HostsTools](https://github.com/HostsTools)**
-
-平台 | 类型
---------|---------
-Microsoft Windows |  终端工具, HostsTool 应用
-Mac OS | Hosts Tool 应用
-Android | Android应用
-Linux | 脚本
-跨平台 | Haskell-终端应用,[**Hozz**](http://ppoffice.github.io/Hozz) 应用 (外部项目)
+**除脚本外，其他工具已迁移至  [HostsTools](https://github.com/HostsTools)（不含 Hozz）**
 
 ## 简介
 
-### cross-platform-Qt
-- QT GUI 应用（可跨平台，C++ 编写）
+### Windows
+- [终端工具](https://github.com/HostsTools/Windows)（C++ 编写）
 
-### [Windows](https://github.com/HostsTools/Windows)
-- Windows 平台的终端工具（C++ 编写）
+### Mac OS
+- [HostsToolforMac](https://github.com/HostsTools/OSX)
+  - Mac 环境下的 hosts 自动部署应用 (适用于 OS X 10.10 或以上, Swift 编写)
 
-### [Haskell-Console](https://github.com/HostsTools/Haskell-Console)
-- 跨平台的终端工具(Haskell编写)
+### Android
+- [AndroidGoogleHost](https://github.com/HostsTools/Android)
 
-### [OSX](https://github.com/HostsTools/OSX)
-- Mac 环境下的 hosts 自动部署应用 (适用于 OS X 10.10 或以上, Swift 编写)
-
-### [Android](https://github.com/HostsTools/Android)
-- Android 下的 hosts 更新应用(Java 编写)
+### 跨平台
+- [HostsTool](https://github.com/HostsTools/cross-platform-Qt)（采用 Qt 框架开发）
+- [Haskell-Console](https://github.com/HostsTools/Haskell-Console)
+  - 终端工具（Haskell 编写）
+- **Hozz**
+  - 拥有一个不错的图形化界面，Javascripts 编写。维护者 [@ppoffice](https://github.com/ppoffice)
+  - **Hozz** [首页](http://ppoffice.github.io/Hozz)
+  - **Hozz** on [Github](https://github.com/ppoffice/Hozz)
 
 ### 工具
 
@@ -32,15 +28,8 @@ Linux | 脚本
   - 贡献者:[@Too-Naive](https://github.com/Too-Naive)
   - Homepage:[HostsTools/Windows](https://github.com/HostsTools/Windows)
 
-- [**lhosts**](http://keving.pythonanywhere.com/hosts_scripts/lhosts)
-  - Linux 平台自动部署脚本，使用 `./lhosts -h` 命令获取帮助信息。
-  - 点击链接下载时，请为脚本添加可执行权限，执行 `chmod u+x lhosts`
+- [**lhosts**](lhosts)
+  - Linux 平台更新 hosts 脚本，请使用 `./lhosts -h` 命令获取帮助信息。
 
 - [**Hindent**](Hindent)
-  - Linux 平台下用于格式化 hosts 文件的脚本，用法: `./Hindent [hosts]`
-
-### 跨平台工具
-- **Hozz**
-  - 跨平台的 hosts 更新工具，Javascripts 编写。维护者 [@ppoffice](https://github.com/ppoffice)
-  - **Hozz** [首页](http://ppoffice.github.io/Hozz)
-  - **Hozz** on [Github](https://github.com/ppoffice/Hozz)
+  - Linux 平台下格式化 hosts 文件的脚本

@@ -5,96 +5,83 @@ LINE_BREAK=0
 FORMAT_BREAK=0
 DATE_BREAK=0
 
-# 1. check line endings
-#
-chk_line() {
-    local ret=$(dos2unix -id "$1" | grep -o "[0-9]\+")
+chk_eol()
+{
+	printf "\e[33;1mCheck line endings:\e[0m\n"
 
-    echo -e "1. check line endings:\n"
-
-    if [ "$ret" -ne 0 ]; then
-        echo -e "\033[41mDOS line endings $ret times appeared, " \
-                    "it must be coverted!\033[0m\n\n"
-        LINE_BREAK=1
-    else
-        echo -e "\033[42mAll is well!\033[0m\n\n"
-    fi
+	if file "$1" | grep -q "CRLF"; then
+		printf "\e[31mDOS line endings have appeared, "
+		printf "it must be coverted now!\e[0m\n\n"
+		LINE_BREAK=1
+	else
+		printf "\e[32mAll is well!\e[0m\n\n"
+	fi
 }
 
-# 2. check hosts format, only used if STRICT_HOSTS_FORMAT already set
-#
-chk_format() {
-    local loc="[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+"
-    local in_fmt="[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+$(echo -e "\t")[[:alnum:]]\+"
+# Check TAB, leading and trailing whitespace.
+chk_format()
+{
+	printf "\e[33;1mCheck hosts format:\e[0m\n"
 
-    echo -e "2. check hosts format:\n"
+	# Filter all hosts records.
+	cat "$1" | grep -Pv "^\s*#" | grep -P "(\d+\.){3}\d+" > 1.swp
+	# Trailing whitespace detection.
+	grep -P "[ \t]+$" "$1" >> 1.swp
+	# Filter good records.
+	cat "$1" | grep -Pv "^\s*#" | grep -P "^(\d+\.){3}\d+\t\w" > 2.swp
 
-    grep "$loc" "$1" > 1.txt
-    grep "$in_fmt" "$1" > 2.txt
+	if ! diff 1.swp 2.swp > 0.swp; then
+		printf "\e[31mhosts format mismatch! "
+		printf "The following rules should be normalized:\e[0m\n"
+		cat 0.swp; printf "\n"
+		FORMAT_BREAK=1
+	else
+		printf "\e[32mAll is well!\e[0m\n\n"
+	fi
 
-    diff -q 1.txt 2.txt
-
-    if [ "$?" -ne 0 ]; then
-        echo -e "\n\033[41mhosts format mismatch! " \
-                    "The following rules should be normalized:\033[0m"
-        diff 1.txt 2.txt
-        FORMAT_BREAK=1
-    else
-        echo -e "\033[42mAll is well!\033[0m"
-    fi
-
-    echo -e "\n"
-    rm -f 1.txt 2.txt
+	rm -f 0.swp 1.swp 2.swp
 }
 
-# 3. check "Last updated", only used if STRICT_HOSTS_FORMAT already set
-#
-chk_date() {
-    local real_date=$(git log --date=short "$1" | \
-                        grep -o "[0-9]\+-[0-9]\+-[0-9]\+" -m 1)
-    local in_hosts=$(grep -o "[0-9]\+-[0-9]\+-[0-9]\+" "$1")
+chk_date()
+{
+	local sys_date=$(date +%F)
+	local repo_date=$(git log --date=short "$1" |
+					grep -Pom1 "\d{4}-\d{2}-\d{2}")
+	local in_file=$(grep -Po "\d{4}-\d{2}-\d{2}" "$1")
 
-    echo -e "3. check hosts date:\n"
+	printf "\e[33;1mCheck hosts date:\e[0m\n"
 
-    if [ "$real_date" != "$in_hosts" ]; then
-        echo -e "\033[41mhosts date mismatch, last modified is $real_date, " \
-                "but hosts tells $in_hosts\033[0m\n\n"
-        DATE_BREAK=1
-    else
-        echo -e "\033[42mAll is well!\033[0m\n\n"
-    fi
+	# check if hosts file changes.
+	if git diff --exit-code "$1" &> /dev/null; then
+		# hosts file is not changed.
+		if [ "$repo_date" != "$in_file" ]; then
+			printf "\e[31mhosts date mismatch, last modified "
+			printf "is ${repo_date}, but hosts tells "
+			printf "${in_file}\e[0m\n\n"
+			DATE_BREAK=1
+		else
+			printf "\e[32mAll is well!\e[0m\n\n"
+		fi
+	else
+		# hosts file is being editing, and has not been committed.
+		if [ "$sys_date" != "$in_file" ]; then
+			printf "\e[31mhosts date mismatch, last modified "
+			printf "is $sys_date, but hosts tells "
+			printf "$in_file\e[0m\n\n"
+			DATE_BREAK=1
+		else
+			printf "\e[32mAll is well!\e[0m\n\n"
+		fi
+	fi
 }
 
-#
-# Result
-#
-result () {
-    echo -e "Result:\n"
-
-    echo -e "line endings break?      $LINE_BREAK (1 = yes, 0 = no)"
-
-    if [ -n "$STRICT_HOSTS_FORMAT" ]; then
-        echo -e "hosts format mismatch?   $FORMAT_BREAK (1 = yes, 0 = no)"
-        echo -e "hosts date mismatch?     $DATE_BREAK (1 = yes, 0 = no)"
-
-        local ret=$(echo -e "$LINE_BREAK $FORMAT_BREAK $DATE_BREAK" \
-            | grep -o "1" | wc -w)
-        exit $ret
-    else
-        exit $LINE_BREAK
-    fi
-}
-
-if [ "$1" = "" ]; then
-    echo -e "\033[41mError, requires an argument!\033[0m"
-    exit -1
+if [ -z "$1" ]; then
+	echo "Usage: $0 [file]"
+	exit 4
 fi
 
-chk_line "$1"
+chk_eol "$1"
+chk_format "$1"
+chk_date "$1"
 
-if [ -n "$STRICT_HOSTS_FORMAT" ]; then
-    chk_format "$1"
-    chk_date "$1"
-fi
-
-result
+exit $(( $LINE_BREAK + $FORMAT_BREAK + $DATE_BREAK ))
