@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2016, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2016-12-18
+# Last updated: 2016-12-22
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -160,8 +160,10 @@
 157.240.0.17	fb.me
 157.240.0.17	facebook.com
 157.240.0.17	www.facebook.com
+157.240.0.17	business.facebook.com
 157.240.0.17	m.facebook.com
 157.240.0.17	mqtt.facebook.com
+157.240.0.17	mqtt-mini.facebook.com
 157.240.0.17	s-static.ak.facebook.com
 23.76.153.42	static.ak.facebook.com
 23.76.153.42	b.static.ak.facebook.com
@@ -261,7 +263,7 @@
 # FlipBoard End
 
 # Github start
-192.30.253.113	gist.github.com
+192.30.253.118	gist.github.com
 # Github end
 
 # Gmail web Start
@@ -542,6 +544,7 @@
 61.91.161.217	jmoore-dot-android-experiments.appspot.com
 61.91.161.217	lfe-alpo-gm.appspot.com
 61.91.161.217	m-dot-betaspike.appspot.com
+61.91.161.217	joinjoaomgcd.appspot.com
 61.91.161.217	accounts.google.com.gi
 61.91.161.217	accounts.google.co.nz
 61.91.161.217	id.google.co.nz
@@ -867,6 +870,7 @@
 61.91.161.217	maps.googleapis.com
 61.91.161.217	origin-commondatastorage.googleapis.com
 216.58.221.144	commondatastorage.googleapis.com
+61.91.161.217	personalsafety-pa.googleapis.com
 61.91.161.217	play.googleapis.com
 61.91.161.217	plus.googleapis.com
 61.91.161.217	redirector-bigcache.googleapis.com
@@ -2812,6 +2816,7 @@
 64.233.188.188	gcm.googleapis.com
 64.233.188.188	gcm.l.google.com
 64.233.188.188	gcm-xmpp.googleapis.com
+64.233.188.188	gcm-http.googleapis.com
 64.233.188.188	gcm-preprod.l.google.com
 64.233.188.188	gcm-preprod.googleapis.com
 # Google:gcm End
