@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-01-14
+# Last updated: 2017-01-16
 
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
@@ -265,7 +265,6 @@
 # FlipBoard End
 
 # Github start
-192.30.253.118	gist.github.com
 192.30.253.118	gist.github.com
 204.232.175.78	http://documentcloud.github.com
 207.97.227.239	http://github.com
