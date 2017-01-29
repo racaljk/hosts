@@ -555,6 +555,7 @@
 61.91.161.217	boringssl.googlesource.com
 108.177.97.82	tensorflow.googlesource.com
 61.91.161.217	gerrit.googlesource.com
+61.91.161.217	gerrit-review.googlesource.com
 61.91.161.217	chromium.googlesource.com
 61.91.161.217	kernel.googlesource.com
 61.91.161.217	android-review.googlesource.com
