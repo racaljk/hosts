@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-02-20
+# Last updated: 2017-02-21
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -2324,7 +2324,7 @@
 216.58.196.236	compress.googlezip.net
 216.58.196.236	proxy-dev.googlezip.net
 216.239.34.21	polymer-project.org
-61.91.161.217	www.polymer-project.org
+216.58.199.243	www.polymer-project.org
 61.91.161.217	talkgadget.l.google.com
 61.91.161.217	hangouts.google.com
 61.91.161.217	hangout.google.com
@@ -3087,6 +3087,77 @@
 52.72.26.162	help.issuu.com
 # issuu End
 
+# Kobo Start
+128.127.159.1	magazines-adf.kobo.com
+157.55.176.209	social.kobobooks.com
+191.236.35.232	storedownloads.kobo.com
+191.238.229.33	discovery.kobobooks.com
+204.87.189.12	images.kobobooks.com
+204.87.189.201	ftp.kobobooks.com
+204.87.189.51	kobobooks.com
+204.87.189.51	prod-www.kobobooks.com
+204.87.189.71	ecimagest.kobobooks.com
+204.87.189.87	prod-store.kobobooks.com
+204.87.189.92	kobo.com
+13.92.121.97	kobomaintenance.kobobooks.com
+23.227.38.32	au.kobobooks.com
+23.227.38.32	ca-fr.kobobooks.com
+23.227.38.32	ca.kobobooks.com
+23.227.38.32	corporate.kobobooks.com
+23.227.38.32	de.kobobooks.com
+23.227.38.32	es.kobobooks.com
+23.227.38.32	fr.kobobooks.com
+23.227.38.32	gl.kobobooks.com
+23.227.38.32	it.kobobooks.com
+23.227.38.32	nz.kobobooks.com
+23.227.38.32	pt.kobobooks.com
+23.227.38.32	uk.kobobooks.com
+23.227.38.32	us.kobobooks.com
+23.38.96.57	akimages.kobobooks.com
+23.38.96.57	api.kobobooks.com
+23.38.96.57	esmx.kobobooks.com
+23.38.96.57	esmxsecure.kobobooks.com
+23.38.96.57	merch.kobobooks.com
+23.38.96.57	mobile.kobobooks.com
+23.38.96.57	mobilepartner.kobobooks.com
+23.38.96.57	mobilestage.kobobooks.com
+23.38.96.57	partner.kobobooks.com
+23.38.96.57	ptbr.kobobooks.com
+23.38.96.57	ptbrsecure.kobobooks.com
+23.38.96.57	ratingsapi.kobobooks.com
+23.38.96.57	read.kobobooks.com
+23.38.96.57	secure.kobobooks.com
+23.38.96.57	services.kobobooks.com
+23.38.96.57	store.kobobooks.
+23.38.96.57	tr.kobobooks.com
+23.38.96.57	webstore.kobobooks.com
+23.38.96.57	webstore2.kobobooks.com
+23.38.96.57	writinglife.kobobooks.com
+23.38.96.57	www.kobobooks.com
+23.38.99.249	assets.kobo.com
+23.38.99.249	de.kobo.com
+23.38.99.249	es.kobo.com
+23.38.99.249	fr.kobo.com
+23.38.99.249	it.kobo.com
+23.38.99.249	ja.kobo.com
+23.38.99.249	nl.kobo.com
+23.38.99.249	pt.kobo.com
+23.38.99.249	ptbr.kobo.com
+23.38.99.249	read.kobo.com
+23.38.99.249	rum.kobo.com
+23.38.99.249	stage.kobo.com
+23.38.99.249	storeapi.kobo.com
+23.38.99.249	tw.kobo.com
+23.38.99.249	www.kobo.com
+40.114.86.114	sorry.kobo.com
+75.98.196.99	media.kobobooks.com
+88.221.15.40	contentdownloads.kobobooks.com
+88.221.15.40	get.kobobooks.com
+88.221.15.50	ecimages.kobobooks.com
+88.221.15.50	ecmimages.kobobooks.com
+89.187.65.68	insiders.kobo.com
+# Kobo End
+
 # Line Start
 104.121.240.61	scdn.line-apps.com
 104.70.135.244	scdn.line-apps.com
@@ -3317,18 +3388,18 @@
 66.6.32.4	tumblr.co
 66.6.32.4	api.tumblr.com
 66.6.32.4	www.tumblr.com
-66.6.32.22	cynicallys.tumblr.com
-66.6.32.22	mx.tumblr.com
+192.229.237.97	cynicallys.tumblr.com
+192.229.237.97	mx.tumblr.com
 54.182.6.6	vt.tumblr.com
 87.248.116.14	vt.media.tumblr.com
 216.115.100.126	vtt.tumblr.com
 66.6.32.162	ls.srvcs.tumblr.com
 66.6.32.162	px.srvcs.tumblr.com
-119.160.254.197	assets.tumblr.com
+119.161.4.10	assets.tumblr.com
 119.160.254.215	secure.assets.tumblr.com
 54.182.6.6	secure.static.tumblr.com
 66.6.44.4	media.tumblr.com
-216.115.100.125	24.media.tumblr.com
+119.161.10.198	24.media.tumblr.com
 192.229.237.98	30.media.tumblr.com
 216.115.100.126	31.media.tumblr.com
 54.239.176.79	32.media.tumblr.com
@@ -3355,10 +3426,10 @@
 216.115.100.125	90.media.tumblr.com
 128.127.159.1	94.media.tumblr.com
 23.2.16.8	95.media.tumblr.com
-54.239.176.79	96.media.tumblr.com
+119.161.10.198	96.media.tumblr.com
 192.229.237.98	97.media.tumblr.com
 151.101.76.249	98.media.tumblr.com
-209.197.3.20	99.media.tumblr.com
+119.161.10.198	99.media.tumblr.com
 # Tumblr End
 
 # Twitter Start
