@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-02-21
+# Last updated: 2017-02-28
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -2366,8 +2366,8 @@
 61.91.161.217	i9.ytimg.com
 61.91.161.217	s.ytimg.com
 61.91.161.217	manifest.googlevideo.com
-64.233.162.83	onetoday.google.com
-64.233.162.83	notifications.google.com
+61.91.161.217	onetoday.google.com
+61.91.161.217	notifications.google.com
 
 # Google:others Start
 61.91.161.217	google.ad
