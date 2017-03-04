@@ -3606,4 +3606,21 @@
 116.214.11.98	tw.mobi.yahoo.com
 # Yahoo End
 
+# pcbeta Start
+218.93.127.136 pcbeta.com
+218.93.127.136 uc.pcbeta.com
+218.93.127.136 m.pcbeta.com
+218.93.127.136 web.pcbeta.com
+218.93.127.136 i.pcbeta.com
+218.93.127.136 bbs.pcbeta.com
+218.93.127.136 www.pcbeta.com
+218.93.127.136 cdn.pcbeta.attachment.inimc.com
+218.93.127.136 cdn.pcbeta.static.inimc.com
+218.93.127.136 cdn.pcbeta.css.inimc.com
+# pcbeta End
+
+# Xboxlive Start
+134.170.178.89  achievements.xboxlive.com
+# Xboxlive End
+
 # Modified hosts end
