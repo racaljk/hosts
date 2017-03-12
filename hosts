@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-10
+# Last updated: 2017-03-11
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -1064,6 +1064,7 @@
 61.91.161.217	android.clients.google.com
 61.91.161.217	withgoogle.com
 61.91.161.217	www.withgoogle.com
+61.91.161.217	cloudnext.withgoogle.com
 61.91.161.217	edutrainingcenter.withgoogle.com
 61.91.161.217	earthview.withgoogle.com
 61.91.161.217	lightsaber.withgoogle.com
