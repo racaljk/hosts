@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-11
+# Last updated: 2017-03-13
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -306,6 +306,9 @@
 61.91.161.217	clients4.google.com
 61.91.161.217	clients5.google.com
 61.91.161.217	clients6.google.com
+61.91.161.217	client2.google.com
+61.91.161.217	client4.google.com
+61.91.161.217	client6.google.com
 61.91.161.217	classroom.google.com
 61.91.161.217	classroom.google.ca
 61.91.161.217	clouderrorreporting.clients6.google.com
@@ -333,6 +336,7 @@
 61.91.161.217	cloudconfig.clients6.google.com
 61.91.161.217	gcmcontextualcampaign-pa.clients6.google.com
 61.91.161.217	mobilecrashreporting.clients6.google.com
+61.91.161.217	reminders-pa.clients6.google.com
 61.91.161.217	goto.google.com
 61.91.161.217	gxc.google.com
 61.91.161.217	get.google.com
@@ -618,7 +622,6 @@
 61.91.161.217	docs7.google.com
 61.91.161.217	docs8.google.com
 61.91.161.217	docs9.google.com
-61.91.161.217	firebase.google.com
 61.91.161.217	material.google.com
 216.239.34.21	material.io
 61.91.161.217	writely.google.com
@@ -3090,6 +3093,15 @@
 52.72.26.162	help.issuu.com
 # issuu End
 
+# Ingress Start
+54.241.32.8	appload.ingest.crittercism.com
+54.241.32.8	api.crittercism.com
+54.193.253.0	txn.ingest.crittercism.com
+169.44.145.200	bootstrap.upsight-api.com
+169.44.145.200	single.upsight-api.com
+169.44.145.200	batch.upsight-api.com
+# Ingress End
+
 # Kobo Start
 128.127.159.1	magazines-adf.kobo.com
 157.55.176.209	social.kobobooks.com
@@ -3163,73 +3175,29 @@
 
 # Line Start
 104.121.240.61	scdn.line-apps.com
-104.70.135.244	scdn.line-apps.com
-104.74.169.189	w.line.me
-104.98.19.185	scdn.line-apps.com
-104.98.19.185	scdn.line-apps.com
 125.209.210.239	lcp-checkout.line.me
-125.209.222.202	gd2w.line.naver.jp
-125.209.222.202	gd2w.line.naver.jp
 125.209.222.202	gd2w.line.naver.jp
 125.209.222.202	gww.line.naver.jp
 125.209.222.59	gd2k.line.naver.jp
-125.209.222.59	gd2w.line.naver.jp
-125.209.222.59	gww.line.naver.jp
 125.209.222.59	gwx.line.naver.jp
 125.209.238.181	obs-cn.line-apps.com
 125.209.238.181	obs.line-apps.com
 125.209.238.186	xcdn-cn-prf.line-apps.com
 125.209.238.186	xcdn-cn-shp.line-apps.com
 125.209.238.186	xcdn-cn-stk.line-apps.com
-125.209.238.186	xcdn-cn-stk.line-apps.com
-125.209.238.209	obs-cn.line-apps.com
-125.209.238.209	obs-cn.line-apps.com
-125.209.238.209	obs.line-apps.com
-125.209.248.6	xcdn-cn-prf.line-apps.com
 125.209.252.17	gd2g.line.naver.jp
 125.209.252.18	gd2i.line.naver.jp
-125.209.252.41	gwx.line.naver.jp
-125.209.252.42	gwx.line.naver.jp
-125.209.252.43	gwx.line.naver.jp
-125.209.252.44	gwx.line.naver.jp
 203.104.138.138	line.me
 203.104.142.52	lan.line.me
 203.104.150.2	gd2.line.naver.jp
 203.104.150.2	gw.line.naver.jp
-203.104.150.3	gwx.line.naver.jp
 203.104.150.4	obs-tw.line-apps.com
-203.104.153.1	gd2.line.naver.jp
-203.104.153.1	gw.line.naver.jp
-203.104.153.129	gd2.line.naver.jp
-203.104.153.129	gd2.line.naver.jp
-203.104.153.129	gw.line.naver.jp
-203.104.153.130	gwx.line.naver.jp
-203.104.153.135	obs-tw.line-apps.com
-203.104.153.2	gwx.line.naver.jp
-203.104.153.7	obs-tw.line-apps.com
 203.104.160.11	gd2u.line.naver.jp
-203.104.160.31	gwx.line.naver.jp
-203.104.160.32	gwx.line.naver.jp
 203.104.174.12	gd2s.line.naver.jp
 203.104.174.13	gd2v.line.naver.jp
-203.104.174.14	gwx.line.naver.jp
-203.104.174.15	gwx.line.naver.jp
-203.104.174.16	gwx.line.naver.jp
-203.104.174.17	gwx.line.naver.jp
-203.104.174.18	gwx.line.naver.jp
 23.0.130.177	w.line.me
-23.2.27.60	scdn.line-apps.com
-23.205.217.59	scdn.line-apps.com
-23.205.217.59	scdn.line-apps.com
 23.215.103.24	dl.profile.line.naver.jp
 23.215.103.40	dl.stickershop.line.naver.jp
-23.219.132.153	scdn.line-apps.com
-23.32.5.48	lan.line.me
-23.32.5.48	scdn.line-apps.com
-23.57.196.158	scdn.line-apps.com
-23.57.244.158	scdn.line-apps.com
-23.63.22.24	scdn.line-apps.com
-69.192.179.250	scdn.line-apps.com
 # Line End
 
 # Logmein Start
@@ -3307,10 +3275,20 @@
 # Psiphon End
 
 # pinterest Start
-151.101.64.84	about.pinterest.com
-151.101.64.84	blog.pinterest.com
 151.101.64.84	pinterest.com
 151.101.64.84	www.pinterest.com
+151.101.64.84	about.pinterest.com
+151.101.64.84	blog.pinterest.com
+151.101.192.84	api.pinterest.com
+151.101.192.84	nl.pinterest.com
+151.101.192.84	s.pinimg.com
+151.101.192.84	i.pinimg.com
+151.101.192.84	v.pinimg.com
+151.101.192.84	s-media-cache-ak0.pinimg.com
+151.101.192.84	passets-cdn.pinterest.com
+151.101.192.84	post.pinterest.com
+151.101.192.84	trk.pinterest.com
+151.101.192.84	api.pinterest.com
 23.212.99.185	s-media-cache-ak0.pinimg.com
 23.212.99.185	s.pinimg.com
 # pinterest End
