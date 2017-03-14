@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-13
+# Last updated: 2017-03-14
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -896,6 +896,7 @@
 61.91.161.217	bigcache.googleapis.com
 61.91.161.217	chart.googleapis.com
 61.91.161.217	content.googleapis.com
+61.91.161.217	growth-pa.googleapis.com
 61.91.161.217	khms0.googleapis.com
 61.91.161.217	khms1.googleapis.com
 61.91.161.217	maps.googleapis.com
@@ -3338,6 +3339,9 @@
 149.154.167.99	core.telegram.org
 149.154.167.99	macos.telegram.org
 149.154.167.120	web.telegram.org
+149.154.167.57	venus.web.telegram.org
+149.154.171.22	flora.web.telegram.org
+149.154.171.22	flora-1.web.telegram.org
 # telegram end
 
 # Tor Start
