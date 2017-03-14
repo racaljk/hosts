@@ -770,6 +770,7 @@
 61.91.161.217	safebrowsing.google.com
 61.91.161.217	search.google.com
 61.91.161.217	alt1-safebrowsing.google.com
+61.91.161.217	alt2-safebrowsing.google.com
 61.91.161.217	safebrowsing.clients.google.com
 61.91.161.217	safebrowsing-cache.google.com
 61.91.161.217	sandbox.google.com
@@ -893,6 +894,9 @@
 61.91.161.217	googleapis.com
 61.91.161.217	www.googleapis.com
 61.91.161.217	ajax.googleapis.com
+61.91.161.217	appinvite-pa.googleapis.com
+61.91.161.217	appinvite-ipv4-pa.googleapis.com
+61.91.161.217	appinvite-ipv6-pa.googleapis.com
 61.91.161.217	android.googleapis.com
 61.91.161.217	bigcache.googleapis.com
 61.91.161.217	chart.googleapis.com
@@ -903,6 +907,7 @@
 61.91.161.217	maps.googleapis.com
 61.91.161.217	origin-commondatastorage.googleapis.com
 216.58.221.144	commondatastorage.googleapis.com
+61.91.161.217	photos.googleapis.com
 61.91.161.217	play.googleapis.com
 61.91.161.217	plus.googleapis.com
 61.91.161.217	redirector-bigcache.googleapis.com
