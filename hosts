@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-14
+# Last updated: 2017-03-15
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -770,6 +770,7 @@
 61.91.161.217	safebrowsing.google.com
 61.91.161.217	search.google.com
 61.91.161.217	alt1-safebrowsing.google.com
+61.91.161.217	alt2-safebrowsing.google.com
 61.91.161.217	safebrowsing.clients.google.com
 61.91.161.217	safebrowsing-cache.google.com
 61.91.161.217	sandbox.google.com
@@ -864,6 +865,7 @@
 61.91.161.217	maps.gstatic.com
 61.91.161.217	ssl.gstatic.com
 61.91.161.217	www.gstatic.com
+61.91.161.217	connectivitycheck.gstatic.com
 61.91.161.217	encrypted-tbn0.gstatic.com
 61.91.161.217	encrypted-tbn1.gstatic.com
 61.91.161.217	encrypted-tbn2.gstatic.com
@@ -892,6 +894,9 @@
 61.91.161.217	googleapis.com
 61.91.161.217	www.googleapis.com
 61.91.161.217	ajax.googleapis.com
+61.91.161.217	appinvite-pa.googleapis.com
+61.91.161.217	appinvite-ipv4-pa.googleapis.com
+61.91.161.217	appinvite-ipv6-pa.googleapis.com
 61.91.161.217	android.googleapis.com
 61.91.161.217	bigcache.googleapis.com
 61.91.161.217	chart.googleapis.com
@@ -902,6 +907,7 @@
 61.91.161.217	maps.googleapis.com
 61.91.161.217	origin-commondatastorage.googleapis.com
 216.58.221.144	commondatastorage.googleapis.com
+61.91.161.217	photos.googleapis.com
 61.91.161.217	play.googleapis.com
 61.91.161.217	plus.googleapis.com
 61.91.161.217	redirector-bigcache.googleapis.com
@@ -3089,6 +3095,7 @@
 52.72.26.162	image.issuu.com
 52.72.26.162	api.issuu.com
 52.72.26.162	content.issuu.com
+52.72.26.162	e.issuu.com
 52.72.26.162	static.issuu.com
 52.72.26.162	skin.issuu.com
 52.72.26.162	help.issuu.com
@@ -3574,7 +3581,7 @@
 74.6.47.80	gq1.farm5.staticflickr.com
 74.6.47.80	gq1.farm6.staticflickr.com
 98.138.4.56	ne1.farm7.staticflickr.com
-183.177.81.73	flickr.com
+208.71.44.31	flickr.com
 106.10.137.175	geo.query.yahoo.com
 217.12.13.41	geo.yahoo.com
 203.84.197.27	finance.yahoo.com
@@ -3604,14 +3611,14 @@
 106.10.137.23	static.flickr.com
 106.10.199.11	tw.news.yahoo.com
 106.10.138.240	tw.yahoo.com
-121.101.144.116	up.flickr.com
+119.161.11.10	up.flickr.com
 204.0.5.34	us.js2.yimg.com
 106.10.138.240	us.yahoo.com
-183.177.81.73	www.flickr.com
+208.71.44.31	www.flickr.com
 106.10.138.240	www.yahoo.com
 98.138.253.109	yahoo.com
 77.238.184.150	ying.com
-183.177.81.73	downloadr.flickr.com
+208.71.44.31	downloadr.flickr.com
 50.18.192.250	duckduckgo-owned-server.yahoo.net
 116.214.11.98	tw.mobi.yahoo.com
 # Yahoo End
