@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-15
+# Last updated: 2017-03-22
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -475,6 +475,7 @@
 61.91.161.217	analytics.googleblog.com
 61.91.161.217	android.googleblog.com
 61.91.161.217	android-developers.googleblog.com
+61.91.161.217	androidstudio.googleblog.com
 61.91.161.217	research.googleblog.com
 61.91.161.217	security.googleblog.com
 61.91.161.217	gmail.googleblog.com
