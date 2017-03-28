@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-24
+# Last updated: 2017-03-27
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -358,6 +358,7 @@
 61.91.161.217	script.google.com
 61.91.161.217	security.google.com
 61.91.161.217	services.google.com
+61.91.161.217	summerofcode.withgoogle.com
 61.91.161.217	store.google.com
 61.91.161.217	suggestqueries.google.com
 61.91.161.217	support.google.com
@@ -477,6 +478,7 @@
 61.91.161.217	android.googleblog.com
 61.91.161.217	android-developers.googleblog.com
 61.91.161.217	androidstudio.googleblog.com
+61.91.161.217	firebase.googleblog.com
 61.91.161.217	research.googleblog.com
 61.91.161.217	security.googleblog.com
 61.91.161.217	gmail.googleblog.com
@@ -566,6 +568,7 @@
 61.91.161.217	jmoore-dot-android-experiments.appspot.com
 61.91.161.217	lfe-alpo-gm.appspot.com
 61.91.161.217	m-dot-betaspike.appspot.com
+61.91.161.217	mission-author-dot-betaspike.appspot.com
 61.91.161.217	joinjoaomgcd.appspot.com
 61.91.161.217	accounts.google.com.gi
 61.91.161.217	accounts.google.co.nz
@@ -574,7 +577,6 @@
 61.91.161.217	fuchsia.googlesource.com
 61.91.161.217	googlesource.com
 61.91.161.217	boringssl.googlesource.com
-108.177.97.82	tensorflow.googlesource.com
 61.91.161.217	gerrit.googlesource.com
 61.91.161.217	gerrit-review.googlesource.com
 61.91.161.217	chromium.googlesource.com
@@ -874,6 +876,7 @@
 61.91.161.217	encrypted-tbn2.gstatic.com
 61.91.161.217	encrypted-tbn3.gstatic.com
 203.208.51.55	fonts.gstatic.com
+61.91.161.217	play-music.gstatic.com
 61.91.161.217	g0.gstatic.com
 61.91.161.217	g1.gstatic.com
 61.91.161.217	g2.gstatic.com
@@ -2783,7 +2786,7 @@
 61.91.161.217	abc.xyz
 64.233.191.121	www.androidexperiments.com
 64.233.191.121	androidexperiments.com
-64.233.188.121	www.tensorflow.org
+61.91.161.217	www.tensorflow.org
 # Google:others End
 
 # Gmail SMTP/POP/IMAP Start
@@ -3535,7 +3538,7 @@
 104.244.42.73	a3.twimg.com
 104.244.42.73	a4.twimg.com
 104.244.42.73	a5.twimg.com
-104.244.42.73	video.twimg.com
+104.244.43.103	video.twimg.com
 104.244.42.73	abs.twimg.com
 104.244.42.73	g.twimg.com
 104.244.42.73	o.twimg.com
