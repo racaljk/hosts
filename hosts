@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-03-27
+# Last updated: 2017-03-28
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -59,6 +59,8 @@
 207.241.224.22	ia802704.us.archive.org
 207.241.224.22	analytics.archive.org
 207.241.226.190	web.archive.org
+207.241.225.186	web-beta.archive.org
+207.241.225.186	wwwb-sentry.us.archive.org
 # Archive End
 
 # Box.com Start
@@ -3488,38 +3490,38 @@
 # Tumblr End
 
 # Twitter Start
-104.244.45.248	twitter.com
-104.244.45.248	www.twitter.com
+104.244.45.250	twitter.com
+104.244.45.250	www.twitter.com
 185.45.5.47	t.co
-104.244.45.248	api.twitter.com
-104.244.45.248	mobile.twitter.com
-104.244.45.248	support.twitter.com
-104.244.45.248	upload.twitter.com
-104.244.45.248	tweetdeck.twitter.com
-104.244.45.248	syndication.twitter.com
+104.244.45.250	api.twitter.com
+104.244.45.250	mobile.twitter.com
+104.244.45.250	support.twitter.com
+104.244.45.250	upload.twitter.com
+104.244.45.250	tweetdeck.twitter.com
+104.244.45.250	syndication.twitter.com
 104.244.43.12	platform.twitter.com
-104.244.45.248	about.twitter.com
-104.244.45.248	blog.twitter.com
-104.244.45.248	betastream.twitter.com
-104.244.45.248	dev.twitter.com
-104.244.45.248	pic.twitter.com
-104.244.45.248	search.twitter.com
-104.244.45.248	status.twitter.com
-104.244.45.248	assets0.twitter.com
-104.244.45.248	assets1.twitter.com
-104.244.45.248	assets2.twitter.com
-104.244.45.248	assets3.twitter.com
-104.244.45.248	assets4.twitter.com
-104.244.45.248	static.twitter.com
-104.244.45.248	help.twitter.com
-104.244.45.248	ton.twitter.com
-104.244.45.248	s.twitter.com
-104.244.45.248	analytics.twitter.com
-104.244.45.248	urls-real.api.twitter.com
-104.244.45.248	userstream.twitter.com
-104.244.45.248	sitestream.twitter.com
-104.244.45.248	stream.twitter.com
-104.244.45.248	tdweb.twitter.com
+104.244.45.250	about.twitter.com
+104.244.45.250	blog.twitter.com
+104.244.45.250	betastream.twitter.com
+104.244.45.250	dev.twitter.com
+104.244.45.250	pic.twitter.com
+104.244.45.250	search.twitter.com
+104.244.45.250	status.twitter.com
+104.244.45.250	assets0.twitter.com
+104.244.45.250	assets1.twitter.com
+104.244.45.250	assets2.twitter.com
+104.244.45.250	assets3.twitter.com
+104.244.45.250	assets4.twitter.com
+104.244.45.250	static.twitter.com
+104.244.45.250	help.twitter.com
+104.244.45.250	ton.twitter.com
+104.244.45.250	s.twitter.com
+104.244.45.250	analytics.twitter.com
+104.244.45.250	urls-real.api.twitter.com
+104.244.45.250	userstream.twitter.com
+104.244.45.250	sitestream.twitter.com
+104.244.45.250	stream.twitter.com
+104.244.45.250	tdweb.twitter.com
 104.244.43.20	twitpic.com
 104.244.43.20	m1.twitpic.com
 104.244.43.20	web1.twitpic.com
@@ -3532,33 +3534,33 @@
 104.244.43.20	web7.twitpic.com
 104.244.43.20	web8.twitpic.com
 104.244.43.20	web9.twitpic.com
-104.244.42.73	a0.twimg.com
-104.244.42.73	a1.twimg.com
-104.244.42.73	a2.twimg.com
-104.244.42.73	a3.twimg.com
-104.244.42.73	a4.twimg.com
-104.244.42.73	a5.twimg.com
-104.244.43.103	video.twimg.com
-104.244.42.73	abs.twimg.com
-104.244.42.73	g.twimg.com
-104.244.42.73	o.twimg.com
-104.244.42.73	p.twimg.com
-104.244.42.73	r.twimg.com
-104.244.42.73	ma.twimg.com
-104.244.42.73	pbs.twimg.com
-104.244.42.73	ton.twimg.com
-104.244.42.73	syndication.twimg.com
-104.244.42.73	syndication-o.twimg.com
-104.244.42.73	image-proxy-origin.twimg.com
-104.244.45.248	tweetdeck.com
-104.244.45.248	api.tweetdeck.com
-104.244.45.248	web.tweetdeck.com
-104.244.45.248	www.tweetdeck.com
-104.244.45.248	downloads.tweetdeck.com
+104.244.43.167	a0.twimg.com
+104.244.43.167	a1.twimg.com
+104.244.43.167	a2.twimg.com
+104.244.43.167	a3.twimg.com
+104.244.43.167	a4.twimg.com
+104.244.43.167	a5.twimg.com
+104.244.43.167	video.twimg.com
+104.244.43.167	abs.twimg.com
+104.244.43.167	g.twimg.com
+104.244.43.167	o.twimg.com
+104.244.43.167	p.twimg.com
+104.244.43.167	r.twimg.com
+104.244.43.167	ma.twimg.com
+104.244.43.167	pbs.twimg.com
+104.244.43.167	ton.twimg.com
+104.244.43.167	syndication.twimg.com
+104.244.43.167	syndication-o.twimg.com
+104.244.43.167	image-proxy-origin.twimg.com
+104.244.45.250	tweetdeck.com
+104.244.45.250	api.tweetdeck.com
+104.244.45.250	web.tweetdeck.com
+104.244.45.250	www.tweetdeck.com
+104.244.45.250	downloads.tweetdeck.com
 104.244.43.145	cdn.syndication.twimg.com
 104.244.43.8	cdn.syndication.twitter.com
-104.244.45.248	apps.twitter.com
-104.244.45.248	debates.twitter.com
+104.244.45.250	apps.twitter.com
+104.244.45.250	debates.twitter.com
 # Twitter End
 
 # Vimeo Start
