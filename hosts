@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-07
+# Last updated: 2017-04-08
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -291,6 +291,7 @@
 61.91.161.217	gcr.io
 61.91.161.217	www.gcr.io
 61.91.161.217	com.google
+61.91.161.217	dl.google.com
 61.91.161.217	admin.google.com
 61.91.161.217	accounts.google.com
 61.91.161.217	accounts.google.cn
