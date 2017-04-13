@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-11
+# Last updated: 2017-04-13
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3553,6 +3553,7 @@
 104.244.43.167	video.twimg.com
 104.244.43.167	abs.twimg.com
 104.244.43.167	g.twimg.com
+104.244.43.167	hca.twimg.com
 104.244.43.167	o.twimg.com
 104.244.43.167	p.twimg.com
 104.244.43.167	r.twimg.com
