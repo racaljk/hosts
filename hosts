@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-14
+# Last updated: 2017-04-19
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3678,5 +3678,13 @@
 50.18.192.250	duckduckgo-owned-server.yahoo.net
 116.214.11.98	tw.mobi.yahoo.com
 # Yahoo End
+
+#culturalspot start
+61.91.161.217	embed.culturalspot.org
+#culturalspot end
+
+#autodraw start
+172.217.25.243	www.autodraw.com
+#autodraw end
 
 # Modified hosts end
