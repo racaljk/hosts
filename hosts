@@ -266,7 +266,10 @@
 # FlipBoard End
 
 # Github start
+192.30.253.112	github.com
+151.101.60.249	github.global.ssl.fastly.net
 192.30.253.118	gist.github.com
+151.101.0.133	assets-cdn.github.com
 # Github end
 
 # Gmail web Start
