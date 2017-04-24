@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-20
+# Last updated: 2017-04-24
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -266,16 +266,11 @@
 # FlipBoard End
 
 # Github start
-<<<<<<< HEAD
-192.30.253.119	gist.github.com
 151.101.0.249	github.global.ssl.fastly.net
-203.208.39.99	github.com
-=======
 192.30.253.112	github.com
 151.101.60.249	github.global.ssl.fastly.net
-192.30.253.118	gist.github.com
+192.30.253.119	gist.github.com
 151.101.0.133	assets-cdn.github.com
->>>>>>> d95629093bca6436cbfb2075c0a4f3e58ee42ca4
 # Github end
 
 # Gmail web Start
