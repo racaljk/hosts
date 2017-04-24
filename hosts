@@ -266,9 +266,16 @@
 # FlipBoard End
 
 # Github start
+<<<<<<< HEAD
 192.30.253.119	gist.github.com
 151.101.0.249	github.global.ssl.fastly.net
 203.208.39.99	github.com
+=======
+192.30.253.112	github.com
+151.101.60.249	github.global.ssl.fastly.net
+192.30.253.118	gist.github.com
+151.101.0.133	assets-cdn.github.com
+>>>>>>> d95629093bca6436cbfb2075c0a4f3e58ee42ca4
 # Github end
 
 # Gmail web Start
@@ -981,8 +988,8 @@
 61.91.161.217	g.co
 61.91.161.217	www.google.org
 61.91.161.217	blog.google.org
-216.58.208.151	panoramio.com
-216.58.208.151	www.panoramio.com
+216.58.196.150	panoramio.com
+216.58.196.150	www.panoramio.com
 64.233.189.128	static.panoramio.com
 61.91.161.217	blog.panoramio.com
 61.91.161.217	www.recaptcha.net
