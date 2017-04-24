@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-20
+# Last updated: 2017-04-24
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -27,14 +27,14 @@
 54.240.193.125	ap-southeast-2.console.aws.amazon.com
 54.239.38.102	eu-west-1.console.aws.amazon.com
 54.239.54.102	eu-central-1.console.aws.amazon.com
-54.231.49.3	s3.amazonaws.com
+54.231.49.3		s3.amazonaws.com
 54.239.31.128	s3-console-us-standard.console.aws.amazon.com
-52.219.0.4	s3-ap-northeast-1.amazonaws.com
+52.219.0.4		s3-ap-northeast-1.amazonaws.com
 54.231.242.170	s3-ap-southeast-1.amazonaws.com
 54.231.251.21	s3-ap-southeast-2.amazonaws.com
 52.218.16.140	s3-eu-west-1.amazonaws.com
 54.231.193.37	s3-eu-central-1.amazonaws.com
-52.92.72.2	s3-sa-east-1.amazonaws.com
+52.92.72.2		s3-sa-east-1.amazonaws.com
 54.231.236.6	s3-us-west-1.amazonaws.com
 54.231.168.160	s3-us-west-2.amazonaws.com
 177.72.244.194	sa-east-1.console.aws.amazon.com
@@ -266,7 +266,10 @@
 # FlipBoard End
 
 # Github start
-192.30.253.118	gist.github.com
+151.101.0.249	github.global.ssl.fastly.net
+192.30.253.112	github.com
+192.30.253.119	gist.github.com
+151.101.0.133	assets-cdn.github.com
 # Github end
 
 # Gmail web Start
@@ -3686,5 +3689,9 @@
 #autodraw start
 172.217.25.243	www.autodraw.com
 #autodraw end
+
+#ieeexplore start
+140.98.193.112	ieeexplore.ieee.org
+#ieeexplore end
 
 # Modified hosts end
