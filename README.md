@@ -42,7 +42,28 @@
 **注意**
   >  - 手动替换 hosts 时，建议清空 hosts 原有的内容，再进行复制操作
   >  - 替换 hosts 文件后，相关记录可能不会立即生效，可以关闭开启网络，或启用禁用飞行模式<br/>
-  >    让域名解析立即生效
+  >    让域名解析立即生效
+#### 域名解析生效方法
+- Windows
+ 开始 -> 运行 -> 输入cmd -> 在CMD窗口输入
+```
+ipconfig /flushdns
+```
+- Linux
+ 终端输入
+```
+sudo rcnscd restart
+// 对于systemd发行版，请使用命令
+sudo systemctl restart NetworkManager
+```
+- Mac OS X终端输入
+```
+sudo killall -HUP mDNSResponder
+```
+- Android
+ 开启飞行模式 -> 关闭飞行模式
+
+- **通用方法** :断网重新连接网络,如不行请清空浏览器缓存
 
 ## 更多
 
