@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-04-20
+# Last updated: 2017-05-03
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3692,11 +3692,10 @@
 52.214.109.54 www.thebodyshop.com
 52.48.212.136 thebodyshop.com
 59.124.99.130 thebodyshop.com.tw
-210.200.141.55 shop.thebodyshop.com.tw
-52.76.11.9 www.thebodyshop.com.hk
+210.200.141.55  shop.thebodyshop.com.tw
+52.76.11.9  www.thebodyshop.com.hk
 151.101.0.230 apps.nexus.bazaarvoice.com
-210.200.141.52 fs.thebodyshop.com.tw
-
+210.200.141.52  fs.thebodyshop.com.tw
 #thebodyshop end
 
 
