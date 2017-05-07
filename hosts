@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-05-06
+# Last updated: 2017-05-07
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -3712,16 +3712,19 @@
 61.91.161.217	tw.youtube.com
 61.91.161.217	uk.youtube.com
 61.91.161.217	accounts.youtube.com
+61.91.161.217	analytics.youtube.com
 61.91.161.217	apiblog.youtube.com
 61.91.161.217	m.youtube.com
 61.91.161.217	s.youtube.com
 61.91.161.217	gdata.youtube.com
+61.91.161.217	gaming.youtube.com
 61.91.161.217	help.youtube.com
 61.91.161.217	img.youtube.com
 61.91.161.217	insight.youtube.com
 61.91.161.217	upload.youtube.com
 61.91.161.217	redirector.c.youtube.com
 61.91.161.217	stage.gdata.youtube.com
+61.91.161.217	tv.youtube.com
 61.91.161.217	uploads.stage.gdata.youtube.com
 61.91.161.217	youtube.googleblog.com
 61.91.161.217	youtube.googleapis.com
