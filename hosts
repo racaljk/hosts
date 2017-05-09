@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-05-07
+# Last updated: 2017-05-09
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -702,6 +702,7 @@
 
 61.91.161.217	gwt.googlesource.com
 61.91.161.217	code.google.com
+61.91.161.217	code.googlesource.com
 61.91.161.217	uploads.code.google.com
 
 61.91.161.217	chromium.googlecode.com
