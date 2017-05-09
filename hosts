@@ -1075,6 +1075,8 @@
 61.91.161.217	feeds2.feedburner.com
 61.91.161.217	feedproxy.google.com
 61.91.161.217	go.googlesource.com
+61.91.161.217	go-review.googlesource.com
+61.91.161.217	cdn.googlesource.com
 61.91.161.217	golang.org
 61.91.161.217	www.golang.org
 61.91.161.217	blog.golang.org
