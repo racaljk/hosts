@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-05-12
+# Last updated: 2017-05-13
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -112,6 +112,16 @@
 # bandwagonhost.com Start
 104.20.6.63	bandwagonhost.com
 # bandwagonhost.com End
+
+# Cloudfront.net Start
+52.84.246.72	d3c33hcgiwev3.cloudfront.net
+52.84.246.90	d3c33hcgiwev3.cloudfront.net
+52.84.246.106	d3c33hcgiwev3.cloudfront.net
+52.84.246.135	d3c33hcgiwev3.cloudfront.net
+52.84.246.144	d3c33hcgiwev3.cloudfront.net
+52.84.246.227	d3c33hcgiwev3.cloudfront.net
+52.84.246.252	d3c33hcgiwev3.cloudfront.net
+# Cloudfront.net End
 
 # Disqus Start
 151.101.100.134	disqus.com
