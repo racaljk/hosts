@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-05-13
+# Last updated: 2017-05-14
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -1099,9 +1099,9 @@
 61.91.161.217	g.co
 61.91.161.217	www.google.org
 61.91.161.217	blog.google.org
-216.58.196.150	panoramio.com
-216.58.196.150	www.panoramio.com
-64.233.189.128	static.panoramio.com
+74.125.34.40	panoramio.com
+74.125.34.40	www.panoramio.com
+64.233.188.128	static.panoramio.com
 61.91.161.217	blog.panoramio.com
 61.91.161.217	www.recaptcha.net
 61.91.161.217	api.recaptcha.net
@@ -3534,39 +3534,39 @@
 # Tumblr End
 
 # Twitter Start
-104.244.45.253	twitter.com
-104.244.45.253	www.twitter.com
+104.244.45.250	twitter.com
+104.244.45.250	www.twitter.com
 185.45.5.47	t.co
-104.244.45.253	api.twitter.com
-104.244.45.253	caps.twitter.com
-104.244.45.253	mobile.twitter.com
-104.244.45.253	support.twitter.com
-104.244.45.253	upload.twitter.com
-104.244.45.253	tweetdeck.twitter.com
-104.244.45.253	syndication.twitter.com
+104.244.45.250	api.twitter.com
+104.244.45.250	caps.twitter.com
+104.244.45.250	mobile.twitter.com
+104.244.45.250	support.twitter.com
+104.244.45.250	upload.twitter.com
+104.244.45.250	tweetdeck.twitter.com
+104.244.45.250	syndication.twitter.com
 104.244.43.77	platform.twitter.com
-104.244.45.253	about.twitter.com
-104.244.45.253	blog.twitter.com
-104.244.45.253	betastream.twitter.com
-104.244.45.253	dev.twitter.com
-104.244.45.253	pic.twitter.com
-104.244.45.253	search.twitter.com
-104.244.45.253	status.twitter.com
-104.244.45.253	assets0.twitter.com
-104.244.45.253	assets1.twitter.com
-104.244.45.253	assets2.twitter.com
-104.244.45.253	assets3.twitter.com
-104.244.45.253	assets4.twitter.com
-104.244.45.253	static.twitter.com
-104.244.45.253	help.twitter.com
-104.244.45.253	ton.twitter.com
-104.244.45.253	s.twitter.com
-104.244.45.253	analytics.twitter.com
-104.244.45.253	urls-real.api.twitter.com
-104.244.45.253	userstream.twitter.com
-104.244.45.253	sitestream.twitter.com
-104.244.45.253	stream.twitter.com
-104.244.45.253	tdweb.twitter.com
+104.244.45.250	about.twitter.com
+104.244.45.250	blog.twitter.com
+104.244.45.250	betastream.twitter.com
+104.244.45.250	dev.twitter.com
+104.244.45.250	pic.twitter.com
+104.244.45.250	search.twitter.com
+104.244.45.250	status.twitter.com
+104.244.45.250	assets0.twitter.com
+104.244.45.250	assets1.twitter.com
+104.244.45.250	assets2.twitter.com
+104.244.45.250	assets3.twitter.com
+104.244.45.250	assets4.twitter.com
+104.244.45.250	static.twitter.com
+104.244.45.250	help.twitter.com
+104.244.45.250	ton.twitter.com
+104.244.45.250	s.twitter.com
+104.244.45.250	analytics.twitter.com
+104.244.45.250	urls-real.api.twitter.com
+104.244.45.250	userstream.twitter.com
+104.244.45.250	sitestream.twitter.com
+104.244.45.250	stream.twitter.com
+104.244.45.250	tdweb.twitter.com
 104.244.43.52	twitpic.com
 104.244.43.52	m1.twitpic.com
 104.244.43.52	web1.twitpic.com
