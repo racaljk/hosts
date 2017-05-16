@@ -11,6 +11,8 @@
 
 ### Android
 - [AndroidGoogleHost](https://github.com/HostsTools/Android)
+- [Daedalus](https://github.com/iTXTech/Daedalus)
+  - 免 Root 使用第三方DNS服务器，自定义hosts和DNSMasq规则（适用于Android 4.0.3 或以上，纯Java编写）
 
 ### 跨平台
 - [HostsTool](https://github.com/HostsTools/cross-platform-Qt)（采用 Qt 框架开发）
