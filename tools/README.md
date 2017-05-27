@@ -32,6 +32,3 @@
 
 - [**lhosts**](lhosts)
   - Linux 平台更新 hosts 脚本，请使用 `./lhosts -h` 命令获取帮助信息。
-
-- [**Hindent**](Hindent)
-  - Linux 平台下格式化 hosts 文件的脚本
