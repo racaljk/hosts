@@ -22,6 +22,11 @@
 ## 更新 hosts
 #### 推荐使用项目内提供的 [应用/工具](tools) 来自动获取最新 hosts 文件，以下简单介绍手动替换 hosts 的步骤
 
+### Max自动更新
+* 运行sudo crontab -e
+增加执行脚本的任务
+脚本为autogenerate
+
 ### Windows
 
 1. 用文本编辑器（如 [Notepad++](https://notepad-plus-plus.org/)）打开 (如下图)：`%SystemRoot%\System32\drivers\etc\hosts`
