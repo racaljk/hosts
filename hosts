@@ -40,6 +40,10 @@
 219.76.4.4	github-production-release-asset-2e65be.s3.amazonaws.com
 # Amazon AWS End
 
+# Fastly Start
+151.101.72.249 global-ssl.fastly.net
+# Fastly End
+
 # Android Start
 216.58.200.33	android.com
 216.58.200.33	www.android.com
