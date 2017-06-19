@@ -79,7 +79,8 @@ get_hosts()
 }
 
 backup_hosts()
-{
+{       
+        unalias cp 2> /dev/null
 	sudo cp -f "$HOSTS" "$BACKUP_FILE"
 }
 
@@ -100,7 +101,7 @@ update_hosts()
 			echo "请从 $BACKUP_FILE 中手动恢复需要的 hosts 记录" >&2
 		fi
 	fi
-
+	sudo echo "127.0.1.1	`hostname`" >> $REMOTE_FILE
 	cat "$REMOTE_FILE" >> "$swp"
 	sudo cp -f "$swp" "$HOSTS"
 
