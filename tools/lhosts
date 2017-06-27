@@ -73,7 +73,8 @@ get_hosts()
 	fi
 
 	# Add range mark
-	sed -e "1 i\\$BEGIN_MARK" -e "$ a\\$END_MARK" "$REMOTE_FILE" > "$swp"
+	sed -e '1i\'$'\n'"$BEGIN_MARK" -e '$a\'$'\n'"$END_MARK" "$REMOTE_FILE" > "$swp"
+
 	mv -f "$swp" "$REMOTE_FILE"
 }
 
