@@ -1,25 +1,23 @@
 #!/bin/bash
-# Update your hosts file from：
+# Update hosts file from:
 # https://github.com/racaljk/hosts
 #
 
 myname=${0##*/}
 
 HOSTS="/etc/hosts"
-BACKUP_FILE="/etc/hosts.$myname.$(date +%Y%m%d%H%M%S).bak"
+BACKUP_FILE="/etc/hosts.bak"
 REMOTE_FILE="/tmp/hosts.rmt"
 
 MAIN="https://raw.githubusercontent.com/racaljk/hosts/master/hosts"
 MIRROR="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts"
 HOSTS_URL="$MAIN"
 
-NET_TOOLS="curl"
-QWGET=
-QCURL=
-
+QUIET_MODE=
 RANGE=
-BEGIN_MARK="#-- $myname BEGIN MARK --#"
-END_MARK="#-- $myname END MARK --#"
+
+BEGIN_MARK="# 远程 hosts 开始标记，请在 上方 添加其他内容"
+END_MARK="# 远程 hosts 结束标记，请在 下方 添加其他内容"
 
 usage()
 {
@@ -27,20 +25,19 @@ usage()
 提示:
   1. 可以使用 crontab 定时执行脚本 (root 身份运行或 sudo 免密码);
 
-  2. 使用 $myname 下载的 hosts 会被加上范围标记，每次更新会保留范围外的
-     全部内容。首次使用 $myname 会自动保留原hosts内容，请放心使用。
+  2. 使用 $myname 下载的 hosts 会被加上范围标记，每次更新**仅保留范围外**的
+     全部内容 (请勿在标记范围内添加自定义内容)。
 
-  3. 更新前，本地 hosts 备份至 $BACKUP_FILE 并每次保留时间戳，方便随时查找恢复
+  3. 更新前，本地 hosts 备份至 $BACKUP_FILE
 
 用法: $myname [选项]...
 
 选项:
   -m, --mirror           从镜像仓库获取 hosts (下载更快)
   -q, --quiet            静默模式
-  -r, --range <range>    范围模式
+  -r, --range <range>    范围模式 (无视范围标记)
   -u, --url <url>        自定义 hosts 源地址
-  -w, --wget             使用 wget 下载
-  -h, -1, --help         显示帮助信息并退出
+  -h, --help             显示帮助信息并退出
 
 退出状态：
   0  正常
@@ -61,19 +58,14 @@ EOL
 get_hosts()
 {
 	local swp="/tmp/hosts.swp"
+	local downer="curl ${HOSTS_URL} -#o ${REMOTE_FILE}"
 
-	# If the quiet mode is turned off, print some messages.
-	if [ -z "$QCURL" ]; then
-		echo "正在更新 hosts..."
-        fi
-
-	if [ "$NET_TOOLS" = "wget" ]; then
-		# Use Wget to download.
-		"$NET_TOOLS" $QWGET "$HOSTS_URL" -O "$REMOTE_FILE"
+	if [ "$QUIET_MODE" = "on" ]; then
+		${downer} -s
 	else
-		# Use cURL to download.
-		"$NET_TOOLS" $QCURL "$HOSTS_URL" -#o "$REMOTE_FILE"
-	fi
+		echo "正在更新 hosts..."
+		${downer}
+        fi
 
 	if [ $? -ne 0 ]; then
 		echo "hosts 下载失败" >&2
@@ -81,7 +73,8 @@ get_hosts()
 	fi
 
 	# Add range mark
-	sed -e "1 i\\$BEGIN_MARK" -e "$ a\\$END_MARK" "$REMOTE_FILE" > "$swp"
+	sed -e '1i\'$'\n'"$BEGIN_MARK" -e '$a\'$'\n'"$END_MARK" "$REMOTE_FILE" > "$swp"
+
 	mv -f "$swp" "$REMOTE_FILE"
 }
 
@@ -98,18 +91,13 @@ update_hosts()
 		# Range mode on
 		sed -n "$RANGE"p "$HOSTS" > "$swp"
 	else
-		# Range mode off, auto set marker if no marker in the local hosts file.
-		if cat /etc/hosts | grep "$BEGIN_MARK"; then
-			echo 'Find MARK and handle the marker range only'
-		else
-			echo 'Not find MARK, Auto set marker and save hosts content'
-			echo $BEGIN_MARK | sudo tee -a /etc/hosts
-			echo $END_MARK | sudo tee -a /etc/hosts
-			echo 'Hosts update success!'
-		fi
 		# Range mode off, handle marker in the local hosts file.
 		if grep -q "$BEGIN_MARK" "$HOSTS"; then
 			sed "/$BEGIN_MARK/,/$END_MARK/d" "$HOSTS" >> "$swp"
+		else
+			echo "警告: $HOSTS 中没有发现此脚本所作标记，" \
+					"更新后会清空之前的所有内容。" >&2
+			echo "请从 $BACKUP_FILE 中手动恢复需要的 hosts 记录" >&2
 		fi
 	fi
 
@@ -119,35 +107,30 @@ update_hosts()
 	rm -f "$swp" "$REMOTE_FILE"
 }
 
-LONGOPTS="wget,mirror,quiet,url:,range:,help"
-CMD=$(getopt -o wmqu:r:h1 --long $LONGOPTS -n "$myname" -- "$@") || exit 1
+LONGOPTS="mirror,quiet,url:,range:,help"
+CMD=$(getopt -o mqu:r:h --long $LONGOPTS -n "$myname" -- "$@") || exit 1
 
 eval set -- "$CMD"
 
 while true; do
 	case "$1" in
-	-w|--wget)
-		NET_TOOLS="wget"
-		shift
-		;;
 	-m|--mirror)
 		HOSTS_URL="$MIRROR"
 		shift
 		;;
 	-q|--quiet)
-		QWGET=-q
-		QCURL=-s
+		QUIET_MODE="on"
 		shift
-		;;
-	-u|--url)
-		HOSTS_URL="$2"
-		shift 2
 		;;
 	-r|--range)
 		RANGE="$2"
 		shift 2
 		;;
-	-h|-1|--help)
+	-u|--url)
+		HOSTS_URL="$2"
+		shift 2
+		;;
+	-h|--help)
 		usage
 		exit 0
 		shift

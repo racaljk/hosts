@@ -11,6 +11,8 @@
 
 ### Android
 - [AndroidGoogleHost](https://github.com/HostsTools/Android)
+- [Daedalus](https://github.com/iTXTech/Daedalus)
+  - 免 Root 使用第三方DNS服务器，自定义hosts和DNSMasq规则（适用于Android 4.0.3 或以上，纯Java编写）
 
 ### 跨平台
 - [HostsTool](https://github.com/HostsTools/cross-platform-Qt)（采用 Qt 框架开发）
@@ -23,13 +25,10 @@
 
 ### 工具
 
-- [**Windows.zip**](https://github.com/racaljk/hosts/raw/master/tools/windows.zip)
+- [**Windows.zip**](https://github.com/HostsTools/Windows/releases)
   - 代替脚本的可执行程序版本，比脚本稍大但是更有鲁棒性
   - 贡献者:[@Too-Naive](https://github.com/Too-Naive)
   - Homepage:[HostsTools/Windows](https://github.com/HostsTools/Windows)
 
 - [**lhosts**](lhosts)
   - Linux 平台更新 hosts 脚本，请使用 `./lhosts -h` 命令获取帮助信息。
-
-- [**Hindent**](Hindent)
-  - Linux 平台下格式化 hosts 文件的脚本
