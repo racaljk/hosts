@@ -1,6 +1,6 @@
 # Copyright (c) 2014-2017, racaljk.
 # https://github.com/racaljk/hosts
-# Last updated: 2017-06-22
+# Last updated: 2017-07-05
 
 # This work is licensed under a CC BY-NC-SA 4.0 International License.
 # https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -158,55 +158,55 @@
 # Disqus End
 
 # Dropbox Start
-108.160.173.239	dropbox.com
-108.160.173.239	www.dropbox.com
-108.160.173.193	db.tt
-108.160.173.193	www.v.dropbox.com
-108.160.173.193	www.dropbox-dns.com
-108.160.173.193	api.dropbox.com
-108.160.173.193	api-d.dropbox.com
-108.160.173.193	api.dropboxapi.com
-108.160.173.193	api.v.dropbox.com
-108.160.173.193	api-notify.dropbox.com
-108.160.173.193	api-content.dropbox.com
-108.160.173.193	api-content-photos.dropbox.com
-108.160.173.193	blogs.dropbox.com
-108.160.173.193	block.dropbox.com
-108.160.173.193	block.v.dropbox.com
-108.160.173.193	bolt.dropbox.com
-108.160.173.193	client.dropbox.com
-108.160.173.193	client.v.dropbox.com
-108.160.173.193	client-lb.dropbox.com
-108.160.173.193	client-cf.dropbox.com
-108.160.173.193	client-web.dropbox.com
-108.160.173.193	d.dropbox.com
-108.160.173.193	d.v.dropbox.com
-108.160.173.193	dl.dropbox.com
-108.160.173.193	dl-doc.dropbox.com
-108.160.173.193	dl-web.dropbox.com
-108.160.173.193	dl-debug.dropbox.com
-108.160.173.193	forums.dropbox.com
-108.160.173.193	linux.dropbox.com
-108.160.173.193	m.dropbox.com
-108.160.173.193	marketing.dropbox.com
-108.160.173.193	notify.dropbox.com
-108.160.173.193	photos.dropbox.com
-108.160.173.193	photos-1.dropbox.com
-108.160.173.193	photos-2.dropbox.com
-108.160.173.193	photos-3.dropbox.com
-108.160.173.193	photos-4.dropbox.com
-108.160.173.193	photos-5.dropbox.com
-108.160.173.193	photos-6.dropbox.com
-108.160.173.193	photos-thumb.dropbox.com
-108.160.173.193	photos-thumb.x.dropbox.com
-108.160.173.193	status.dropbox.com
-108.160.173.193	snapengage.dropbox.com
-162.125.3.6	dl.dropboxusercontent.com
-104.16.100.29	www.dropboxstatic.com
+162.125.248.1	dropbox.com
+162.125.248.1	www.dropbox.com
+162.125.32.9	db.tt
+162.125.32.14	www.v.dropbox.com
+162.125.7.1	www.dropbox-dns.com
+162.125.82.7	api.dropbox.com
+162.125.82.7	api.dropboxapi.com
+162.125.32.5	api-d.dropbox.com
+162.125.32.13	api.v.dropbox.com
+162.125.32.13	api-notify.dropbox.com
+162.125.1.8	api-content.dropbox.com
+162.125.2.5	api-content-photos.dropbox.com
+52.85.12.34	blogs.dropbox.com
+162.125.32.2	block.dropbox.com
+162.125.34.133	block.v.dropbox.com
+162.125.18.133	bolt.dropbox.com
+162.125.2.3	client.dropbox.com
+162.125.2.3	client-cf.dropbox.com
+162.125.32.12	client.v.dropbox.com
+162.125.80.3	client-lb.dropbox.com
+162.125.80.3	client-web.dropbox.com
+162.125.32.5	d.dropbox.com
+162.125.32.5	d.v.dropbox.com
+162.125.2.6	dl.dropbox.com
+162.125.2.6	dl-web.dropbox.com
+162.125.80.6	dl-doc.dropbox.com
+34.197.94.108	dl-debug.dropbox.com
+52.85.12.7	forums.dropbox.com
+54.192.136.115	linux.dropbox.com
+162.125.32.9	m.dropbox.com
+52.85.12.227	marketing.dropbox.com
+162.125.17.131	notify.dropbox.com
+162.125.32.15	photos.dropbox.com
+162.125.80.5	photos-1.dropbox.com
+162.125.80.5	photos-2.dropbox.com
+162.125.80.5	photos-3.dropbox.com
+162.125.80.5	photos-4.dropbox.com
+162.125.80.5	photos-5.dropbox.com
+162.125.80.5	photos-6.dropbox.com
+162.125.80.5	photos-thumb.dropbox.com
+162.125.18.129	photos-thumb.x.dropbox.com
+52.85.12.41	status.dropbox.com
+52.85.12.72	snapengage.dropbox.com
+162.125.2.6	dl.dropboxusercontent.com
+162.125.32.10	www.dropboxstatic.com
 104.16.100.29	cfl.dropboxstatic.com
-104.16.100.29	cf.dropboxstatic.com
-104.16.100.29	dbxlocal.dropboxstatic.com
-104.16.100.29	log.getdropbox.com
+54.230.125.126	cf.dropboxstatic.com
+162.125.32.10	dbxlocal.dropboxstatic.com
+162.125.32.6	log.getdropbox.com
 # Dropbox End
 
 # DuckDuckGo Start
@@ -292,6 +292,15 @@
 157.240.7.35	static.xx.fbcdn.net
 157.240.7.35	static.thefacebook.com
 157.240.7.35	attachment.fbsbx.com
+157.240.7.35	messenger.com
+157.240.7.35	www.messenger.com
+157.240.7.35	0-edge-chat.messenger.com
+157.240.7.35	1-edge-chat.messenger.com
+157.240.7.35	2-edge-chat.messenger.com
+157.240.7.35	3-edge-chat.messenger.com
+157.240.7.35	4-edge-chat.messenger.com
+157.240.7.35	5-edge-chat.messenger.com
+157.240.7.35	6-edge-chat.messenger.com
 31.13.95.33	snaptu-z.facebook.com
 31.13.95.33	snaptu-p1.facebook.com
 31.13.95.33	snaptu-p2.facebook.com
@@ -551,14 +560,24 @@
 216.58.200.33	gcr.io
 216.58.200.33	www.gcr.io
 216.58.200.33	console.firebase.google.com
-216.58.200.33	cloudusersettings-pa.clients6.google.com
+216.58.200.33	appengine.clients6.google.com
+216.58.200.33	bigtableadmin.clients6.google.com
+216.58.200.33	clouddebugger.clients6.google.com
 216.58.200.33	cloudconfig.clients6.google.com
-216.58.200.33	firebasestorage.clients6.google.com
-216.58.200.33	firebaserules.clients6.google.com
+216.58.200.33	cloudpersonalization-pa.clients6.google.com
+216.58.200.33	cloudsupport.clients6.google.com
+216.58.200.33	cloudusersettings-pa.clients6.google.com
+216.58.200.33	dataflow.clients6.google.com
+216.58.200.33	datahub.clients6.google.com
 216.58.200.33	firebasedurablelinks-pa.clients6.google.com
+216.58.200.33	firebaserules.clients6.google.com
+216.58.200.33	firebasestorage.clients6.google.com
 216.58.200.33	gcmcontextualcampaign-pa.clients6.google.com
-216.58.200.33	mobilesdk-pa.clients6.google.com
+216.58.200.33	logging.clients6.google.com
+216.58.200.33	memcache.clients6.google.com
+216.58.200.33	ml.clients6.google.com
 216.58.200.33	mobilecrashreporting.clients6.google.com
+216.58.200.33	mobilesdk-pa.clients6.google.com
 216.58.200.33	reminders-pa.clients6.google.com
 216.58.200.33	linkhelp.clients.google.com
 216.58.200.33	upload.clients.google.com
@@ -709,6 +728,7 @@
 216.58.200.33	www.textcube.com
 216.58.200.33	www.blogspot.com
 216.58.200.33	blogspot.com
+216.58.200.33	bp.blogspot.com
 216.58.200.33	1.bp.blogspot.com
 216.58.200.33	2.bp.blogspot.com
 216.58.200.33	3.bp.blogspot.com
@@ -753,6 +773,17 @@
 216.58.200.33	chrometophone.appspot.com
 216.58.200.33	google-developers.appspot.com
 216.58.200.33	download-chromium.appspot.com
+216.58.200.33	apps.googleusercontent.com
+216.58.200.33	appspot.com.storage.googleapis.com
+216.58.200.33	storage-download.googleapis.com
+216.58.200.33	content-storage-download.googleapis.com
+216.58.200.33	content-storage-upload.googleapis.com
+216.58.200.33	content-storage.googleapis.com
+216.58.200.33	googlesyndication.com
+216.58.200.33	googleweblight.com
+216.58.200.33	static.panoramio.com.storage.googleapis.com
+216.58.200.33	unfiltered.news
+216.58.200.33	jigsaw.google.com
 216.58.200.33	lfe-alpo-gm.appspot.com
 216.58.200.33	m-dot-betaspike.appspot.com
 216.58.200.33	mission-author-dot-betaspike.appspot.com
@@ -782,11 +813,12 @@
 216.58.200.33	google-code-prettify.googlecode.com
 216.58.200.33	www.googlesource.com
 216.58.200.33	cloud.google.com
+216.58.200.33	console.cloud.google.com
 216.58.200.33	ogs.google.com
 216.58.200.33	packages.cloud.google.com
-216.58.200.33	console.cloud.google.com
-216.58.200.33	status.cloud.google.com
 216.58.200.33	ssh.cloud.google.com
+216.58.200.33	status.cloud.google.com
+216.58.200.33	storage.cloud.google.com
 216.58.200.33	developers.google.com
 216.58.200.33	cloudssh.developers.google.com
 216.58.200.33	codelabs.developers.google.com
@@ -961,6 +993,7 @@
 216.58.200.33	safebrowsing.clients.google.com
 216.58.200.33	safebrowsing-cache.google.com
 216.58.200.33	sandbox.google.com
+216.58.200.33	googleapis.sandbox.google.com
 216.58.200.33	scholar.google.com
 216.58.200.33	scholar.google.com.tw
 216.58.200.33	sites.google.com
@@ -1248,6 +1281,7 @@
 
 # Googleapis Start
 216.58.200.33	chart.apis.google.com
+216.58.200.33	explorer.apis.google.com
 216.58.200.33	googleapis.com
 216.58.200.33	www.googleapis.com
 216.58.200.33	ajax.googleapis.com
@@ -1280,6 +1314,7 @@
 216.58.200.33	securetoken.googleapis.com
 216.58.200.33	firebasestorage.googleapis.com
 216.58.200.33	www-tactile-opensocial.googleusercontent.com
+216.58.200.33	safenup.googleusercontent.com
 216.58.200.33	www--google--com.safenup.googleusercontent.com
 216.58.200.33	www--google--com--hk.safenup.googleusercontent.com
 216.58.200.33	doc-00-24-apps-viewer.googleusercontent.com
@@ -2458,6 +2493,7 @@
 216.58.200.33	ytimg.googleusercontent.com
 216.58.200.33	www-opensocial.googleusercontent.com
 216.58.200.33	www-gm-opensocial.googleusercontent.com
+216.58.200.33	sandbox.googleusercontent.com
 216.58.200.33	www-opensocial-sandbox.googleusercontent.com
 216.58.200.33	www-fc-opensocial.googleusercontent.com
 216.58.200.33	www-focus-opensocial.googleusercontent.com
@@ -2948,9 +2984,9 @@
 64.233.188.188	gcm.googleapis.com
 64.233.188.188	gcm.l.google.com
 64.233.188.188	gcm-xmpp.googleapis.com
-64.233.188.188	gcm-http.googleapis.com
 64.233.188.188	gcm-preprod.l.google.com
 64.233.188.188	gcm-preprod.googleapis.com
+216.58.200.33	gcm-http.googleapis.com
 # Google:gcm End
 
 # Goole:duo Start
@@ -2980,11 +3016,11 @@
 # Google:Fit End
 
 # HumbleBundle Start
-5.153.35.171	humble.pubnub.com
-198.41.186.33	humblebundle.com
+54.249.82.177	humble.pubnub.com
+104.20.35.236	humblebundle.com
 203.69.81.33	humblebundle-a.akamaihd.net
 52.36.140.12	pubnub.com
-74.125.34.32	www.humblebundle.com
+216.58.200.243	www.humblebundle.com
 # HumbleBundle End
 
 # imgur Start
@@ -3292,30 +3328,31 @@
 # Kobo End
 
 # Line Start
-104.121.240.61	scdn.line-apps.com
+203.104.138.138	line.me
 125.209.210.239	lcp-checkout.line.me
-125.209.222.202	gd2w.line.naver.jp
-125.209.222.202	gww.line.naver.jp
-125.209.222.59	gd2k.line.naver.jp
-125.209.222.59	gwx.line.naver.jp
-125.209.238.181	obs-cn.line-apps.com
+223.119.202.208	lan.line.me
+223.119.202.208	w.line.me
+223.119.202.208	scdn.line-apps.com
 125.209.238.181	obs.line-apps.com
+125.209.238.181	obs-cn.line-apps.com
+203.104.153.6	obs-tw.line-apps.com
 125.209.238.186	xcdn-cn-prf.line-apps.com
 125.209.238.186	xcdn-cn-shp.line-apps.com
 125.209.238.186	xcdn-cn-stk.line-apps.com
-125.209.252.17	gd2g.line.naver.jp
-125.209.252.18	gd2i.line.naver.jp
-203.104.138.138	line.me
-203.104.142.52	lan.line.me
 203.104.150.2	gd2.line.naver.jp
 203.104.150.2	gw.line.naver.jp
-203.104.150.4	obs-tw.line-apps.com
-203.104.160.11	gd2u.line.naver.jp
-203.104.174.12	gd2s.line.naver.jp
-203.104.174.13	gd2v.line.naver.jp
-23.0.130.177	w.line.me
-23.215.103.24	dl.profile.line.naver.jp
-23.215.103.40	dl.stickershop.line.naver.jp
+203.104.160.12	gd2u.line.naver.jp
+203.104.160.12	gd2s.line.naver.jp
+203.104.160.12	gd2v.line.naver.jp
+125.209.252.17	gd2g.line.naver.jp
+125.209.252.17	gd2i.line.naver.jp
+125.209.222.202	gd2k.line.naver.jp
+125.209.222.202	gd2w.line.naver.jp
+125.209.222.202	gww.line.naver.jp
+203.104.174.18	gwx.line.naver.jp
+96.7.54.24	dl.profile.line.naver.jp
+96.7.54.17	dl.stickershop.line.naver.jp
+203.104.150.35	static.line.naver.jp
 # Line End
 
 # Logmein Start
@@ -3379,7 +3416,7 @@
 
 # OneDrive Start
 204.79.197.213	api.onedrive.com
-2.17.58.51	api.onedrive.com
+2.17.58.51	api.onedrive.live.com
 204.79.197.217	onedrive.live.com
 204.79.197.217	skyweb.skyprod.akadns.net
 204.79.197.217	webedgegeo.skyprod.akadns.net
@@ -3505,6 +3542,28 @@
 52.203.245.216	developers.pinterest.com
 # pinterest End
 
+# Periscope Start
+52.193.42.51	pscp.tv
+52.193.42.51	www.pscp.tv
+52.11.126.129	channels.pscp.tv
+52.32.74.235	proxsee.pscp.tv
+13.32.194.196	assets.pscp.tv
+13.32.194.196	prod-profile.pscp.tv
+13.32.194.196	prod-thumbnail.pscp.tv
+151.101.2.93	prod-video-ap-northeast-1.pscp.tv
+151.101.2.93	prod-video-ap-southeast-1.pscp.tv
+151.101.2.93	prod-video-ap-southeast-2.pscp.tv
+151.101.2.93	prod-video-eu-central-1.pscp.tv
+151.101.2.93	prod-video-eu-west-1.pscp.tv
+151.101.2.93	prod-video-us-east-1.pscp.tv
+151.101.2.93	prod-video-us-west-1.pscp.tv
+151.101.2.93	prod-video-us-west-2.pscp.tv
+151.101.2.93	prod-video-sa-east-1.pscp.tv
+52.28.70.96	prod-chatman-ancillary-eu-central-1.pscp.tv
+52.5.25.47	prod-chatman-ancillary-us-east-1.pscp.tv
+52.26.41.23	prod-chatman-ancillary-us-west-2.pscp.tv
+# Periscope End
+
 # Psiphon Start
 54.239.168.4	psiphon3.com
 54.239.168.4	www.psiphon3.com
@@ -3512,11 +3571,19 @@
 104.20.39.14	www.psiphon.ca
 # Psiphon End
 
+# RawGit Start
+198.232.125.81	cdn.rawgit.com
+# RawGit End
+
 # Resilio Sync Start
-52.85.69.35	config.getsync.com
-52.85.69.35	update.getsync.com
-52.85.69.166	www.getsync.com
-52.85.69.73	getsync.com
+13.32.231.218	getsync.com
+13.32.231.218	config.getsync.com
+13.32.231.218	download-cdn.getsync.com
+13.32.231.218	update.getsync.com
+13.32.231.218	www.getsync.com
+13.32.231.218	config.resilio.com
+13.32.231.218	www.resilio.com
+54.82.227.39	new-bench.resilio.com
 # Resilio Sync End
 
 # slideshare Start
@@ -3577,6 +3644,14 @@
 149.154.167.99	macos.telegram.org
 149.154.167.120	web.telegram.org
 149.154.167.57	venus.web.telegram.org
+149.154.175.16	pluto.web.telegram.org
+149.154.175.16	pluto-1.web.telegram.org
+149.154.167.24	venus.web.telegram.org
+149.154.167.24	venus-1.web.telegram.org
+149.154.175.115	aurora.web.telegram.org
+149.154.175.115	aurora-1.web.telegram.org
+149.154.167.124	vesta.web.telegram.org
+149.154.167.124	vesta-1.web.telegram.org
 149.154.171.22	flora.web.telegram.org
 149.154.171.22	flora-1.web.telegram.org
 # telegram End
@@ -3794,6 +3869,10 @@
 192.229.173.207	www.w3schools.com
 # W3schools End
 
+# Wikinews Start
+198.35.26.96	zh.m.wikinews.org
+# Wikinews End
+
 # Wikipedia Start
 198.35.26.96	www.wikipedia.org
 198.35.26.96	login.wikimedia.org
@@ -3809,114 +3888,90 @@
 # Xboxlive End
 
 # Yahoo Start
-119.161.10.150	api.flickr.com
 202.43.194.205	c5.ah.yahoo.com
+202.43.194.205	edit.yahoo.com
+202.43.194.205	na.edit.yahoo.com
+202.43.194.205	sa.edit.yahoo.com
+202.43.194.205	login.yahoo.com
+202.43.194.205	mail.yahoo.com
+202.43.194.205	open.login.yahoo.com
 192.0.79.32	code.flickr.com
-119.160.254.215	d.yimg.com
-119.160.254.215	e.yimg.com
-119.160.254.215	h.yimg.com
-119.160.254.215	l.yimg.com
-119.160.254.215	p.yimg.com
-119.160.254.215	s1.yimg.com
-106.10.136.195	de.yahoo.com
-98.139.21.169	edit.yahoo.com
-69.147.88.13	c.staticflickr.com
-69.147.88.13	c1.staticflickr.com
-69.147.88.13	c2.staticflickr.com
-69.147.88.13	c3.staticflickr.com
-69.147.88.13	c4.staticflickr.com
-69.147.88.13	c5.staticflickr.com
-69.147.88.13	c6.staticflickr.com
-69.147.88.13	c7.staticflickr.com
-69.147.88.13	c8.staticflickr.com
-69.147.88.13	c9.staticflickr.com
-106.10.137.23	static.flickr.com
-106.10.137.23	farm1.staticflickr.com
-106.10.137.23	farm2.staticflickr.com
-106.10.137.23	farm3.staticflickr.com
-106.10.137.23	farm4.staticflickr.com
-106.10.137.23	farm5.staticflickr.com
-106.10.137.23	farm6.staticflickr.com
-106.10.137.23	farm7.staticflickr.com
-106.10.137.23	farm8.staticflickr.com
-106.10.137.23	farm9.staticflickr.com
-63.250.200.72	bf1.farm3.staticflickr.com
-63.250.200.72	bf1.farm6.staticflickr.com
-63.250.200.72	bf1.farm7.staticflickr.com
-74.6.47.80	gq1.farm3.staticflickr.com
-74.6.47.80	gq1.farm4.staticflickr.com
-74.6.47.80	gq1.farm5.staticflickr.com
-74.6.47.80	gq1.farm6.staticflickr.com
-98.138.4.56	ne1.farm7.staticflickr.com
-208.71.44.31	flickr.com
-208.71.44.31	m.flickr.com
-208.71.44.31	secure.flickr.com
-208.71.44.31	www.flickr.com
-208.71.44.31	downloadr.flickr.com
-106.10.137.175	geo.query.yahoo.com
-217.12.13.41	geo.yahoo.com
+192.0.79.32	code.flickr.net
+106.10.231.23	static.flickr.com
+106.10.231.23	farm1.staticflickr.com
+106.10.231.23	farm2.staticflickr.com
+106.10.231.23	farm3.staticflickr.com
+106.10.231.23	farm4.staticflickr.com
+106.10.231.23	farm5.staticflickr.com
+106.10.231.23	farm6.staticflickr.com
+106.10.231.23	farm7.staticflickr.com
+106.10.231.23	farm8.staticflickr.com
+106.10.231.23	farm9.staticflickr.com
+119.161.14.17	flickr.com
+119.161.14.17	m.flickr.com
+119.161.14.17	secure.flickr.com
+119.161.14.17	www.flickr.com
+119.161.14.17	heartbeat.flickr.com
+119.161.14.17	api.flickr.com
+119.161.14.17	up.flickr.com
+76.13.28.196	downloadr.flickr.com
 203.84.197.27	finance.yahoo.com
-203.84.197.27	lh.secure.yahoo.com
-203.84.197.27	mg.mail.yahoo.com
+203.84.197.27	hk.finance.yahoo.com0
+203.84.197.27	answers.yahoo.com
+203.84.197.27	hk.answers.yahoo.com
+203.84.197.27	tw.answers.yahoo.com
+203.84.197.27	geo.yahoo.com
+116.214.10.132	tw.bid.yahoo.com
 121.101.144.112	hk.finance.yahoo.com
-27.123.201.252	tw.finance.yahoo.com
-106.10.199.10	hk.news.yahoo.com
-106.10.138.240	hk.yahoo.com
-106.10.138.240	tw.yahoo.com
-106.10.138.240	us.yahoo.com
-106.10.138.240	www.yahoo.com
-106.10.136.146	hsrd.yahoo.com
-106.10.193.20	hk-mg61.mail.yahoo.com
-106.10.193.20	login.yahoo.com
-106.10.193.20	mail.yahoo.com
-106.10.193.20	na.edit.yahoo.com
-106.10.193.20	open.login.yahoo.com
-106.10.193.20	sa.edit.yahoo.com
-216.39.54.12	overview.mail.yahoo.com
-124.108.101.57	s.yimg.com
-106.10.199.11	heartbeat.flickr.com
-106.10.199.11	tw.news.yahoo.com
-106.10.193.30	sp.analytics.yahoo.com
-119.161.11.10	up.flickr.com
-204.0.5.34	us.js2.yimg.com
-98.138.253.109	yahoo.com
-77.238.184.150	ying.com
+124.108.112.57	tw.finance.yahoo.com
+106.10.160.45	news.yahoo.com
+203.188.200.67	hk.yahoo.com
+203.188.200.67	tw.yahoo.com
+180.222.100.23	tw.news.yahoo.com
+180.222.100.23	hk.news.yahoo.com
+106.10.178.36	yahoo.com
 50.18.192.250	duckduckgo-owned-server.yahoo.net
 116.214.11.98	tw.mobi.yahoo.com
+119.160.242.137	tw.mall.yahoo.com
+116.214.11.98	hk.mobi.yahoo.com
+116.214.11.98	tw.mobi.yahoo.com
+27.123.200.67	search.yahoo.com
+27.123.200.67	hk.search.yahoo.com
+27.123.200.67	tw.search.yahoo.com
 # Yahoo End
 
 # Youtube Start
-61.91.161.217	youtube.com
-61.91.161.217	www.youtube.com
-61.91.161.217	ads.youtube.com
-61.91.161.217	au.youtube.com
-61.91.161.217	ca.youtube.com
-61.91.161.217	de.youtube.com
-61.91.161.217	jp.youtube.com
-61.91.161.217	ru.youtube.com
-61.91.161.217	tw.youtube.com
-61.91.161.217	uk.youtube.com
-61.91.161.217	accounts.youtube.com
-61.91.161.217	analytics.youtube.com
-61.91.161.217	apiblog.youtube.com
-61.91.161.217	creatoracademy.youtube.com
-61.91.161.217	m.youtube.com
-61.91.161.217	s.youtube.com
-61.91.161.217	gdata.youtube.com
-61.91.161.217	gaming.youtube.com
-61.91.161.217	help.youtube.com
-61.91.161.217	img.youtube.com
-61.91.161.217	insight.youtube.com
-61.91.161.217	upload.youtube.com
-61.91.161.217	redirector.c.youtube.com
-61.91.161.217	stage.gdata.youtube.com
-61.91.161.217	tv.youtube.com
-61.91.161.217	uploads.stage.gdata.youtube.com
-61.91.161.217	youtube.googleblog.com
-61.91.161.217	youtube.googleapis.com
-61.91.161.217	youtubei.googleapis.com
-61.91.161.217	youtube-ui.l.google.com
-61.91.161.217	www.youtube-nocookie.com
+172.217.26.46	youtube.com
+172.217.26.46	www.youtube.com
+172.217.26.46	ads.youtube.com
+172.217.26.46	au.youtube.com
+172.217.26.46	ca.youtube.com
+172.217.26.46	de.youtube.com
+172.217.26.46	jp.youtube.com
+172.217.26.46	ru.youtube.com
+172.217.26.46	tw.youtube.com
+172.217.26.46	uk.youtube.com
+172.217.26.46	accounts.youtube.com
+172.217.26.46	analytics.youtube.com
+172.217.26.46	apiblog.youtube.com
+172.217.26.46	creatoracademy.youtube.com
+172.217.26.46	m.youtube.com
+172.217.26.46	s.youtube.com
+172.217.26.46	gdata.youtube.com
+172.217.26.46	gaming.youtube.com
+172.217.26.46	help.youtube.com
+172.217.26.46	img.youtube.com
+172.217.26.46	insight.youtube.com
+172.217.26.46	upload.youtube.com
+172.217.26.46	redirector.c.youtube.com
+172.217.26.46	stage.gdata.youtube.com
+172.217.26.46	tv.youtube.com
+172.217.26.46	uploads.stage.gdata.youtube.com
+172.217.26.46	youtube.googleblog.com
+172.217.26.46	youtube.googleapis.com
+172.217.26.46	youtubei.googleapis.com
+172.217.26.46	youtube-ui.l.google.com
+172.217.26.46	www.youtube-nocookie.com
 # Youtube End
 
 # Modified Hosts End
